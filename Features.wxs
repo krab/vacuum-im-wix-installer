@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include Variables.wxi?>
+	<Fragment>
+		<Feature Id="ProductFeature" Title="$(var.ProductName)" Description="Jabber client" Level="1" ConfigurableDirectory="INSTALLLOCATION">
+			<ComponentRef Id="ApplicationShortcut" />
+			<ComponentRef Id="main" />
+			<ComponentRef Id="imageformats" />
+			<ComponentRef Id="resources_Menuicons_Shared" />
+			<ComponentRef Id="resources_Serviceicons_Shared" />
+			<ComponentRef Id="resources_Simplemessagestyles_Chat" />
+			<ComponentRef Id="resources_Simplemessagestyles_Chat_Incoming" />
+			<ComponentRef Id="resources_Simplemessagestyles_Chat_Outgoing" />
+			<ComponentRef Id="resources_Simplemessagestyles_Chat_Variants" />
+			<ComponentRef Id="resources_Simplemessagestyles_Normal" />
+			<ComponentRef Id="resources_Simplemessagestyles_Normal_Incoming" />
+			<ComponentRef Id="resources_Simplemessagestyles_Normal_Variants" />
+			<ComponentRef Id="resources_Simplemessagestyles_Plain" />
+			<ComponentRef Id="resources_Simplemessagestyles_Plain_Incoming" />
+			<ComponentRef Id="resources_Simplemessagestyles_Plain_Variants" />
+			<ComponentRef Id="resources_Simplemessagestyles_Psi" />
+			<ComponentRef Id="resources_Simplemessagestyles_Psi_Incoming" />
+			<ComponentRef Id="resources_Simplemessagestyles_Psi_Variants" />
+			<ComponentRef Id="resources_Simplemessagestyles_Shared" />
+			<ComponentRef Id="resources_Sounds_Shared" />
+			<ComponentRef Id="resources_Statusicons_Aim" />
+			<ComponentRef Id="resources_Statusicons_Bot" />
+			<ComponentRef Id="resources_Statusicons_Facebook" />
+			<ComponentRef Id="resources_Statusicons_Gadu" />
+			<ComponentRef Id="resources_Statusicons_Gtalk" />
+			<ComponentRef Id="resources_Statusicons_Icq" />
+			<ComponentRef Id="resources_Statusicons_Livejournal" />
+			<ComponentRef Id="resources_Statusicons_Mrim" />
+			<ComponentRef Id="resources_Statusicons_Msn" />
+			<ComponentRef Id="resources_Statusicons_Rss" />
+			<ComponentRef Id="resources_Statusicons_Shared" />
+			<ComponentRef Id="resources_Statusicons_Sms" />
+			<ComponentRef Id="resources_Statusicons_Smtp" />
+			<ComponentRef Id="resources_Statusicons_Vkontakte" />
+			<ComponentRef Id="resources_Statusicons_Weather" />
+			<ComponentRef Id="resources_Statusicons_Yahoo" />
+			<ComponentRef Id="resources_Statusicons_Yaonline" />
+			<Feature Id="plugins" Title="!(loc.plugins_Title)" Description="!(loc.plugins_Description)" Level="1">
+				<ComponentRef Id="plugins" />
+				<Feature Id="Adiummessagestyle" Title="!(loc.Adiummessagestyle_Title)" Description="!(loc.Adiummessagestyle_Description)" Level="1">
+					<ComponentRef Id="plugins_Adiummessagestyle" />
+					<ComponentRef Id="resources_Adiummessagestyles_Shared" />
+					<Feature Id="resources_Adiummessagestyles_Renkoo" Title="!(loc.resources_Adiummessagestyles_Renkoo_Title)" Description="!(loc.resources_Adiummessagestyles_Renkoo_Description)" Level="1">
+						<ComponentRef Id="resources_Adiummessagestyles_Renkoo_Contents" />
+						<ComponentRef Id="resources_Adiummessagestyles_Renkoo_Contents_Resources" />
+						<ComponentRef Id="resources_Adiummessagestyles_Renkoo_Contents_Resources_Images" />
+						<ComponentRef Id="resources_Adiummessagestyles_Renkoo_Contents_Resources_Incoming" />
+						<ComponentRef Id="resources_Adiummessagestyles_Renkoo_Contents_Resources_Outgoing" />
+						<ComponentRef Id="resources_Adiummessagestyles_Renkoo_Contents_Resources_Variants" />
+					</Feature>
+					<Feature Id="resources_Adiummessagestyles_YMous" Title="!(loc.resources_Adiummessagestyles_YMous_Title)" Description="!(loc.resources_Adiummessagestyles_YMous_Description)" Level="1">
+						<ComponentRef Id="resources_Adiummessagestyles_YMous_Contents" />
+						<ComponentRef Id="resources_Adiummessagestyles_YMous_Contents_Resources" />
+						<ComponentRef Id="resources_Adiummessagestyles_YMous_Contents_Resources_Incoming" />
+						<ComponentRef Id="resources_Adiummessagestyles_YMous_Contents_Resources_Variants" />
+						<ComponentRef Id="resources_Adiummessagestyles_YMous_Contents_Resources_Variants__Themes" />
+					</Feature>
+				</Feature>
+				<Feature Id="Avatars" Title="!(loc.Avatars_Title)" Description="!(loc.Avatars_Description)" Level="1">
+					<ComponentRef Id="plugins_Avatars" />
+				</Feature>
+				<Feature Id="Emoticons" Title="!(loc.Emoticons_Title)" Description="!(loc.Emoticons_Description)" Level="1">
+					<ComponentRef Id="plugins_Emoticons" />
+					<Feature Id="Emoticons_Kolobok_dark" Title="!(loc.Emoticons_Kolobok_dark_Title)" Description="!(loc.Emoticons_Kolobok_dark_Description)" Level="1">
+						<ComponentRef Id="resources_Emoticons_Kolobok_dark" />
+					</Feature>
+					<Feature Id="Emoticons_Kolobok_light" Title="!(loc.Emoticons_Kolobok_light_Title)" Description="!(loc.Emoticons_Kolobok_light_Description)" Level="1">
+						<ComponentRef Id="resources_Emoticons_Kolobok_light" />
+					</Feature>
+					<Feature Id="Emoticons_Tasha" Title="!(loc.Emoticons_Tasha_Title)" Description="!(loc.Emoticons_Tasha_Description)" Level="1">
+						<ComponentRef Id="resources_Emoticons_Tasha" />
+					</Feature>
+				</Feature>
+			</Feature>
+			<Feature Id="translations" Title="!(loc.translations_Title)" Description="!(loc.translations_Description)" Level="1">
+				<Feature Id="translations_De" Title="!(loc.translations_De_Title)" Description="!(loc.translations_De_Description)" Level="1">
+					<ComponentRef Id="translations_De" />
+				</Feature>
+				<Feature Id="translations_Pl" Title="!(loc.translations_Pl_Title)" Description="!(loc.translations_Pl_Description)" Level="1">
+					<ComponentRef Id="translations_Pl" />
+				</Feature>
+				<Feature Id="translations_Ru" Title="!(loc.translations_Ru_Title)" Description="!(loc.translations_Ru_Description)" Level="1">
+					<ComponentRef Id="translations_Ru" />
+				</Feature>
+				<Feature Id="translations_Uk" Title="!(loc.translations_Uk_Title)" Description="!(loc.translations_Uk_Description)" Level="1">
+					<ComponentRef Id="translations_Uk" />
+				</Feature>
+			</Feature>
+		</Feature>
+	</Fragment>
+</Wix>
