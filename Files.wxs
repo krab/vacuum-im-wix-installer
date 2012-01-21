@@ -28,6 +28,7 @@
 				<!-- Place product path and version into registry -->
 				<RegistryValue Root="HKLM" Key="SOFTWARE\$(var.ProductName)\$(var.ProductName)" Type="string" Name="Version" Value="$(var.ProductVersion)" />
 				<RegistryValue Root="HKLM" Key="SOFTWARE\$(var.ProductName)\$(var.ProductName)" Type="string" Name="Path" Value="[INSTALLLOCATION]" />
+				<RegistryValue Root="HKLM" Key="Software\$(var.Manufacturer)\$(var.ProductName)" Type="integer" Name="installed" Value="1" KeyPath="yes" />
 			</Component>
 			<Directory Id="imageformats" Name="imageformats">
 				<Component Id="imageformats" Guid="E687963F-0491-467F-A869-244A08959EC1" DiskId="1">

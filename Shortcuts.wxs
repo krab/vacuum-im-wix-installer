@@ -6,7 +6,6 @@
 			<Component Id="ApplicationShortcut" Guid="15564D2B-51BB-4E0A-8CD3-75F94BF94DBB">
 				<Shortcut Id="ShortcutVacuum" Name="Vacuum-IM" Description="$(var.ProductName)" Target="[INSTALLLOCATION]vacuum.exe" WorkingDirectory="INSTALLLOCATION" />
 				<RemoveFolder Id="ApplicationProgramsFolder" On="uninstall" />
-				<RegistryValue Root="HKCU" Key="Software\$(var.Manufacturer)\$(var.ProductName)" Name="installed" Type="integer" Value="1" KeyPath="yes" />
 			</Component>
 		</DirectoryRef>
 	</Fragment>
