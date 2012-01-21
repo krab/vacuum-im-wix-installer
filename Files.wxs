@@ -697,6 +697,7 @@
 							<File Id="resources_Menuicons_Shared_Rchangercopygroup_png" Name="rchangercopygroup.png" Source="install_files\resources\menuicons\shared\rchangercopygroup.png" />
 							<File Id="resources_Menuicons_Shared_Rchangercreategroup_png" Name="rchangercreategroup.png" Source="install_files\resources\menuicons\shared\rchangercreategroup.png" />
 							<File Id="resources_Menuicons_Shared_Rchangergroup_png" Name="rchangergroup.png" Source="install_files\resources\menuicons\shared\rchangergroup.png" />
+							<File Id="resources_Menuicons_Shared_Rchangermanagement_png" Name="rchangermanagement.png" Source="install_files\resources\menuicons\shared\rchangermanagement.png" />
 							<File Id="resources_Menuicons_Shared_Rchangermovegroup_png" Name="rchangermovegroup.png" Source="install_files\resources\menuicons\shared\rchangermovegroup.png" />
 							<File Id="resources_Menuicons_Shared_Rchangerremovecontact_png" Name="rchangerremovecontact.png" Source="install_files\resources\menuicons\shared\rchangerremovecontact.png" />
 							<File Id="resources_Menuicons_Shared_Rchangerremovecontacts_png" Name="rchangerremovecontacts.png" Source="install_files\resources\menuicons\shared\rchangerremovecontacts.png" />

@@ -36,7 +36,7 @@
 		<!-- UI REF -->
 		<UIRef Id="WixUI_Mondo" />
 		<!-- Sequences -->
-		<!-- If a newer version of SharpDevelop is installed, show an error message. -->
+		<!-- If a newer version of product is installed, show an error message. -->
 		<CustomAction Id="NoDowngrade" Error="A later version of [ProductName] is already installed. If you need to install this MSI, first remove program from Add/Remove Programs in Control Panel." />
 		<InstallExecuteSequence>
 			<!-- Display an error message if a newer version found. -->
