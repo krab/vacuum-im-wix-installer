@@ -2,8 +2,7 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 	<?include Variables.wxi?>
 	<Fragment>
-		<Feature Id="ProductFeature" Title="$(var.ProductName)" Description="Jabber client" Level="1" ConfigurableDirectory="INSTALLLOCATION">
-			<ComponentRef Id="ApplicationShortcut" />
+		<Feature Id="ProductFeature" Title="$(var.ProductName)" Description="Jabber client" Level="1" ConfigurableDirectory="APPLICATIONFOLDER">
 			<ComponentRef Id="main" />
 			<ComponentRef Id="imageformats" />
 			<ComponentRef Id="resources_Menuicons_Shared" />

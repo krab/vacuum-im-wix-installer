@@ -25,19 +25,18 @@
     <Compile Include="Files.wxs" />
     <Compile Include="Product.wxs" />
     <Compile Include="Features.wxs" />
-    <Compile Include="Shortcuts.wxs" />
-  </ItemGroup>
-  <ItemGroup>
-    <WixExtension Include="WixUIExtension">
-      <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
-      <Name>WixUIExtension</Name>
-    </WixExtension>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Variables.wxi" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="loc_en_us.wxl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WixExtension Include="WixUIExtension">
+      <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
+      <Name>WixUIExtension</Name>
+    </WixExtension>
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
   <!--

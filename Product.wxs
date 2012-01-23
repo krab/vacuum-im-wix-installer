@@ -13,28 +13,28 @@
 		<Media Id="1" Cabinet="vacuumim.cab" EmbedCab="yes" CompressionLevel="high" />
 		<Directory Id="TARGETDIR" Name="SourceDir">
 			<Directory Id="ProgramFilesFolder">
-				<Directory Id="INSTALLLOCATION" Name="$(var.ProductName)">
+				<Directory Id="APPLICATIONFOLDER" Name="$(var.ProductName)">
 				</Directory>
 			</Directory>
-			<Directory Id="ProgramMenuFolder">
+<!--			<Directory Id="ProgramMenuFolder">
 				<Directory Id="ApplicationProgramsFolder" Name="$(var.ProductName)" />
-			</Directory>
+			</Directory> -->
 		</Directory>
+    
+    <Property Id="WixAppFolder" Value="WixPerMachineFolder" />
+    <Property Id="ApplicationFolderName" Value="$(var.ProductName)" />
+    
 		<!-- Include Features -->
 		<FeatureRef Id="ProductFeature" />
-		<!-- Get Instsll location from registry key, if not, set default -->
-		<Property Id="INSTALLLOCATION">
-			<RegistrySearch Id="vacuumiminstalllocation" Root="HKLM" Key="SOFTWARE\$(var.ProductName)\$(var.ProductName)" Name="Path" Type="raw" Win64="no" />
-		</Property>
-		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLLOCATION" />
+
 		<!-- Install product for all users -->
 		<Property Id="ALLUSERS">2</Property>
 		<!-- License and bitmaps -->
-		<WixVariable Id="WixUILicenseRtf" Overridable="yes" Value="license.rtf" />
+		<WixVariable Id="WixUILicenseRtf" Overridable="yes" Value="license.rtf" /> 
 		<WixVariable Id="WixUIBannerBmp" Value="bannrbmp.bmp" />
 		<WixVariable Id="WixUIDialogBmp" Value="dlgbmp.bmp" />
 		<!-- UI REF -->
-		<UIRef Id="WixUI_Mondo" />
+		<UIRef Id="WixUI_Advanced" />
 		<!-- Sequences -->
 		<!-- If a newer version of product is installed, show an error message. -->
 		<CustomAction Id="NoDowngrade" Error="A later version of [ProductName] is already installed. If you need to install this MSI, first remove program from Add/Remove Programs in Control Panel." />

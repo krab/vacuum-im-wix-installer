@@ -2,7 +2,7 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 	<?include Variables.wxi?>
 	<Fragment>
-		<DirectoryRef Id="INSTALLLOCATION">
+		<DirectoryRef Id="APPLICATIONFOLDER">
 			<Component Id="main" Guid="029A4410-275B-4CB5-A6A5-BC8473D1C159" DiskId="1">
 				<File Id="AUTHORS" Name="AUTHORS" Source="install_files\AUTHORS" />
 				<File Id="CHANGELOG" Name="CHANGELOG" Source="install_files\CHANGELOG" />
@@ -25,10 +25,6 @@
 				<File Id="TRANSLATORS" Name="TRANSLATORS" Source="install_files\TRANSLATORS" />
 				<File Id="vacuum_exe" Name="vacuum.exe" Source="install_files\vacuum.exe" />
 				<File Id="vacuumutils_dll" Name="vacuumutils.dll" Source="install_files\vacuumutils.dll" />
-				<!-- Place product path and version into registry -->
-				<RegistryValue Root="HKLM" Key="SOFTWARE\$(var.ProductName)\$(var.ProductName)" Type="string" Name="Version" Value="$(var.ProductVersion)" />
-				<RegistryValue Root="HKLM" Key="SOFTWARE\$(var.ProductName)\$(var.ProductName)" Type="string" Name="Path" Value="[INSTALLLOCATION]" />
-				<RegistryValue Root="HKLM" Key="Software\$(var.Manufacturer)\$(var.ProductName)" Type="integer" Name="installed" Value="1" KeyPath="yes" />
 			</Component>
 			<Directory Id="imageformats" Name="imageformats">
 				<Component Id="imageformats" Guid="E687963F-0491-467F-A869-244A08959EC1" DiskId="1">
