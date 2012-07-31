@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="ru-ru" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+  <String Id="language" Overridable="yes">1049</String>
+  <String Id="codepage" Overridable="yes">1251</String>
+  <String Id="major_upgrade_error" Overridable="yes">Новая версия Vacuum-IM уже установлена. Если необходимо установить этот MSI пакет, сперва удалите программу через Установку/Удаление программ в панели управления.</String>
+  <String Id="d_plugins" Overridable="yes">Плагины расширяют функциональность клиента</String>
+  <String Id="d_plugins_adiummessagestyle" Overridable="yes">Позволяет использовать Adium стиль оформления сообщений</String>
+  <String Id="d_plugins_autostatus" Overridable="yes">Позволяет менять статус в зависимости от времени бездействия</String>
+  <String Id="d_plugins_avatars" Overridable="yes">Позволяет устанавливать и отображать аватары</String>
+  <String Id="d_plugins_birthdayreminder" Overridable="yes">Напоминать о днях рождения ваших друзей</String>
+  <String Id="d_plugins_compress" Overridable="yes">Позволяет сжимать поток сообщений отправляемый и получаемый от сервера</String>
+  <String Id="d_plugins_emoticons" Overridable="yes">Позволяет использовать изображения смайликов в сообщениях</String>
+  <String Id="d_plugins_simplemessagestyle" Overridable="yes">Позволяет использовать упрощённый стиль оформления сообщений</String>
+  <String Id="d_product" Overridable="yes">Кроссплатформенный jabber клиент написанный на Qt</String>
+  <String Id="d_resources_adiummessagestyle_renkoo" Overridable="yes">Adium стиль Renkoo</String>
+  <String Id="d_resources_adiummessagestyle_ymous" Overridable="yes">Adium стиль YMous</String>
+  <String Id="d_resources_emoticons_kolobok_dark" Overridable="yes">Вариант смайликов колобки для темного фона окна чата</String>
+  <String Id="d_resources_emoticons_kolobok_light" Overridable="yes">Вариант смайликов колобки для светлого фона окна чата</String>
+  <String Id="d_resources_emoticons_kolobok_tasha" Overridable="yes">Смайлики Tasha</String>
+  <String Id="d_resources_simplemessagestyles_chat" Overridable="yes">Упрощённый стиль Chat</String>
+  <String Id="d_resources_simplemessagestyles_normal" Overridable="yes">Упрощённый стиль Messange</String>
+  <String Id="d_resources_simplemessagestyles_plain" Overridable="yes">Упрощённый стиль Plain</String>
+  <String Id="d_resources_simplemessagestyles_psi" Overridable="yes">Упрощённый стиль Psi</String>
+  <String Id="d_translations" Overridable="yes">Файлы локализаций</String>
+  <String Id="d_translations_de" Overridable="yes">Немецкая локализация</String>
+  <String Id="d_translations_pl" Overridable="yes">Польская локализация</String>
+  <String Id="d_translations_ru" Overridable="yes">Русская локализация</String>
+  <String Id="d_translations_uk" Overridable="yes">Украинская локализация</String>
+  <String Id="t_plugins" Overridable="yes">Плагины</String>
+  <String Id="t_plugins_adiummessagestyle" Overridable="yes">Adium стиль сообщений</String>
+  <String Id="t_plugins_autostatus" Overridable="yes">Авто статус </String>
+  <String Id="t_plugins_avatars" Overridable="yes">Аватары</String>
+  <String Id="t_plugins_birthdayreminder" Overridable="yes">Напоминания о днях рождения</String>
+  <String Id="t_plugins_compress" Overridable="yes">Сжатие XMPP потока</String>
+  <String Id="t_plugins_emoticons" Overridable="yes">Смайлики</String>
+  <String Id="t_plugins_simplemessagestyle" Overridable="yes">Упрощённый стиль сообщений</String>
+  <String Id="t_resources_adiummessagestyle_renkoo" Overridable="yes">Renkoo</String>
+  <String Id="t_resources_adiummessagestyle_ymous" Overridable="yes">yMous</String>
+  <String Id="t_resources_emoticons_kolobok_dark" Overridable="yes">Колобки (тёмный фон)</String>
+  <String Id="t_resources_emoticons_kolobok_light" Overridable="yes">Колобки (светлый фон)</String>
+  <String Id="t_resources_emoticons_kolobok_tasha" Overridable="yes">Tasha</String>
+  <String Id="t_resources_simplemessagestyles_chat" Overridable="yes">Chat</String>
+  <String Id="t_resources_simplemessagestyles_normal" Overridable="yes">Messange</String>
+  <String Id="t_resources_simplemessagestyles_plain" Overridable="yes">Plain</String>
+  <String Id="t_resources_simplemessagestyles_psi" Overridable="yes">Psi</String>
+  <String Id="t_translations" Overridable="yes">Локализация</String>
+  <String Id="t_translations_de" Overridable="yes">Немецкая</String>
+  <String Id="t_translations_pl" Overridable="yes">Польская</String>
+  <String Id="t_translations_ru" Overridable="yes">Русская</String>
+  <String Id="t_translations_uk" Overridable="yes">Украинская</String>
+</WixLocalization>

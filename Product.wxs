@@ -1,60 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<?include Variables.wxi?>
-	<Product Id="*" Name="$(var.ProductName)" Codepage="$(var.ProductCodepage)" Language="1033" Version="$(var.ProductVersion)" Manufacturer="$(var.Manufacturer)" UpgradeCode="$(var.UpgradeCode)">
-		<Package Id="*" Compressed="yes" Description="$(var.ProductName) $(var.ProductVersion) installer" InstallerVersion="200" ShortNames="no" Manufacturer="$(var.Manufacturer)" />
-		<!-- Upgrade information -->
-		<Upgrade Id="$(var.UpgradeCode)">
-			<!-- Checks for older versions -->
-			<UpgradeVersion Minimum="$(var.RTMProductVersion)" IncludeMinimum="yes" Maximum="$(var.ProductVersion)" IncludeMaximum="no" Property="PREVIOUSVERSIONFOUND" />
-			<!-- Checks for newer versions -->
-			<UpgradeVersion OnlyDetect="yes" IncludeMinimum="no" Minimum="$(var.ProductVersion)" Property="NEWERVERSIONFOUND" />
-		</Upgrade>
-		<Media Id="1" Cabinet="vacuumim.cab" EmbedCab="yes" CompressionLevel="high" />
-		<Directory Id="TARGETDIR" Name="SourceDir">
-			<Directory Id="ProgramFilesFolder">
-				<Directory Id="APPLICATIONFOLDER" Name="$(var.ProductName)">
-				</Directory>
-			</Directory>
-<!--			<Directory Id="ProgramMenuFolder">
-				<Directory Id="ApplicationProgramsFolder" Name="$(var.ProductName)" />
-			</Directory> -->
-		</Directory>
-    
-    <Property Id="WixAppFolder" Value="WixPerMachineFolder" />
-    <Property Id="ApplicationFolderName" Value="$(var.ProductName)" />
-    
-		<!-- Include Features -->
-		<FeatureRef Id="ProductFeature" />
+  <?include Variables.wxi?>
+  <Product Id="*" Name="$(var.ProductName)" Manufacturer="$(var.Manufacturer)" Codepage="$(var.ProductCodepage)" Language="!(loc.language)" Version="$(var.ProductVersion)" UpgradeCode="$(var.UpgradeCode)">
+    <Package Id="*" Description="$(var.ProductName) $(var.ProductVersion) installer" Manufacturer="$(var.Manufacturer)" InstallerVersion="200" Compressed="yes" ShortNames="no" />
+    <Upgrade Id="$(var.UpgradeCode)" />
+    <Media Id="1" Cabinet="vacuumim.cab" EmbedCab="yes" CompressionLevel="high" />
 
-		<!-- Install product for all users -->
-		<Property Id="ALLUSERS">2</Property>
-		<!-- License and bitmaps -->
-		<WixVariable Id="WixUILicenseRtf" Overridable="yes" Value="license.rtf" /> 
-		<WixVariable Id="WixUIBannerBmp" Value="bannrbmp.bmp" />
-		<WixVariable Id="WixUIDialogBmp" Value="dlgbmp.bmp" />
-		<!-- UI REF -->
-		<UIRef Id="WixUI_Advanced" />
-		<!-- Sequences -->
-		<!-- If a newer version of product is installed, show an error message. -->
-		<CustomAction Id="NoDowngrade" Error="A later version of [ProductName] is already installed. If you need to install this MSI, first remove program from Add/Remove Programs in Control Panel." />
-		<InstallExecuteSequence>
-			<!-- Display an error message if a newer version found. -->
-			<Custom Action="NoDowngrade" After="FindRelatedProducts">NEWERVERSIONFOUND</Custom>
-			<!-- Removes the older version, if we are upgrading, before installing the new version. -->
-			<RemoveExistingProducts After="InstallInitialize" />
-		</InstallExecuteSequence>
-		<!-- Indormation about program -->
-		<Property Id="ARPHELPLINK">http://code.google.com/p/vacuum-im/</Property>
-		<Property Id="ARPURLUPDATEINFO">http://code.google.com/p/vacuum-im/downloads/</Property>
-		<!-- Puts icon in Control Panel's Add/Remove Programs -->
-		<Property Id="ARPPRODUCTICON" Value="vacuum.ico" />
-		<Icon Id="vacuum.ico" SourceFile="install_files\vacuum.exe" />
-		<!-- Add information to Add/Remove Programs -->
-		<CustomAction Id="SetARPINSTALLLOCATION" Property="ARPINSTALLLOCATION" Value="[INSTALLDIR]" />
-		<InstallExecuteSequence>
-			<Custom Action="SetARPINSTALLLOCATION" After="InstallFinalize">
-			</Custom>
-		</InstallExecuteSequence>
-	</Product>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="APPLICATIONFOLDER" Name="$(var.ProductName)">
+        </Directory>
+      </Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ProgramMenuAppFolder" Name="$(var.ProductName)">
+          <Component Id="c.ProgramMenuAppFolder" Guid="a46490d1-7ce1-4418-9efd-d944086df6ae">
+            <RegistryValue Root="HKMU" Key="Software\$(var.Manufacturer)\$(var.ProductName)" Type="string" Value="" KeyPath="yes" />
+            <RemoveFolder Id="ProgramMenuAppFolder" On="uninstall"/>
+          </Component>
+        </Directory>
+      </Directory>
+      <Directory Id="DesktopFolder" Name="Desktop"/>
+    </Directory>
+
+    <!--<WixVariable Id="WixUISupportPerMachine" Value="0" />-->
+    <Property Id="WixAppFolder" Value="WixPerUserFolder" />
+    <Property Id="ApplicationFolderName" Value="$(var.ProductName)" />
+    <Property Id="DISABLEADVTSHORTCUTS" Value="1" />
+
+    <FeatureRef Id="f.product" />
+
+    <WixVariable Id="WixUILicenseRtf" Overridable="yes" Value="license.rtf" />
+    <WixVariable Id="WixUIBannerBmp" Value="bannrbmp.bmp" />
+    <WixVariable Id="WixUIDialogBmp" Value="dlgbmp.bmp" />
+
+    <UI>
+      <UIRef Id="WixUI_Advanced" />
+      <UIRef Id="WixUI_ErrorProgressText" />
+    </UI>
+
+    <MajorUpgrade Schedule="afterInstallFinalize" AllowSameVersionUpgrades="yes" DowngradeErrorMessage="!(loc.major_upgrade_error)" />
+
+    <Property Id="ARPHELPLINK">http://code.google.com/p/vacuum-im/</Property>
+    <Property Id="ARPURLUPDATEINFO">http://code.google.com/p/vacuum-im/downloads/</Property>
+    <Property Id="ARPPRODUCTICON" Value="vacuum.ico" />
+    <Icon Id="vacuum.ico" SourceFile="SourceDir\vacuum.exe" />
+
+    <CustomAction Id="SetARPINSTALLLOCATION" Property="ARPINSTALLLOCATION" Value="[APPLICATIONFOLDER]" />
+    <InstallExecuteSequence>
+      <Custom Action="SetARPINSTALLLOCATION" After="InstallFinalize" />
+    </InstallExecuteSequence>
+  </Product>
 </Wix>

@@ -1,95 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<?include Variables.wxi?>
-	<Fragment>
-		<Feature Id="ProductFeature" Title="$(var.ProductName)" Description="Jabber client" Level="1" ConfigurableDirectory="APPLICATIONFOLDER">
-			<ComponentRef Id="main" />
-			<ComponentRef Id="imageformats" />
-			<ComponentRef Id="resources_Menuicons_Shared" />
-			<ComponentRef Id="resources_Serviceicons_Shared" />
-			<ComponentRef Id="resources_Simplemessagestyles_Chat" />
-			<ComponentRef Id="resources_Simplemessagestyles_Chat_Incoming" />
-			<ComponentRef Id="resources_Simplemessagestyles_Chat_Outgoing" />
-			<ComponentRef Id="resources_Simplemessagestyles_Chat_Variants" />
-			<ComponentRef Id="resources_Simplemessagestyles_Normal" />
-			<ComponentRef Id="resources_Simplemessagestyles_Normal_Incoming" />
-			<ComponentRef Id="resources_Simplemessagestyles_Normal_Variants" />
-			<ComponentRef Id="resources_Simplemessagestyles_Plain" />
-			<ComponentRef Id="resources_Simplemessagestyles_Plain_Incoming" />
-			<ComponentRef Id="resources_Simplemessagestyles_Plain_Variants" />
-			<ComponentRef Id="resources_Simplemessagestyles_Psi" />
-			<ComponentRef Id="resources_Simplemessagestyles_Psi_Incoming" />
-			<ComponentRef Id="resources_Simplemessagestyles_Psi_Variants" />
-			<ComponentRef Id="resources_Simplemessagestyles_Shared" />
-			<ComponentRef Id="resources_Sounds_Shared" />
-			<ComponentRef Id="resources_Statusicons_Aim" />
-			<ComponentRef Id="resources_Statusicons_Bot" />
-			<ComponentRef Id="resources_Statusicons_Facebook" />
-			<ComponentRef Id="resources_Statusicons_Gadu" />
-			<ComponentRef Id="resources_Statusicons_Gtalk" />
-			<ComponentRef Id="resources_Statusicons_Icq" />
-			<ComponentRef Id="resources_Statusicons_Livejournal" />
-			<ComponentRef Id="resources_Statusicons_Mrim" />
-			<ComponentRef Id="resources_Statusicons_Msn" />
-			<ComponentRef Id="resources_Statusicons_Rss" />
-			<ComponentRef Id="resources_Statusicons_Shared" />
-			<ComponentRef Id="resources_Statusicons_Sms" />
-			<ComponentRef Id="resources_Statusicons_Smtp" />
-			<ComponentRef Id="resources_Statusicons_Vkontakte" />
-			<ComponentRef Id="resources_Statusicons_Weather" />
-			<ComponentRef Id="resources_Statusicons_Yahoo" />
-			<ComponentRef Id="resources_Statusicons_Yaonline" />
-			<Feature Id="plugins" Title="!(loc.plugins_Title)" Description="!(loc.plugins_Description)" Level="1">
-				<ComponentRef Id="plugins" />
-				<Feature Id="Adiummessagestyle" Title="!(loc.Adiummessagestyle_Title)" Description="!(loc.Adiummessagestyle_Description)" Level="1">
-					<ComponentRef Id="plugins_Adiummessagestyle" />
-					<ComponentRef Id="resources_Adiummessagestyles_Shared" />
-					<Feature Id="resources_Adiummessagestyles_Renkoo" Title="!(loc.resources_Adiummessagestyles_Renkoo_Title)" Description="!(loc.resources_Adiummessagestyles_Renkoo_Description)" Level="1">
-						<ComponentRef Id="resources_Adiummessagestyles_Renkoo_Contents" />
-						<ComponentRef Id="resources_Adiummessagestyles_Renkoo_Contents_Resources" />
-						<ComponentRef Id="resources_Adiummessagestyles_Renkoo_Contents_Resources_Images" />
-						<ComponentRef Id="resources_Adiummessagestyles_Renkoo_Contents_Resources_Incoming" />
-						<ComponentRef Id="resources_Adiummessagestyles_Renkoo_Contents_Resources_Outgoing" />
-						<ComponentRef Id="resources_Adiummessagestyles_Renkoo_Contents_Resources_Variants" />
-					</Feature>
-					<Feature Id="resources_Adiummessagestyles_YMous" Title="!(loc.resources_Adiummessagestyles_YMous_Title)" Description="!(loc.resources_Adiummessagestyles_YMous_Description)" Level="1">
-						<ComponentRef Id="resources_Adiummessagestyles_YMous_Contents" />
-						<ComponentRef Id="resources_Adiummessagestyles_YMous_Contents_Resources" />
-						<ComponentRef Id="resources_Adiummessagestyles_YMous_Contents_Resources_Incoming" />
-						<ComponentRef Id="resources_Adiummessagestyles_YMous_Contents_Resources_Variants" />
-						<ComponentRef Id="resources_Adiummessagestyles_YMous_Contents_Resources_Variants__Themes" />
-					</Feature>
-				</Feature>
-				<Feature Id="Avatars" Title="!(loc.Avatars_Title)" Description="!(loc.Avatars_Description)" Level="1">
-					<ComponentRef Id="plugins_Avatars" />
-				</Feature>
-				<Feature Id="Emoticons" Title="!(loc.Emoticons_Title)" Description="!(loc.Emoticons_Description)" Level="1">
-					<ComponentRef Id="plugins_Emoticons" />
-					<Feature Id="Emoticons_Kolobok_dark" Title="!(loc.Emoticons_Kolobok_dark_Title)" Description="!(loc.Emoticons_Kolobok_dark_Description)" Level="1">
-						<ComponentRef Id="resources_Emoticons_Kolobok_dark" />
-					</Feature>
-					<Feature Id="Emoticons_Kolobok_light" Title="!(loc.Emoticons_Kolobok_light_Title)" Description="!(loc.Emoticons_Kolobok_light_Description)" Level="1">
-						<ComponentRef Id="resources_Emoticons_Kolobok_light" />
-					</Feature>
-					<Feature Id="Emoticons_Tasha" Title="!(loc.Emoticons_Tasha_Title)" Description="!(loc.Emoticons_Tasha_Description)" Level="1">
-						<ComponentRef Id="resources_Emoticons_Tasha" />
-					</Feature>
-				</Feature>
-			</Feature>
-			<Feature Id="translations" Title="!(loc.translations_Title)" Description="!(loc.translations_Description)" Level="1">
-				<Feature Id="translations_De" Title="!(loc.translations_De_Title)" Description="!(loc.translations_De_Description)" Level="1">
-					<ComponentRef Id="translations_De" />
-				</Feature>
-				<Feature Id="translations_Pl" Title="!(loc.translations_Pl_Title)" Description="!(loc.translations_Pl_Description)" Level="1">
-					<ComponentRef Id="translations_Pl" />
-				</Feature>
-				<Feature Id="translations_Ru" Title="!(loc.translations_Ru_Title)" Description="!(loc.translations_Ru_Description)" Level="1">
-					<ComponentRef Id="translations_Ru" />
-				</Feature>
-				<Feature Id="translations_Uk" Title="!(loc.translations_Uk_Title)" Description="!(loc.translations_Uk_Description)" Level="1">
-					<ComponentRef Id="translations_Uk" />
-				</Feature>
-			</Feature>
-		</Feature>
-	</Fragment>
+  <?include Variables.wxi?>
+  <Fragment>
+    <Feature Id="f.product" Title="$(var.ProductName)" Description="!(loc.d_product)" Display="expand" Level="1" AllowAdvertise="no" Absent="disallow" ConfigurableDirectory="APPLICATIONFOLDER">
+      <ComponentGroupRef Id="cg.main" />
+      <ComponentRef Id="c.ProgramMenuAppFolder" />
+      <ComponentGroupRef Id="cg.docs" />
+      <ComponentGroupRef Id="cg.openssl" />
+      <ComponentGroupRef Id="cg.microsoft_visual_cpp_runtime" />
+      <ComponentGroupRef Id="cg.qt_frameworks" />
+      <ComponentGroupRef Id="cg.resources_menuicons_shared" />
+      <ComponentGroupRef Id="cg.resources_serviceicons_shared" />
+      <ComponentGroupRef Id="cg.resources_sounds_shared" />
+      <ComponentGroupRef Id="cg.resources_statusicons" />
+
+      <Feature Id="f.plugins" Title="!(loc.t_plugins)" Description="!(loc.d_plugins)" Level="1" AllowAdvertise="no" Absent="disallow">
+        <ComponentGroupRef Id="cg.plugins" />
+        <Feature Id="f.plugins_adiummessagestyle" Title="!(loc.t_plugins_adiummessagestyle)" Description="!(loc.d_plugins_adiummessagestyle)" Level="1" AllowAdvertise="no">
+          <ComponentGroupRef Id="cg.plugins_adiummessagestyle" />
+          <ComponentGroupRef Id="cg.resources_adiummessagestyle_shared" />
+          <Feature Id="f.resources_adiummessagestyle_renkoo" Title="!(loc.t_resources_adiummessagestyle_renkoo)" Description="!(loc.d_resources_adiummessagestyle_renkoo)" Level="1" AllowAdvertise="no">
+            <ComponentGroupRef Id="cg.resources_adiummessagestyle_renkoo" />
+          </Feature>
+          <Feature Id="f.resources_adiummessagestyle_ymous" Title="!(loc.t_resources_adiummessagestyle_ymous)" Description="!(loc.d_resources_adiummessagestyle_ymous)" Level="1" AllowAdvertise="no">
+            <ComponentGroupRef Id="cg.resources_adiummessagestyle_ymous" />
+          </Feature>
+        </Feature>
+        <Feature Id="f.plugins_avatars" Title="!(loc.t_plugins_avatars)" Description="!(loc.d_plugins_avatars)" Level="1" AllowAdvertise="no">
+          <ComponentGroupRef Id="cg.plugins_avatars" />
+        </Feature>
+        <Feature Id="f.plugins_autostatus" Title="!(loc.t_plugins_autostatus)" Description="!(loc.d_plugins_autostatus)" Level="1" AllowAdvertise="no">
+          <ComponentGroupRef Id="cg.plugins_autostatus" />
+        </Feature>
+        <Feature Id="f.plugins_birthdayreminder" Title="!(loc.t_plugins_birthdayreminder)" Description="!(loc.d_plugins_birthdayreminder)" Level="1" AllowAdvertise="no">
+          <ComponentGroupRef Id="cg.plugins_birthdayreminder" />
+        </Feature>
+        <Feature Id="f.plugins_compress" Title="!(loc.t_plugins_compress)" Description="!(loc.d_plugins_compress)" Level="1" AllowAdvertise="no">
+          <ComponentGroupRef Id="cg.plugins_compress" />
+        </Feature>
+        <Feature Id="f.plugins_emoticons" Title="!(loc.t_plugins_emoticons)" Description="!(loc.d_plugins_emoticons)" Level="1" AllowAdvertise="no">
+          <ComponentGroupRef Id="cg.plugins_emoticons" />
+          <Feature Id="f.resources_emoticons_kolobok_dark" Title="!(loc.t_resources_emoticons_kolobok_dark)" Description="!(loc.d_resources_emoticons_kolobok_dark)" Level="1" AllowAdvertise="no">
+            <ComponentGroupRef Id="cg.resources_emoticons_kolobok_dark" />
+          </Feature>
+          <Feature Id="f.resources_emoticons_kolobok_light" Title="!(loc.t_resources_emoticons_kolobok_light)" Description="!(loc.d_resources_emoticons_kolobok_light)" Level="1" AllowAdvertise="no">
+            <ComponentGroupRef Id="cg.resources_emoticons_kolobok_light" />
+          </Feature>
+          <Feature Id="f.resources_emoticons_kolobok_tasha" Title="!(loc.t_resources_emoticons_kolobok_tasha)" Description="!(loc.d_resources_emoticons_kolobok_tasha)" Level="1" AllowAdvertise="no">
+            <ComponentGroupRef Id="cg.resources_emoticons_kolobok_tasha" />
+          </Feature>
+        </Feature>
+        <Feature Id="f.plugins_simplemessagestyle" Title="!(loc.t_plugins_simplemessagestyle)" Description="!(loc.d_plugins_simplemessagestyle)" Level="1" AllowAdvertise="no">
+          <ComponentGroupRef Id="cg.plugins_simplemessagestyle" />
+          <ComponentGroupRef Id="cg.resources_simplemessagestyles_shared" />
+          <Feature Id="f.resources_simplemessagestyles_chat" Title="!(loc.t_resources_simplemessagestyles_chat)" Description="!(loc.d_resources_simplemessagestyles_chat)" Level="1" AllowAdvertise="no">
+            <ComponentGroupRef Id="cg.resources_simplemessagestyles_chat" />
+          </Feature>
+          <Feature Id="f.resources_simplemessagestyles_normal" Title="!(loc.t_resources_simplemessagestyles_normal)" Description="!(loc.d_resources_simplemessagestyles_normal)" Level="1" AllowAdvertise="no">
+            <ComponentGroupRef Id="cg.resources_simplemessagestyles_normal" />
+          </Feature>
+          <Feature Id="f.resources_simplemessagestyles_plain" Title="!(loc.t_resources_simplemessagestyles_plain)" Description="!(loc.d_resources_simplemessagestyles_plain)" Level="1" AllowAdvertise="no">
+            <ComponentGroupRef Id="cg.resources_simplemessagestyles_plain" />
+          </Feature>
+          <Feature Id="f.resources_simplemessagestyles_psi" Title="!(loc.t_resources_simplemessagestyles_psi)" Description="!(loc.d_resources_simplemessagestyles_psi)" Level="1" AllowAdvertise="no">
+            <ComponentGroupRef Id="cg.resources_simplemessagestyles_psi" />
+          </Feature>
+        </Feature>
+      </Feature>
+      <Feature Id="f.translations" Title="!(loc.t_translations)" Description="!(loc.d_translations)" Level="1" AllowAdvertise="no">
+        <Feature Id="f.translations_de" Title="!(loc.t_translations_de)" Description="!(loc.d_translations_de)" Level="1" AllowAdvertise="no">
+          <ComponentGroupRef Id="cg.translations_de" />
+        </Feature>
+        <Feature Id="f.translations_pl" Title="!(loc.t_translations_pl)" Description="!(loc.d_translations_pl)" Level="1" AllowAdvertise="no">
+          <ComponentGroupRef Id="cg.translations_pl" />
+        </Feature>
+        <Feature Id="f.translations_ru" Title="!(loc.t_translations_ru)" Description="!(loc.d_translations_ru)" Level="1" AllowAdvertise="no">
+          <ComponentGroupRef Id="cg.translations_ru" />
+        </Feature>
+        <Feature Id="f.translations_uk" Title="!(loc.t_translations_uk)" Description="!(loc.d_translations_uk)" Level="1" AllowAdvertise="no">
+          <ComponentGroupRef Id="cg.translations_uk" />
+        </Feature>
+      </Feature>
+    </Feature>
+  </Fragment>
 </Wix>
