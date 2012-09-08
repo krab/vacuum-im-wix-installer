@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:swid="http://schemas.microsoft.com/wix/TagExtension">
   <?include Variables.wxi?>
   <Product Id="*" Name="$(var.ProductName)" Manufacturer="$(var.Manufacturer)" Codepage="$(var.ProductCodepage)" Language="!(loc.language)" Version="$(var.ProductVersion)" UpgradeCode="$(var.UpgradeCode)">
     <Package Id="*" Description="$(var.ProductName) $(var.ProductVersion) installer" Manufacturer="$(var.Manufacturer)" InstallerVersion="200" Compressed="yes" ShortNames="no" />
     <Upgrade Id="$(var.UpgradeCode)" />
     <Media Id="1" Cabinet="vacuumim.cab" EmbedCab="yes" CompressionLevel="high" />
+
+    <swid:Tag Regid="$(var.TagId)" />
 
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
@@ -22,10 +25,10 @@
       <Directory Id="DesktopFolder" Name="Desktop"/>
     </Directory>
 
-    <!--<WixVariable Id="WixUISupportPerMachine" Value="0" />-->
     <Property Id="WixAppFolder" Value="WixPerUserFolder" />
     <Property Id="ApplicationFolderName" Value="$(var.ProductName)" />
-    <Property Id="DISABLEADVTSHORTCUTS" Value="1" />
+    <!--<Property Id="DISABLEADVTSHORTCUTS" Value="1" />-->
+    <Property Id="REINSTALLMODE" Value="amus" />
 
     <FeatureRef Id="f.product" />
 
@@ -39,15 +42,11 @@
     </UI>
 
     <MajorUpgrade Schedule="afterInstallFinalize" AllowSameVersionUpgrades="yes" DowngradeErrorMessage="!(loc.major_upgrade_error)" />
-
-    <Property Id="ARPHELPLINK">http://code.google.com/p/vacuum-im/</Property>
-    <Property Id="ARPURLUPDATEINFO">http://code.google.com/p/vacuum-im/downloads/</Property>
+    
+    <SetProperty Id="ARPINSTALLLOCATION" Value="[APPLICATIONFOLDER]" After="CostFinalize" />
+    <Property Id="ARPHELPLINK" Value="http://code.google.com/p/vacuum-im/" />
+    <Property Id="ARPURLUPDATEINFO" Value="http://code.google.com/p/vacuum-im/downloads/" />  
     <Property Id="ARPPRODUCTICON" Value="vacuum.ico" />
     <Icon Id="vacuum.ico" SourceFile="SourceDir\vacuum.exe" />
-
-    <CustomAction Id="SetARPINSTALLLOCATION" Property="ARPINSTALLLOCATION" Value="[APPLICATIONFOLDER]" />
-    <InstallExecuteSequence>
-      <Custom Action="SetARPINSTALLLOCATION" After="InstallFinalize" />
-    </InstallExecuteSequence>
   </Product>
 </Wix>

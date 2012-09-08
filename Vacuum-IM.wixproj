@@ -14,7 +14,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
-    <Cultures>ru-ru</Cultures>
+    <Cultures>en-US;ru-RU</Cultures>
     <LinkerAdditionalOptions>-b "C:\Users\krab\Desktop\vacuum-im-wix-installer"</LinkerAdditionalOptions>
     <CompilerAdditionalOptions>
     </CompilerAdditionalOptions>
@@ -22,11 +22,9 @@
     <Pedantic>False</Pedantic>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AdvancedWelcomeEulaDlg.wxs" />
     <Compile Include="Files.wxs" />
     <Compile Include="Product.wxs" />
     <Compile Include="Features.wxs" />
-    <Compile Include="WixUI_MyAdvanced.wxs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Variables.wxi" />
@@ -36,6 +34,10 @@
     <EmbeddedResource Include="loc_ru_ru.wxl" />
   </ItemGroup>
   <ItemGroup>
+    <WixExtension Include="WixTagExtension">
+      <HintPath>$(WixExtDir)\WixTagExtension.dll</HintPath>
+      <Name>WixTagExtension</Name>
+    </WixExtension>
     <WixExtension Include="WixUIExtension">
       <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
       <Name>WixUIExtension</Name>

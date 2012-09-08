@@ -5,5 +5,6 @@
 	<?define ProductCodepage="UTF-8"?>
 	<?define UpgradeCode="70E8E2D2-162A-4B89-95E7-DD8D2332B585"?>
 	<?define Manufacturer="Sergey Potapov"?>
-    <?define ApplicationDescription="Crossplarform jabber client written on Qt"?>
+  <?define ApplicationDescription="Crossplarform jabber client written on Qt"?>
+  <?define TagId="regid.2010-01.com.jrudevels.vacuum"?>
 </Include>
