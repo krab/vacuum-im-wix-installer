@@ -15,11 +15,16 @@
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <Cultures>en-US;ru-RU</Cultures>
-    <LinkerAdditionalOptions>-b "C:\Users\krab\Desktop\vacuum-im-wix-installer"</LinkerAdditionalOptions>
+    <LinkerAdditionalOptions>-b "C:\Git\vacuum-im-wix-installer"</LinkerAdditionalOptions>
     <CompilerAdditionalOptions>
     </CompilerAdditionalOptions>
     <SuppressAllWarnings>True</SuppressAllWarnings>
     <Pedantic>False</Pedantic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <Cultures>en-US;ru-RU</Cultures>
+    <LinkerAdditionalOptions>-b "C:\Git\vacuum-im-wix-installer"</LinkerAdditionalOptions>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Files.wxs" />
@@ -34,13 +39,13 @@
     <EmbeddedResource Include="loc_ru_ru.wxl" />
   </ItemGroup>
   <ItemGroup>
-    <WixExtension Include="WixTagExtension">
-      <HintPath>$(WixExtDir)\WixTagExtension.dll</HintPath>
-      <Name>WixTagExtension</Name>
-    </WixExtension>
     <WixExtension Include="WixUIExtension">
       <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
       <Name>WixUIExtension</Name>
+    </WixExtension>
+    <WixExtension Include="WixTagExtension">
+      <HintPath>$(WixExtDir)\WixTagExtension.dll</HintPath>
+      <Name>WixTagExtension</Name>
     </WixExtension>
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />

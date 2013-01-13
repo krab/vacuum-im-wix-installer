@@ -1,8 +1,8 @@
 candle -nologo -out obj\ -ext WixUIExtension -ext WixTagExtension Files.wxs Product.wxs Features.wxs
 
-light -b "C:\vacuum-im-wix-installer" -nologo -out bin\Vacuum-IM.msi -cultures:en-US -loc loc_en_us.wxl -ext WixUIExtension -ext WixTagExtension obj\Files.wixobj obj\Product.wixobj obj\Features.wixobj
+light -b "C:\Git\vacuum-im-wix-installer" -nologo -out bin\Release\en-us\Vacuum-IM.msi -cultures:en-US -loc loc_en_us.wxl -ext WixUIExtension -ext WixTagExtension obj\Files.wixobj obj\Product.wixobj obj\Features.wixobj
 
-light -b "C:\vacuum-im-wix-installer" -nologo -out bin\Vacuum-IM.msi -cultures:ru-ru -loc loc_ru-ru.wxl -ext WixUIExtension -ext WixTagExtension obj\Files.wixobj obj\Product.wixobj obj\Features.wixobj
+light -b "C:\Git\vacuum-im-wix-installer" -nologo -out bin\Release\ru-ru\Vacuum-IM.msi -cultures:ru-ru -loc loc_ru_ru.wxl -ext WixUIExtension -ext WixTagExtension obj\Files.wixobj obj\Product.wixobj obj\Features.wixobj
 
 msitran -g bin\Release\en-us\Vacuum-IM.msi bin\Release\ru-ru\Vacuum-IM.msi bin\Release\en-us\ru.mst
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Include>
 	<?define ProductName="Vacuum-IM"?>
-	<?define ProductVersion="1.2.0.1859"?>
+	<?define ProductVersion="1.2.1.2072"?>
 	<?define ProductCodepage="UTF-8"?>
 	<?define UpgradeCode="70E8E2D2-162A-4B89-95E7-DD8D2332B585"?>
 	<?define Manufacturer="Sergey Potapov"?>

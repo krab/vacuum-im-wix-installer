@@ -9,6 +9,9 @@
 
     <swid:Tag Regid="$(var.TagId)" />
 
+    <WixVariable Id="WixUISupportPerUser" Value="1" />
+    <WixVariable Id="WixUISupportPerMachine" Value="0" />
+
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
         <Directory Id="APPLICATIONFOLDER" Name="$(var.ProductName)">
@@ -40,7 +43,7 @@
       <UIRef Id="WixUI_Advanced" />
       <UIRef Id="WixUI_ErrorProgressText" />
     </UI>
-
+    
     <MajorUpgrade Schedule="afterInstallFinalize" AllowSameVersionUpgrades="yes" DowngradeErrorMessage="!(loc.major_upgrade_error)" />
     
     <SetProperty Id="ARPINSTALLLOCATION" Value="[APPLICATIONFOLDER]" After="CostFinalize" />

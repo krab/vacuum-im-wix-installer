@@ -15,20 +15,11 @@
       <Component Id="libeay32.dll" Guid="{382B6B97-A5FE-4AFF-84FB-733408E605AF}">
         <File Id="libeay32.dll" KeyPath="yes" Source="SourceDir\libeay32.dll" />
       </Component>
-      <Component Id="libssl32.dll" Guid="{0F9174B1-AFE5-4772-950A-34A4656C59B2}">
-        <File Id="libssl32.dll" KeyPath="yes" Source="SourceDir\libssl32.dll" />
+      <Component Id="msvcp100.dll" Guid="{679F62F5-7FB1-4EF0-A94F-923BDA0AF20B}">
+        <File Id="msvcp100.dll" KeyPath="yes" Source="SourceDir\msvcp100.dll" />
       </Component>
-      <Component Id="Microsoft.VC90.CRT.manifest" Guid="{B8B8151A-0783-4706-99DF-8CB3D127CA73}">
-        <File Id="Microsoft.VC90.CRT.manifest" KeyPath="yes" Source="SourceDir\Microsoft.VC90.CRT.manifest" />
-      </Component>
-      <Component Id="msvcm90.dll" Guid="{E61D78C7-E292-4B71-B791-B20041A69E9A}">
-        <File Id="msvcm90.dll" KeyPath="yes" Source="SourceDir\msvcm90.dll" />
-      </Component>
-      <Component Id="msvcp90.dll" Guid="{DB48DB29-17C5-4075-8955-3397E99E5A60}">
-        <File Id="msvcp90.dll" KeyPath="yes" Source="SourceDir\msvcp90.dll" />
-      </Component>
-      <Component Id="msvcr90.dll" Guid="{3F6F7FCA-C09E-4FED-A9DE-3938B7283362}">
-        <File Id="msvcr90.dll" KeyPath="yes" Source="SourceDir\msvcr90.dll" />
+      <Component Id="msvcr100.dll" Guid="{52593AB8-6625-4D4A-993D-F2EDBD92A3BC}">
+        <File Id="msvcr100.dll" KeyPath="yes" Source="SourceDir\msvcr100.dll" />
       </Component>
       <Component Id="phonon4.dll" Guid="{38F2FD70-F890-4124-9164-4122876DC13A}">
         <File Id="phonon4.dll" KeyPath="yes" Source="SourceDir\phonon4.dll" />
@@ -69,10 +60,10 @@
       <Component Id="vacuumutils.dll" Guid="{17AB7786-BB54-44C7-8011-94E14E6033C6}">
         <File Id="vacuumutils.dll" KeyPath="yes" Source="SourceDir\vacuumutils.dll" />
       </Component>
+      <Component Id="vacuumutils.lib" Guid="{079C240C-9F03-4266-9E5D-91D96F2F829F}">
+        <File Id="vacuumutils.lib" KeyPath="yes" Source="SourceDir\vacuumutils.lib" />
+      </Component>
       <Directory Id="imageformats" Name="imageformats">
-        <Component Id="imageformats_Microsoft.VC90.CRT.manifest" Guid="{57B8B58F-15B8-4473-B46F-17C5B84DA625}">
-          <File Id="imageformats_Microsoft.VC90.CRT.manifest" KeyPath="yes" Source="SourceDir\imageformats\Microsoft.VC90.CRT.manifest" />
-        </Component>
         <Component Id="imageformats_qgif4.dll" Guid="{35BAB619-9B9C-43E8-839B-3957A04D7C7C}">
           <File Id="imageformats_qgif4.dll" KeyPath="yes" Source="SourceDir\imageformats\qgif4.dll" />
         </Component>
@@ -96,9 +87,6 @@
         </Component>
       </Directory>
       <Directory Id="phonon_backend" Name="phonon_backend">
-        <Component Id="phonon_backend_Microsoft.VC90.CRT.manifest" Guid="{08BFDAE2-5752-4CF8-8CD6-9C382573E300}">
-          <File Id="phonon_backend_Microsoft.VC90.CRT.manifest" KeyPath="yes" Source="SourceDir\phonon_backend\Microsoft.VC90.CRT.manifest" />
-        </Component>
         <Component Id="phonon_backend_phonon_ds94.dll" Guid="{BBEE98C8-6588-469A-958C-E5F69BABF81F}">
           <File Id="phonon_backend_phonon_ds94.dll" KeyPath="yes" Source="SourceDir\phonon_backend\phonon_ds94.dll" />
         </Component>
@@ -199,9 +187,6 @@
         </Component>
         <Component Id="plugins_messagewidgets.dll" Guid="{E33CCD14-59D4-4663-B6AF-5DE1F4E5AD1E}">
           <File Id="plugins_messagewidgets.dll" KeyPath="yes" Source="SourceDir\plugins\messagewidgets.dll" />
-        </Component>
-        <Component Id="plugins_Microsoft.VC90.CRT.manifest" Guid="{52C70BA0-9296-4ED5-92B8-A41C41928F79}">
-          <File Id="plugins_Microsoft.VC90.CRT.manifest" KeyPath="yes" Source="SourceDir\plugins\Microsoft.VC90.CRT.manifest" />
         </Component>
         <Component Id="plugins_multiuserchat.dll" Guid="{9491D3FF-B1D4-4D42-A4D7-ADD91C2A295D}">
           <File Id="plugins_multiuserchat.dll" KeyPath="yes" Source="SourceDir\plugins\multiuserchat.dll" />
@@ -3904,6 +3889,7 @@
     <ComponentGroup Id="cg.main">
       <ComponentRef Id="vacuum.exe" />
       <ComponentRef Id="vacuumutils.dll" />
+      <ComponentRef Id="vacuumutils.lib" />
     </ComponentGroup>
     <ComponentGroup Id="cg.docs">
       <ComponentRef Id="AUTHORS" />
@@ -3914,17 +3900,11 @@
     </ComponentGroup>
     <ComponentGroup Id="cg.openssl">
       <ComponentRef Id="libeay32.dll" />
-      <ComponentRef Id="libssl32.dll" />
       <ComponentRef Id="ssleay32.dll" />
     </ComponentGroup>
     <ComponentGroup Id="cg.microsoft_visual_cpp_runtime">
-      <ComponentRef Id="Microsoft.VC90.CRT.manifest" />
-      <ComponentRef Id="msvcm90.dll" />
-      <ComponentRef Id="msvcp90.dll" />
-      <ComponentRef Id="msvcr90.dll" />
-      <ComponentRef Id="imageformats_Microsoft.VC90.CRT.manifest" />
-      <ComponentRef Id="phonon_backend_Microsoft.VC90.CRT.manifest" />
-      <ComponentRef Id="plugins_Microsoft.VC90.CRT.manifest" />
+      <ComponentRef Id="msvcp100.dll" />
+      <ComponentRef Id="msvcr100.dll" />
     </ComponentGroup>
     <ComponentGroup Id="cg.qt_frameworks">
       <ComponentRef Id="phonon4.dll" />
