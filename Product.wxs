@@ -3,15 +3,15 @@
      xmlns:swid="http://schemas.microsoft.com/wix/TagExtension">
   <?include Variables.wxi?>
   <Product Id="*" Name="$(var.ProductName)" Manufacturer="$(var.Manufacturer)" Codepage="$(var.ProductCodepage)" Language="!(loc.language)" Version="$(var.ProductVersion)" UpgradeCode="$(var.UpgradeCode)">
-    <Package Id="*" Description="$(var.ProductName) $(var.ProductVersion) installer" Manufacturer="$(var.Manufacturer)" InstallerVersion="200" Compressed="yes" ShortNames="no" />
+    <Package Id="*" Description="$(var.ProductName) $(var.ProductVersion) installer" Manufacturer="$(var.Manufacturer)" InstallScope="perUser" InstallPrivileges="limited" InstallerVersion="200" Compressed="yes" ShortNames="no" />
     <Upgrade Id="$(var.UpgradeCode)" />
-    <Media Id="1" Cabinet="vacuumim.cab" EmbedCab="yes" CompressionLevel="high" />
+    <Media Id="1" Cabinet="vacuumim.cab" EmbedCab="yes" CompressionLevel="none" />
 
     <swid:Tag Regid="$(var.TagId)" />
 
-    <WixVariable Id="WixUISupportPerUser" Value="1" />
     <WixVariable Id="WixUISupportPerMachine" Value="0" />
-
+    <WixVariable Id="WixUISupportPerUser" Value="1" />
+    
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
         <Directory Id="APPLICATIONFOLDER" Name="$(var.ProductName)">
