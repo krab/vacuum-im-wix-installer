@@ -5,7 +5,7 @@
   <Product Id="*" Name="$(var.ProductName)" Manufacturer="$(var.Manufacturer)" Codepage="$(var.ProductCodepage)" Language="!(loc.language)" Version="$(var.ProductVersion)" UpgradeCode="$(var.UpgradeCode)">
     <Package Id="*" Description="$(var.ProductName) $(var.ProductVersion) installer" Manufacturer="$(var.Manufacturer)" InstallScope="perUser" InstallPrivileges="limited" InstallerVersion="200" Compressed="yes" ShortNames="no" />
     <Upgrade Id="$(var.UpgradeCode)" />
-    <Media Id="1" Cabinet="vacuumim.cab" EmbedCab="yes" CompressionLevel="none" />
+    <Media Id="1" Cabinet="vacuumim.cab" EmbedCab="yes" CompressionLevel="high" />
 
     <swid:Tag Regid="$(var.TagId)" />
 

@@ -293,8 +293,8 @@
                 <File Id="renkoo_Contents_Info.plist" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Info.plist" />
               </Component>
               <Directory Id="renkoo_Contents_Resources" Name="Resources">
-                <Component Id="renkoo_Contents_Resources_alternating.css" Guid="{7D1D90CD-E759-44EC-B022-6DAAC812EF63}">
-                  <File Id="renkoo_Contents_Resources_alternating.css" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\alternating.css" />
+                <Component Id="renkoo_Contents_Resources_Footer.html" Guid="{5FAD9820-857B-11E2-9E96-0800200C9A66}">
+                  <File Id="renkoo_Contents_Resources_Footer.html" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\Footer.html" />
                 </Component>
                 <Component Id="renkoo_Contents_Resources_Header.html" Guid="{808CBEE0-C1B9-4F8F-A7B4-F915F4B915D8}">
                   <File Id="renkoo_Contents_Resources_Header.html" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\Header.html" />
@@ -302,20 +302,17 @@
                 <Component Id="renkoo_Contents_Resources_incoming_icon.png" Guid="{035B38E1-02E2-42FC-BBCB-76A1FA53957C}">
                   <File Id="renkoo_Contents_Resources_incoming_icon.png" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\incoming_icon.png" />
                 </Component>
-                <Component Id="renkoo_Contents_Resources_main.css" Guid="{8916B388-5B8F-4358-8147-4076F3958FE1}">
-                  <File Id="renkoo_Contents_Resources_main.css" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\main.css" />
-                </Component>
-                <Component Id="renkoo_Contents_Resources_noname.css" Guid="{8EAE0F0D-C683-425F-95F6-9E52B3870B1B}">
-                  <File Id="renkoo_Contents_Resources_noname.css" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\noname.css" />
-                </Component>
                 <Component Id="renkoo_Contents_Resources_outgoing_icon.png" Guid="{33575408-63A5-4D5F-8966-ACEF9355F657}">
                   <File Id="renkoo_Contents_Resources_outgoing_icon.png" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\outgoing_icon.png" />
                 </Component>
                 <Component Id="renkoo_Contents_Resources_Status.html" Guid="{63E9BA18-89EA-4A23-B5D9-99530FB200C9}">
                   <File Id="renkoo_Contents_Resources_Status.html" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\Status.html" />
                 </Component>
-                <Component Id="renkoo_Contents_Resources_Template.html" Guid="{A00F93B6-A928-4232-8110-FFFB610239F3}">
-                  <File Id="renkoo_Contents_Resources_Template.html" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\Template.html" />
+                <Component Id="renkoo_Contents_Resources_Renkoo.LICENSE.txt" Guid="{E6F7B040-857B-11E2-9E96-0800200C9A66}">
+                  <File Id="renkoo_Contents_Resources_Renkoo.LICENSE.txt" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\Renkoo LICENSE.txt" />
+                </Component>
+                <Component Id="renkoo_Contents_Resources_Topic.html" Guid="{A7CE4140-857B-11E2-9E96-0800200C9A66}">
+                  <File Id="renkoo_Contents_Resources_Topic.html" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\Topic.html" />
                 </Component>
                 <Directory Id="renkoo_Contents_Resources_images" Name="images">
                   <Component Id="renkoo_Contents_Resources_images_alert.png" Guid="{7B938DFD-47D5-4E4C-AD9D-D4327605F9D2}">
@@ -501,6 +498,23 @@
                   </Component>
                   <Component Id="renkoo_Contents_Resources_Outgoing_NextContext.html" Guid="{14538FE6-1312-4475-9579-8FFF45C9F760}">
                     <File Id="renkoo_Contents_Resources_Outgoing_NextContext.html" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\Outgoing\NextContext.html" />
+                  </Component>
+                </Directory>
+                <Directory Id="renkoo_Contents_Resources_Styles" Name="Styles">
+                  <Component Id="renkoo_Contents_Resources_Styles_alternating.css" Guid="{D3F5E9DA-DE09-4837-B299-346B6FEF4919}">
+                    <File Id="renkoo_Contents_Resources_Styles_alternating.css" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\Styles\alternating.css" />
+                  </Component>
+                  <Component Id="renkoo_Contents_Resources_Styles_Header.css" Guid="{A4A744F1-5078-4B36-9435-05DC2BBEB17A}">
+                    <File Id="renkoo_Contents_Resources_Styles_Header.css" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\Styles\Header.css" />
+                  </Component>
+                  <Component Id="renkoo_Contents_Resources_Styles_main.css" Guid="{650A8425-7942-41DB-A79C-EBD9D45ADAB6}">
+                    <File Id="renkoo_Contents_Resources_Styles_main.css" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\Styles\main.css" />
+                  </Component>
+                  <Component Id="renkoo_Contents_Resources_Styles_noname.css" Guid="{5CF323F2-56C1-4A1E-A1E3-BAE5DD923715}">
+                    <File Id="renkoo_Contents_Resources_Styles_noname.css" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\Styles\noname.css" />
+                  </Component>
+                  <Component Id="renkoo_Contents_Resources_Styles_Topic.css" Guid="{6069EBD9-70D2-4B70-9E6D-87008A0AAA00}">
+                    <File Id="renkoo_Contents_Resources_Styles_Topic.css" KeyPath="yes" Source="SourceDir\resources\adiummessagestyles\renkoo\Contents\Resources\Styles\Topic.css" />
                   </Component>
                 </Directory>
                 <Directory Id="renkoo_Contents_Resources_Variants" Name="Variants">
@@ -2848,6 +2862,44 @@
               <File Id="statusicons_shared_xa.png" KeyPath="yes" Source="SourceDir\resources\statusicons\shared\xa.png" />
             </Component>
           </Directory>
+          <Directory Id="statusicons_skype" Name="skype">
+            <Component Id="statusicons_skype_ask.png" Guid="{A1BB153A-C60A-42EA-BA9F-E5279157766C}">
+              <File Id="statusicons_skype_ask.png" KeyPath="yes" Source="SourceDir\resources\statusicons\skype\ask.png" />
+            </Component>
+            <Component Id="statusicons_skype_away.png" Guid="{0924BFB9-0750-4200-928C-E185A1762140}">
+              <File Id="statusicons_skype_away.png" KeyPath="yes" Source="SourceDir\resources\statusicons\skype\away.png" />
+            </Component>
+            <Component Id="statusicons_skype_chatty.png" Guid="{7DFD5A6F-B59C-4503-9534-E32D3B25300F}">
+              <File Id="statusicons_skype_chatty.png" KeyPath="yes" Source="SourceDir\resources\statusicons\skype\chatty.png" />
+            </Component>
+            <Component Id="statusicons_skype_dnd.png" Guid="{D0E4ED54-3C24-42EE-BB9E-75D3FF218727}">
+              <File Id="statusicons_skype_dnd.png" KeyPath="yes" Source="SourceDir\resources\statusicons\skype\dnd.png" />
+            </Component>
+            <Component Id="statusicons_skype_icon.def.xml" Guid="{8ED49359-E7FE-49D2-9D4A-AF7A4CD4A91B}">
+              <File Id="statusicons_skype_icon.def.xml" KeyPath="yes" Source="SourceDir\resources\statusicons\skype\icon.def.xml" />
+            </Component>
+            <Component Id="statusicons_skype_invisible.png" Guid="{A4057395-8706-4F3A-BC89-861FB66A92FB}">
+              <File Id="statusicons_skype_invisible.png" KeyPath="yes" Source="SourceDir\resources\statusicons\skype\invisible.png" />
+            </Component>
+            <Component Id="statusicons_skype_noauth.png" Guid="{0A893C7E-7257-4512-BCA8-4A51E097BA63}">
+              <File Id="statusicons_skype_noauth.png" KeyPath="yes" Source="SourceDir\resources\statusicons\skype\noauth.png" />
+            </Component>
+            <Component Id="statusicons_skype_offline.png" Guid="{6E758447-B14F-4140-83C8-1E2FD774FCE5}">
+              <File Id="statusicons_skype_offline.png" KeyPath="yes" Source="SourceDir\resources\statusicons\skype\offline.png" />
+            </Component>
+            <Component Id="statusicons_skype_online.png" Guid="{C6D17BA4-F7ED-4E69-94C2-F8E8226A59C2}">
+              <File Id="statusicons_skype_online.png" KeyPath="yes" Source="SourceDir\resources\statusicons\skype\online.png" />
+            </Component>
+            <Component Id="statusicons_skype_perr.png" Guid="{8CE09670-075B-45CF-9300-1A6547DC4012}">
+              <File Id="statusicons_skype_perr.png" KeyPath="yes" Source="SourceDir\resources\statusicons\skype\perr.png" />
+            </Component>
+            <Component Id="statusicons_skype_statusicons.def.xml" Guid="{08A13D8B-AED2-449A-BFD3-DE0FE403CB04}">
+              <File Id="statusicons_skype_statusicons.def.xml" KeyPath="yes" Source="SourceDir\resources\statusicons\skype\statusicons.def.xml" />
+            </Component>
+            <Component Id="statusicons_skype_xa.png" Guid="{B6BD9F7A-6313-47CA-9843-6448D89C460E}">
+              <File Id="statusicons_skype_xa.png" KeyPath="yes" Source="SourceDir\resources\statusicons\skype\xa.png" />
+            </Component>
+          </Directory>
           <Directory Id="statusicons_sms" Name="sms">
             <Component Id="statusicons_sms_ask.png" Guid="{A864C08E-AE83-4037-8A53-05745F1DA9FA}">
               <File Id="statusicons_sms_ask.png" KeyPath="yes" Source="SourceDir\resources\statusicons\sms\ask.png" />
@@ -4005,14 +4057,13 @@
     </ComponentGroup>
     <ComponentGroup Id="cg.resources_adiummessagestyle_renkoo">
       <ComponentRef Id="renkoo_Contents_Info.plist" />
-      <ComponentRef Id="renkoo_Contents_Resources_alternating.css" />
+      <ComponentRef Id="renkoo_Contents_Resources_Footer.html" />
       <ComponentRef Id="renkoo_Contents_Resources_Header.html" />
       <ComponentRef Id="renkoo_Contents_Resources_incoming_icon.png" />
-      <ComponentRef Id="renkoo_Contents_Resources_main.css" />
-      <ComponentRef Id="renkoo_Contents_Resources_noname.css" />
       <ComponentRef Id="renkoo_Contents_Resources_outgoing_icon.png" />
+      <ComponentRef Id="renkoo_Contents_Resources_Renkoo.LICENSE.txt" />
       <ComponentRef Id="renkoo_Contents_Resources_Status.html" />
-      <ComponentRef Id="renkoo_Contents_Resources_Template.html" />
+      <ComponentRef Id="renkoo_Contents_Resources_Topic.html" />
       <ComponentRef Id="renkoo_Contents_Resources_images_alert.png" />
       <ComponentRef Id="renkoo_Contents_Resources_images_blueBackground.gif" />
       <ComponentRef Id="renkoo_Contents_Resources_images_blueBackground.png" />
@@ -4073,6 +4124,11 @@
       <ComponentRef Id="renkoo_Contents_Resources_Outgoing_Context.html" />
       <ComponentRef Id="renkoo_Contents_Resources_Outgoing_NextContent.html" />
       <ComponentRef Id="renkoo_Contents_Resources_Outgoing_NextContext.html" />
+      <ComponentRef Id="renkoo_Contents_Resources_Styles_alternating.css" />
+      <ComponentRef Id="renkoo_Contents_Resources_Styles_Header.css" />
+      <ComponentRef Id="renkoo_Contents_Resources_Styles_main.css" />
+      <ComponentRef Id="renkoo_Contents_Resources_Styles_noname.css" />
+      <ComponentRef Id="renkoo_Contents_Resources_Styles_Topic.css" />
       <ComponentRef Id="renkoo_Contents_Resources_Variants_Blue_on_Green_Alternating.css" />
       <ComponentRef Id="renkoo_Contents_Resources_Variants_Blue_on_Green_No_Names_Alt.css" />
       <ComponentRef Id="renkoo_Contents_Resources_Variants_Blue_on_Green_No_Names.css" />
@@ -4851,6 +4907,18 @@
       <ComponentRef Id="statusicons_shared_online.png" />
       <ComponentRef Id="statusicons_shared_perr.png" />
       <ComponentRef Id="statusicons_shared_xa.png" />
+      <ComponentRef Id="statusicons_skype_ask.png" />
+      <ComponentRef Id="statusicons_skype_away.png" />
+      <ComponentRef Id="statusicons_skype_chatty.png" />
+      <ComponentRef Id="statusicons_skype_dnd.png" />
+      <ComponentRef Id="statusicons_skype_icon.def.xml" />
+      <ComponentRef Id="statusicons_skype_invisible.png" />
+      <ComponentRef Id="statusicons_skype_noauth.png" />
+      <ComponentRef Id="statusicons_skype_offline.png" />
+      <ComponentRef Id="statusicons_skype_online.png" />
+      <ComponentRef Id="statusicons_skype_perr.png" />
+      <ComponentRef Id="statusicons_skype_statusicons.def.xml" />
+      <ComponentRef Id="statusicons_skype_xa.png" />
       <ComponentRef Id="statusicons_sms_ask.png" />
       <ComponentRef Id="statusicons_sms_away.png" />
       <ComponentRef Id="statusicons_sms_chatty.png" />
