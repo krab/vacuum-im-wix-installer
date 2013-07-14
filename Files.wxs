@@ -63,6 +63,38 @@
       <Component Id="vacuumutils.lib" Guid="{079C240C-9F03-4266-9E5D-91D96F2F829F}">
         <File Id="vacuumutils.lib" KeyPath="yes" Source="SourceDir\vacuumutils.lib" />
       </Component>
+      <Directory Id="hunspell" Name="hunspell">
+        <Component Id="hunspell_de_DE.aff" Guid="{087BBBB3-C28C-42C2-8E89-976ACDAD4779}">
+          <File Id="hunspell_de_DE.aff" KeyPath="yes" Source="SourceDir\hunspell\de_DE.aff" />
+        </Component>
+        <Component Id="hunspell_de_DE.dic" Guid="{CD2D2DDE-1F43-4D8F-9E6C-272FAD39363D}">
+          <File Id="hunspell_de_DE.dic" KeyPath="yes" Source="SourceDir\hunspell\de_DE.dic" />
+        </Component>
+        <Component Id="hunspell_en_US.aff" Guid="{395B8507-4DE6-4422-B02F-BCCC4E26D2C7}">
+          <File Id="hunspell_en_US.aff" KeyPath="yes" Source="SourceDir\hunspell\en_US.aff" />
+        </Component>
+        <Component Id="hunspell_en_US.dic" Guid="{2F94CB92-2A63-4592-B43B-34BE77D44CBA}">
+          <File Id="hunspell_en_US.dic" KeyPath="yes" Source="SourceDir\hunspell\en_US.dic" />
+        </Component>
+        <Component Id="hunspell_pl_PL.aff" Guid="{B94DBA96-083C-4C72-8D2E-3C111CE32CE4}">
+          <File Id="hunspell_pl_PL.aff" KeyPath="yes" Source="SourceDir\hunspell\pl_PL.aff" />
+        </Component>
+        <Component Id="hunspell_pl_PL.dic" Guid="{B9275736-A1F0-4BCF-AB8A-EF8684A8AE4B}">
+          <File Id="hunspell_pl_PL.dic" KeyPath="yes" Source="SourceDir\hunspell\pl_PL.dic" />
+        </Component>
+        <Component Id="hunspell_ru_RU.aff" Guid="{84CEE2B2-4E95-41DA-8C82-677255FCBDBB}">
+          <File Id="hunspell_ru_RU.aff" KeyPath="yes" Source="SourceDir\hunspell\ru_RU.aff" />
+        </Component>
+        <Component Id="hunspell_ru_RU.dic" Guid="{68C9FA2A-3674-43AF-ADCD-CF7901AEBB3B}">
+          <File Id="hunspell_ru_RU.dic" KeyPath="yes" Source="SourceDir\hunspell\ru_RU.dic" />
+        </Component>
+        <Component Id="hunspell_uk_UA.aff" Guid="{8C0BF8C5-DFBB-4F86-AD84-05309A551570}">
+          <File Id="hunspell_uk_UA.aff" KeyPath="yes" Source="SourceDir\hunspell\uk_UA.aff" />
+        </Component>
+        <Component Id="hunspell_uk_UA.dic" Guid="{89F46C6F-902B-4A7E-BA11-31FD788C5D97}">
+          <File Id="hunspell_uk_UA.dic" KeyPath="yes" Source="SourceDir\hunspell\uk_UA.dic" />
+        </Component>
+      </Directory>
       <Directory Id="imageformats" Name="imageformats">
         <Component Id="imageformats_qgif4.dll" Guid="{35BAB619-9B9C-43E8-839B-3957A04D7C7C}">
           <File Id="imageformats_qgif4.dll" KeyPath="yes" Source="SourceDir\imageformats\qgif4.dll" />
@@ -179,6 +211,9 @@
         <Component Id="plugins_messagearchiver.dll" Guid="{4C8B535E-C9A0-4A87-A6FC-EB3E65F79486}">
           <File Id="plugins_messagearchiver.dll" KeyPath="yes" Source="SourceDir\plugins\messagearchiver.dll" />
         </Component>
+        <Component Id="plugins_messagecarbons.dll" Guid="{36284CE3-E3C0-4548-AF5C-0BFB7A25220F}">
+          <File Id="plugins_messagecarbons.dll" KeyPath="yes" Source="SourceDir\plugins\messagecarbons.dll" />
+        </Component>
         <Component Id="plugins_messageprocessor.dll" Guid="{D85EB424-3BE0-491D-82F4-76116F4A02AC}">
           <File Id="plugins_messageprocessor.dll" KeyPath="yes" Source="SourceDir\plugins\messageprocessor.dll" />
         </Component>
@@ -211,6 +246,9 @@
         </Component>
         <Component Id="plugins_privatestorage.dll" Guid="{2AAE660B-858A-4C45-8B8B-CBE821D728EC}">
           <File Id="plugins_privatestorage.dll" KeyPath="yes" Source="SourceDir\plugins\privatestorage.dll" />
+        </Component>
+        <Component Id="plugins_recentcontacts.dll" Guid="{B341F7F6-0E7E-40E5-B094-71B1ECDE7CA5}">
+          <File Id="plugins_recentcontacts.dll" KeyPath="yes" Source="SourceDir\plugins\recentcontacts.dll" />
         </Component>
         <Component Id="plugins_registration.dll" Guid="{BD23184A-0F57-498B-84CB-BA7C37D810A9}">
           <File Id="plugins_registration.dll" KeyPath="yes" Source="SourceDir\plugins\registration.dll" />
@@ -257,11 +295,17 @@
         <Component Id="plugins_socksstreams.dll" Guid="{C7747ECE-1B7B-415B-AB0E-2D7C42EE41EC}">
           <File Id="plugins_socksstreams.dll" KeyPath="yes" Source="SourceDir\plugins\socksstreams.dll" />
         </Component>
+        <Component Id="plugins_spellchecker.dll" Guid="{8792A982-566E-4C9A-AADF-B73746DB1210}">
+          <File Id="plugins_spellchecker.dll" KeyPath="yes" Source="SourceDir\plugins\spellchecker.dll" />
+        </Component>
         <Component Id="plugins_stanzaprocessor.dll" Guid="{7A98C3A9-346B-481B-A8EB-EC4D6D283098}">
           <File Id="plugins_stanzaprocessor.dll" KeyPath="yes" Source="SourceDir\plugins\stanzaprocessor.dll" />
         </Component>
         <Component Id="plugins_starttls.dll" Guid="{214CC9A8-CA26-4DE6-A821-3A10C815BB40}">
           <File Id="plugins_starttls.dll" KeyPath="yes" Source="SourceDir\plugins\starttls.dll" />
+        </Component>
+        <Component Id="plugins_statistics.dll" Guid="{819F833F-4D62-47FE-BE9C-FC6E8F22C6D5}">
+          <File Id="plugins_statistics.dll" KeyPath="yes" Source="SourceDir\plugins\statistics.dll" />
         </Component>
         <Component Id="plugins_statuschanger.dll" Guid="{72C1EF6F-A605-462E-81AF-3D574262EA5D}">
           <File Id="plugins_statuschanger.dll" KeyPath="yes" Source="SourceDir\plugins\statuschanger.dll" />
@@ -1492,6 +1536,9 @@
             <Component Id="menuicons_shared_bookmarksedit.png" Guid="{753C9482-712B-415F-8848-BE6B6F111C37}">
               <File Id="menuicons_shared_bookmarksedit.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\bookmarksedit.png" />
             </Component>
+            <Component Id="menuicons_shared_bookmarksremove.png" Guid="{939D5788-5A95-4585-A49E-732A7FC0C45B}">
+              <File Id="menuicons_shared_bookmarksremove.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\bookmarksremove.png" />
+            </Component>
             <Component Id="menuicons_shared_bookmarksroom.png" Guid="{20399EAA-0893-4D83-8895-458A0B204652}">
               <File Id="menuicons_shared_bookmarksroom.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\bookmarksroom.png" />
             </Component>
@@ -1512,9 +1559,6 @@
             </Component>
             <Component Id="menuicons_shared_chatmessagehandlermessage.png" Guid="{A29D4B9D-F0A0-48E2-B127-6EA52866F5B3}">
               <File Id="menuicons_shared_chatmessagehandlermessage.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\chatmessagehandlermessage.png" />
-            </Component>
-            <Component Id="menuicons_shared_chatmessagehandlerusermenu.png" Guid="{EE2E2164-2F0A-40FA-A437-D5E26A672C3B}">
-              <File Id="menuicons_shared_chatmessagehandlerusermenu.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\chatmessagehandlerusermenu.png" />
             </Component>
             <Component Id="menuicons_shared_chatstates.def.xml" Guid="{9CB12A8D-2FFE-467D-85DA-6AAD09A6F65D}">
               <File Id="menuicons_shared_chatstates.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\chatstates.def.xml" />
@@ -1681,6 +1725,9 @@
             <Component Id="menuicons_shared_messagewidgetsquote.png" Guid="{2FD47A46-B094-4D62-807A-4DD7049E9541}">
               <File Id="menuicons_shared_messagewidgetsquote.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\messagewidgetsquote.png" />
             </Component>
+            <Component Id="menuicons_shared_messagewidgetsselect.png" Guid="{035402DA-3EBA-44C8-BB82-9300DBEF3694}">
+              <File Id="menuicons_shared_messagewidgetsselect.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\messagewidgetsselect.png" />
+            </Component>
             <Component Id="menuicons_shared_messagewidgetssend.png" Guid="{022E5AC5-B275-4480-9899-7358B8DF2DC8}">
               <File Id="menuicons_shared_messagewidgetssend.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\messagewidgetssend.png" />
             </Component>
@@ -1744,17 +1791,26 @@
             <Component Id="menuicons_shared_mucrequestvoice.png" Guid="{73430C4F-BAEF-4B72-9B29-9B4EBD9B6C8A}">
               <File Id="menuicons_shared_mucrequestvoice.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\mucrequestvoice.png" />
             </Component>
-            <Component Id="menuicons_shared_muctoolsmenu.png" Guid="{651953DD-897C-44A6-A7C6-678C3E1C3842}">
-              <File Id="menuicons_shared_muctoolsmenu.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\muctoolsmenu.png" />
-            </Component>
             <Component Id="menuicons_shared_mucusermenu.png" Guid="{51FC000C-6873-4978-AB0D-0044BF25B56F}">
               <File Id="menuicons_shared_mucusermenu.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\mucusermenu.png" />
             </Component>
             <Component Id="menuicons_shared_normalmessagehandler.def.xml" Guid="{F0A0F822-19AD-4599-8014-349614308391}">
               <File Id="menuicons_shared_normalmessagehandler.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\normalmessagehandler.def.xml" />
             </Component>
+            <Component Id="menuicons_shared_normalmessagehandlerforward.png" Guid="{7AB6A9A9-91F2-4E7B-9375-1EE6553814B3}">
+              <File Id="menuicons_shared_normalmessagehandlerforward.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\normalmessagehandlerforward.png" />
+            </Component>
             <Component Id="menuicons_shared_normalmessagehandlermessage.png" Guid="{9F4EB328-43F4-4627-A52A-606D7BB5374F}">
               <File Id="menuicons_shared_normalmessagehandlermessage.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\normalmessagehandlermessage.png" />
+            </Component>
+            <Component Id="menuicons_shared_normalmessagehandlernext.png" Guid="{DEBE46A7-95E0-4E46-92FE-8165CB5F518D}">
+              <File Id="menuicons_shared_normalmessagehandlernext.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\normalmessagehandlernext.png" />
+            </Component>
+            <Component Id="menuicons_shared_normalmessagehandlerreply.png" Guid="{7BA5F0BC-9141-4662-AD33-568C3D2757A8}">
+              <File Id="menuicons_shared_normalmessagehandlerreply.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\normalmessagehandlerreply.png" />
+            </Component>
+            <Component Id="menuicons_shared_normalmessagehandlersend.png" Guid="{AEA76AAB-BD48-4A6F-BA1E-39740FF5421B}">
+              <File Id="menuicons_shared_normalmessagehandlersend.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\normalmessagehandlersend.png" />
             </Component>
             <Component Id="menuicons_shared_notifications.def.xml" Guid="{EB6B7249-6C1D-4196-895C-9D84DFD6E37B}">
               <File Id="menuicons_shared_notifications.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\notifications.def.xml" />
@@ -1879,6 +1935,24 @@
             <Component Id="menuicons_shared_rchangerunsubscribe.png" Guid="{192792BA-C1B1-48A5-9B8F-0E1EFF51902A}">
               <File Id="menuicons_shared_rchangerunsubscribe.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\rchangerunsubscribe.png" />
             </Component>
+            <Component Id="menuicons_shared_recentcontacts.def.xml" Guid="{C7E84E23-F739-4E28-A2A4-597EEF97DACF}">
+              <File Id="menuicons_shared_recentcontacts.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\recentcontacts.def.xml" />
+            </Component>
+            <Component Id="menuicons_shared_recentcontacts.png" Guid="{A2442E2C-ADF6-4BC0-BE0B-0E5ACF533EAE}">
+              <File Id="menuicons_shared_recentcontacts.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\recentcontacts.png" />
+            </Component>
+            <Component Id="menuicons_shared_recentcontactsfavorite.png" Guid="{EDC7AD91-F7C0-4773-A1EE-5654A01DA191}">
+              <File Id="menuicons_shared_recentcontactsfavorite.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\recentcontactsfavorite.png" />
+            </Component>
+            <Component Id="menuicons_shared_recentcontactsinsertfavorite.png" Guid="{46390FD2-61C7-4B6B-B020-BE3B9194C720}">
+              <File Id="menuicons_shared_recentcontactsinsertfavorite.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\recentcontactsinsertfavorite.png" />
+            </Component>
+            <Component Id="menuicons_shared_recentcontactsremovefavorite.png" Guid="{5C445B72-F9F3-44F9-8C6E-EE50AD4F9664}">
+              <File Id="menuicons_shared_recentcontactsremovefavorite.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\recentcontactsremovefavorite.png" />
+            </Component>
+            <Component Id="menuicons_shared_recentcontactsremoverecent.png" Guid="{7C3F5D33-2147-4878-A6B0-EA9A84D78F9C}">
+              <File Id="menuicons_shared_recentcontactsremoverecent.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\recentcontactsremoverecent.png" />
+            </Component>
             <Component Id="menuicons_shared_register.def.xml" Guid="{23FB2386-B2EE-4648-A4CB-2E76C4E64B03}">
               <File Id="menuicons_shared_register.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\register.def.xml" />
             </Component>
@@ -1908,6 +1982,9 @@
             </Component>
             <Component Id="menuicons_shared_rosterviewclipboard.png" Guid="{33E79A28-A591-46DC-99AA-C774B1728630}">
               <File Id="menuicons_shared_rosterviewclipboard.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\rosterviewclipboard.png" />
+            </Component>
+            <Component Id="menuicons_shared_rosterviewcontacts.png" Guid="{C210F033-4315-4F8A-B1F0-1927686D0E9D}">
+              <File Id="menuicons_shared_rosterviewcontacts.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\rosterviewcontacts.png" />
             </Component>
             <Component Id="menuicons_shared_rosterviewhideoffline.png" Guid="{FCFA9FD3-B79D-4864-9631-BF5B70465D01}">
               <File Id="menuicons_shared_rosterviewhideoffline.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\rosterviewhideoffline.png" />
@@ -2491,6 +2568,41 @@
               <File Id="statusicons_bot_xa.png" KeyPath="yes" Source="SourceDir\resources\statusicons\bot\xa.png" />
             </Component>
           </Directory>
+          <Directory Id="statusicons_conference" Name="conference">
+            <Component Id="statusicons_conference_ask.png" Guid="{5100E0E3-4734-4226-A0F8-D65760292E4B}">
+              <File Id="statusicons_conference_ask.png" KeyPath="yes" Source="SourceDir\resources\statusicons\conference\ask.png" />
+            </Component>
+            <Component Id="statusicons_conference_away.png" Guid="{6070AA19-7ABC-4FB1-A686-417A24623E53}">
+              <File Id="statusicons_conference_away.png" KeyPath="yes" Source="SourceDir\resources\statusicons\conference\away.png" />
+            </Component>
+            <Component Id="statusicons_conference_chatty.png" Guid="{9599F77F-1702-4DE0-BD25-C64E43800246}">
+              <File Id="statusicons_conference_chatty.png" KeyPath="yes" Source="SourceDir\resources\statusicons\conference\chatty.png" />
+            </Component>
+            <Component Id="statusicons_conference_dnd.png" Guid="{D0D61D87-C1A8-400F-81F8-3FD7E232E538}">
+              <File Id="statusicons_conference_dnd.png" KeyPath="yes" Source="SourceDir\resources\statusicons\conference\dnd.png" />
+            </Component>
+            <Component Id="statusicons_conference_icon.def.xml" Guid="{06DD001D-4605-40A0-9B0A-7EE8741FB7F9}">
+              <File Id="statusicons_conference_icon.def.xml" KeyPath="yes" Source="SourceDir\resources\statusicons\conference\icon.def.xml" />
+            </Component>
+            <Component Id="statusicons_conference_invisible.png" Guid="{62FF1B83-9AB2-481A-B1DE-E8CA8BAB0851}">
+              <File Id="statusicons_conference_invisible.png" KeyPath="yes" Source="SourceDir\resources\statusicons\conference\invisible.png" />
+            </Component>
+            <Component Id="statusicons_conference_offline.png" Guid="{6AB3ECA7-0000-4714-AF8E-21CDFFC35DCB}">
+              <File Id="statusicons_conference_offline.png" KeyPath="yes" Source="SourceDir\resources\statusicons\conference\offline.png" />
+            </Component>
+            <Component Id="statusicons_conference_online.png" Guid="{9A725A63-C56F-48FA-BE41-BF22B73B6A6C}">
+              <File Id="statusicons_conference_online.png" KeyPath="yes" Source="SourceDir\resources\statusicons\conference\online.png" />
+            </Component>
+            <Component Id="statusicons_conference_perr.png" Guid="{FFB64B5B-C06C-449D-9B16-3BB815B0563C}">
+              <File Id="statusicons_conference_perr.png" KeyPath="yes" Source="SourceDir\resources\statusicons\conference\perr.png" />
+            </Component>
+            <Component Id="statusicons_conference_statusicons.def.xml" Guid="{0C5CA39B-067C-4045-967A-5E7D7A42949E}">
+              <File Id="statusicons_conference_statusicons.def.xml" KeyPath="yes" Source="SourceDir\resources\statusicons\conference\statusicons.def.xml" />
+            </Component>
+            <Component Id="statusicons_conference_xa.png" Guid="{5AEAACA8-665F-4D05-A066-ED7AC3218117}">
+              <File Id="statusicons_conference_xa.png" KeyPath="yes" Source="SourceDir\resources\statusicons\conference\xa.png" />
+            </Component>
+          </Directory>
           <Directory Id="statusicons_facebook" Name="facebook">
             <Component Id="statusicons_facebook_ask.png" Guid="{D0091AA0-3AE7-48A5-83D7-E1F97643A8C0}">
               <File Id="statusicons_facebook_ask.png" KeyPath="yes" Source="SourceDir\resources\statusicons\facebook\ask.png" />
@@ -2973,6 +3085,41 @@
               <File Id="statusicons_smtp_xa.png" KeyPath="yes" Source="SourceDir\resources\statusicons\smtp\xa.png" />
             </Component>
           </Directory>
+          <Directory Id="statusicons_twitter" Name="twitter">
+            <Component Id="statusicons_twitter_ask.png" Guid="{258A8F91-3ADD-4EAD-AE12-955ADA827700}">
+              <File Id="statusicons_twitter_ask.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\ask.png" />
+            </Component>
+            <Component Id="statusicons_twitter_away.png" Guid="{5759643E-792C-4E51-B3C1-CCE337A0566F}">
+              <File Id="statusicons_twitter_away.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\away.png" />
+            </Component>
+            <Component Id="statusicons_twitter_chatty.png" Guid="{2539A0F6-4CBA-4B32-A7BB-4AB0E82BDE39}">
+              <File Id="statusicons_twitter_chatty.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\chatty.png" />
+            </Component>
+            <Component Id="statusicons_twitter_dnd.png" Guid="{3732AC89-55A6-4326-B174-360AD616290F}">
+              <File Id="statusicons_twitter_dnd.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\dnd.png" />
+            </Component>
+            <Component Id="statusicons_twitter_icon.def.xml" Guid="{A0BF9C02-AE65-4E87-A597-4408BF28B552}">
+              <File Id="statusicons_twitter_icon.def.xml" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\icon.def.xml" />
+            </Component>
+            <Component Id="statusicons_twitter_invisible.png" Guid="{CF0B35EB-25DC-4847-AF70-EC6144114326}">
+              <File Id="statusicons_twitter_invisible.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\invisible.png" />
+            </Component>
+            <Component Id="statusicons_twitter_noauth.png" Guid="{2EA5E4A0-6BC0-46ED-A3B2-ABE7FB4A2984}">
+              <File Id="statusicons_twitter_noauth.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\noauth.png" />
+            </Component>
+            <Component Id="statusicons_twitter_offline.png" Guid="{03539CBF-CFCE-4C69-88D2-431EA821DE06}">
+              <File Id="statusicons_twitter_offline.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\offline.png" />
+            </Component>
+            <Component Id="statusicons_twitter_online.png" Guid="{72D61266-7475-4085-A00A-10F8EDB848ED}">
+              <File Id="statusicons_twitter_online.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\online.png" />
+            </Component>
+            <Component Id="statusicons_twitter_statusicons.def.xml" Guid="{DE9F0007-5659-44F6-A19B-61CED6F6356D}">
+              <File Id="statusicons_twitter_statusicons.def.xml" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\statusicons.def.xml" />
+            </Component>
+            <Component Id="statusicons_twitter_xa.png" Guid="{A220C82F-3FC3-48DA-A33D-242F2A720DCC}">
+              <File Id="statusicons_twitter_xa.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\xa.png" />
+            </Component>
+          </Directory>
           <Directory Id="statusicons_vkontakte" Name="vkontakte">
             <Component Id="statusicons_vkontakte_ask.png" Guid="{47E6BE7F-B866-4E8D-9F58-C508020833D1}">
               <File Id="statusicons_vkontakte_ask.png" KeyPath="yes" Source="SourceDir\resources\statusicons\vkontakte\ask.png" />
@@ -3121,6 +3268,505 @@
           </Directory>
         </Directory>
       </Directory>
+      <Directory Id="sdk" Name="sdk">
+        <Directory Id="sdk_definitions" Name="definitions">
+          <Component Id="sdk_definitions_actiongroups.h" Guid="{8117BA82-41D7-477B-9BCD-A52DDC9D494B}">
+            <File Id="sdk_definitions_actiongroups.h" KeyPath="yes" Source="SourceDir\sdk\definitions\actiongroups.h" />
+          </Component>
+          <Component Id="sdk_definitions_archivecapabilityorders.h" Guid="{9F7D33A9-BE9B-485D-89BB-AFBFD9A5D861}">
+            <File Id="sdk_definitions_archivecapabilityorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\archivecapabilityorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_archivehandlerorders.h" Guid="{B40DE525-7DF3-4D70-831D-EC4F8EEF6086}">
+            <File Id="sdk_definitions_archivehandlerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\archivehandlerorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_commandline.h" Guid="{0283444E-C1E0-491F-ADEC-D3655B0FC24D}">
+            <File Id="sdk_definitions_commandline.h" KeyPath="yes" Source="SourceDir\sdk\definitions\commandline.h" />
+          </Component>
+          <Component Id="sdk_definitions_dataformtypes.h" Guid="{2A2D45E0-798C-4BA6-BBDC-E294255C986C}">
+            <File Id="sdk_definitions_dataformtypes.h" KeyPath="yes" Source="SourceDir\sdk\definitions\dataformtypes.h" />
+          </Component>
+          <Component Id="sdk_definitions_discofeaturehandlerorders.h" Guid="{E5A1F41B-7DE5-406A-B63C-A2A21E00706D}">
+            <File Id="sdk_definitions_discofeaturehandlerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\discofeaturehandlerorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_discoitemdataroles.h" Guid="{2762BE87-D635-4948-BDB0-FF6FFA7BBDFD}">
+            <File Id="sdk_definitions_discoitemdataroles.h" KeyPath="yes" Source="SourceDir\sdk\definitions\discoitemdataroles.h" />
+          </Component>
+          <Component Id="sdk_definitions_fshandlerorders.h" Guid="{DA40115F-C305-4C5C-A9CF-B31F0AAA49B0}">
+            <File Id="sdk_definitions_fshandlerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\fshandlerorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_internalerrors.h" Guid="{E1EA3081-43FF-4364-B10B-D880C2607E0C}">
+            <File Id="sdk_definitions_internalerrors.h" KeyPath="yes" Source="SourceDir\sdk\definitions\internalerrors.h" />
+          </Component>
+          <Component Id="sdk_definitions_mainwindowtabpages.h" Guid="{B9250BE7-D400-46E7-83BF-90335C7D5C35}">
+            <File Id="sdk_definitions_mainwindowtabpages.h" KeyPath="yes" Source="SourceDir\sdk\definitions\mainwindowtabpages.h" />
+          </Component>
+          <Component Id="sdk_definitions_mainwindowwidgets.h" Guid="{6A691DC2-DAF1-4223-8C2C-64E96AA917EB}">
+            <File Id="sdk_definitions_mainwindowwidgets.h" KeyPath="yes" Source="SourceDir\sdk\definitions\mainwindowwidgets.h" />
+          </Component>
+          <Component Id="sdk_definitions_menubargroups.h" Guid="{52A6A562-2B3F-4575-8B4A-0194A38154CF}">
+            <File Id="sdk_definitions_menubargroups.h" KeyPath="yes" Source="SourceDir\sdk\definitions\menubargroups.h" />
+          </Component>
+          <Component Id="sdk_definitions_menuicons.h" Guid="{2263C19C-BB70-4658-AE7C-D276DA9CB6F0}">
+            <File Id="sdk_definitions_menuicons.h" KeyPath="yes" Source="SourceDir\sdk\definitions\menuicons.h" />
+          </Component>
+          <Component Id="sdk_definitions_messagechatwindowwidgets.h" Guid="{84152723-BD2E-47B3-BAEE-753FD3D91839}">
+            <File Id="sdk_definitions_messagechatwindowwidgets.h" KeyPath="yes" Source="SourceDir\sdk\definitions\messagechatwindowwidgets.h" />
+          </Component>
+          <Component Id="sdk_definitions_messagedataroles.h" Guid="{612AE4F2-CB66-4C4B-9C6D-A15821164149}">
+            <File Id="sdk_definitions_messagedataroles.h" KeyPath="yes" Source="SourceDir\sdk\definitions\messagedataroles.h" />
+          </Component>
+          <Component Id="sdk_definitions_messageeditcontentshandlerorders.h" Guid="{3B778130-7495-4A26-9A86-DFB5D63BA744}">
+            <File Id="sdk_definitions_messageeditcontentshandlerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\messageeditcontentshandlerorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_messageeditororders.h" Guid="{3470F5FB-782F-44E0-B7BF-F536B122063F}">
+            <File Id="sdk_definitions_messageeditororders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\messageeditororders.h" />
+          </Component>
+          <Component Id="sdk_definitions_messageeditsendhandlerorders.h" Guid="{8C34AED4-1FB9-4EDF-B4B7-7139DA6F03AA}">
+            <File Id="sdk_definitions_messageeditsendhandlerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\messageeditsendhandlerorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_messagehandlerorders.h" Guid="{7FC9F30A-A5DA-4E05-A820-3B8BF7B004F4}">
+            <File Id="sdk_definitions_messagehandlerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\messagehandlerorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_messagenormalwindowwidgets.h" Guid="{9D81253E-0A56-45BC-85E3-BF3D0690EF49}">
+            <File Id="sdk_definitions_messagenormalwindowwidgets.h" KeyPath="yes" Source="SourceDir\sdk\definitions\messagenormalwindowwidgets.h" />
+          </Component>
+          <Component Id="sdk_definitions_messageviewurlhandlerorders.h" Guid="{B38D3730-7E34-422B-88F8-3E74CB50781B}">
+            <File Id="sdk_definitions_messageviewurlhandlerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\messageviewurlhandlerorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_messagewriterorders.h" Guid="{1561E486-6417-426F-8CA5-6015E37A2F05}">
+            <File Id="sdk_definitions_messagewriterorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\messagewriterorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_multiuserdataroles.h" Guid="{6CCF6252-D11A-469B-B8A2-6C9B623702CC}">
+            <File Id="sdk_definitions_multiuserdataroles.h" KeyPath="yes" Source="SourceDir\sdk\definitions\multiuserdataroles.h" />
+          </Component>
+          <Component Id="sdk_definitions_multiusertooltiporders.h" Guid="{B796EA40-6D66-4FF9-9427-FAE583036EF7}">
+            <File Id="sdk_definitions_multiusertooltiporders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\multiusertooltiporders.h" />
+          </Component>
+          <Component Id="sdk_definitions_namespaces.h" Guid="{6CB8D2F7-2A0D-40F7-8EED-BDFC56DFCDD7}">
+            <File Id="sdk_definitions_namespaces.h" KeyPath="yes" Source="SourceDir\sdk\definitions\namespaces.h" />
+          </Component>
+          <Component Id="sdk_definitions_notificationdataroles.h" Guid="{6C80E7F4-D83F-4229-A037-1A0988A51609}">
+            <File Id="sdk_definitions_notificationdataroles.h" KeyPath="yes" Source="SourceDir\sdk\definitions\notificationdataroles.h" />
+          </Component>
+          <Component Id="sdk_definitions_notificationhandlerorders.h" Guid="{362CCD1D-B085-43A0-BD12-0986F368D1A2}">
+            <File Id="sdk_definitions_notificationhandlerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\notificationhandlerorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_notificationtypeorders.h" Guid="{86CA7AAD-A4FE-4D11-8ED3-017A23D37FF5}">
+            <File Id="sdk_definitions_notificationtypeorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\notificationtypeorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_notificationtypes.h" Guid="{974BE775-2FB7-4E6B-BD06-97ED89C3D491}">
+            <File Id="sdk_definitions_notificationtypes.h" KeyPath="yes" Source="SourceDir\sdk\definitions\notificationtypes.h" />
+          </Component>
+          <Component Id="sdk_definitions_optionnodeorders.h" Guid="{85525A09-9710-4743-824A-6C605C84408E}">
+            <File Id="sdk_definitions_optionnodeorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\optionnodeorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_optionnodes.h" Guid="{F1A3F045-4316-4C5F-A86A-130EDBAB4128}">
+            <File Id="sdk_definitions_optionnodes.h" KeyPath="yes" Source="SourceDir\sdk\definitions\optionnodes.h" />
+          </Component>
+          <Component Id="sdk_definitions_optionvalues.h" Guid="{F03BC33E-E2B9-44DF-96E9-81541C2D38B9}">
+            <File Id="sdk_definitions_optionvalues.h" KeyPath="yes" Source="SourceDir\sdk\definitions\optionvalues.h" />
+          </Component>
+          <Component Id="sdk_definitions_optionwidgetorders.h" Guid="{A170A5FF-B634-4166-ABEE-DA18339D930D}">
+            <File Id="sdk_definitions_optionwidgetorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\optionwidgetorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_plugininitorders.h" Guid="{6E577A36-0954-401F-84C8-B0BC92652C46}">
+            <File Id="sdk_definitions_plugininitorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\plugininitorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_recentitemproperties.h" Guid="{8ADEBFD5-9BA0-4D66-8F8E-22930DED0BEA}">
+            <File Id="sdk_definitions_recentitemproperties.h" KeyPath="yes" Source="SourceDir\sdk\definitions\recentitemproperties.h" />
+          </Component>
+          <Component Id="sdk_definitions_recentitemtypes.h" Guid="{563ADAB4-7C81-43C7-B500-08E7B1847303}">
+            <File Id="sdk_definitions_recentitemtypes.h" KeyPath="yes" Source="SourceDir\sdk\definitions\recentitemtypes.h" />
+          </Component>
+          <Component Id="sdk_definitions_resources.h" Guid="{7ADE13D5-386C-4E8E-BFCA-6691C510D410}">
+            <File Id="sdk_definitions_resources.h" KeyPath="yes" Source="SourceDir\sdk\definitions\resources.h" />
+          </Component>
+          <Component Id="sdk_definitions_rosterclickhookerorders.h" Guid="{7C07547D-96F1-4111-A402-BA977DA35E47}">
+            <File Id="sdk_definitions_rosterclickhookerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\rosterclickhookerorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_rosterdataholderorders.h" Guid="{9F99835A-9340-4ED3-99C5-BA3F727FB887}">
+            <File Id="sdk_definitions_rosterdataholderorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\rosterdataholderorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_rosterdragdropmimetypes.h" Guid="{524DAAEB-2486-484F-AD0D-0A71DA31CFC2}">
+            <File Id="sdk_definitions_rosterdragdropmimetypes.h" KeyPath="yes" Source="SourceDir\sdk\definitions\rosterdragdropmimetypes.h" />
+          </Component>
+          <Component Id="sdk_definitions_rosteredithandlerorders.h" Guid="{E292F8D3-3B6F-4D63-B854-5DA5AF0F4A02}">
+            <File Id="sdk_definitions_rosteredithandlerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\rosteredithandlerorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_rosterindexkindorders.h" Guid="{30B378CF-DA52-47F9-874E-ECD98B9081AC}">
+            <File Id="sdk_definitions_rosterindexkindorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\rosterindexkindorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_rosterindexkinds.h" Guid="{D76B641F-DE5C-43AC-8E41-7958506C4E93}">
+            <File Id="sdk_definitions_rosterindexkinds.h" KeyPath="yes" Source="SourceDir\sdk\definitions\rosterindexkinds.h" />
+          </Component>
+          <Component Id="sdk_definitions_rosterindexroles.h" Guid="{CD187305-39CD-4555-A8D7-C5BFD08E9D88}">
+            <File Id="sdk_definitions_rosterindexroles.h" KeyPath="yes" Source="SourceDir\sdk\definitions\rosterindexroles.h" />
+          </Component>
+          <Component Id="sdk_definitions_rosterkeyhookerorders.h" Guid="{DB8DF684-C0BE-42B9-B690-9E43A282C574}">
+            <File Id="sdk_definitions_rosterkeyhookerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\rosterkeyhookerorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_rosterlabelholderorders.h" Guid="{883ED5E4-A8A7-48A1-AB10-6EFB9F0D25DE}">
+            <File Id="sdk_definitions_rosterlabelholderorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\rosterlabelholderorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_rosterlabels.h" Guid="{41CAE935-BCC6-4B21-9FA3-4BF345B5EEDA}">
+            <File Id="sdk_definitions_rosterlabels.h" KeyPath="yes" Source="SourceDir\sdk\definitions\rosterlabels.h" />
+          </Component>
+          <Component Id="sdk_definitions_rosternotifyorders.h" Guid="{177DED43-ED1C-4D05-9FB6-1606846949E7}">
+            <File Id="sdk_definitions_rosternotifyorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\rosternotifyorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_rosterproxyorders.h" Guid="{AA5CDE4A-A125-4FF4-87C6-D7285DA4DCF3}">
+            <File Id="sdk_definitions_rosterproxyorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\rosterproxyorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_rostertooltiporders.h" Guid="{59F94809-B110-4E41-9CB0-5C2D50C9B879}">
+            <File Id="sdk_definitions_rostertooltiporders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\rostertooltiporders.h" />
+          </Component>
+          <Component Id="sdk_definitions_serviceicons.h" Guid="{BD23DB0E-BDB9-416D-A50B-40AB871BEDC3}">
+            <File Id="sdk_definitions_serviceicons.h" KeyPath="yes" Source="SourceDir\sdk\definitions\serviceicons.h" />
+          </Component>
+          <Component Id="sdk_definitions_sessionnegotiatororders.h" Guid="{22E1FD61-16F4-4D68-BEFD-23458B59EB22}">
+            <File Id="sdk_definitions_sessionnegotiatororders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\sessionnegotiatororders.h" />
+          </Component>
+          <Component Id="sdk_definitions_shortcutgrouporders.h" Guid="{7047EEB4-0EB2-4DCD-BD52-5237D7B8977A}">
+            <File Id="sdk_definitions_shortcutgrouporders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\shortcutgrouporders.h" />
+          </Component>
+          <Component Id="sdk_definitions_shortcuts.h" Guid="{0F48C5C5-98E1-4FF2-A6D7-3ECD6D46591F}">
+            <File Id="sdk_definitions_shortcuts.h" KeyPath="yes" Source="SourceDir\sdk\definitions\shortcuts.h" />
+          </Component>
+          <Component Id="sdk_definitions_soundfiles.h" Guid="{744C3418-E89E-4A50-99D2-31E1BE89921C}">
+            <File Id="sdk_definitions_soundfiles.h" KeyPath="yes" Source="SourceDir\sdk\definitions\soundfiles.h" />
+          </Component>
+          <Component Id="sdk_definitions_stanzahandlerorders.h" Guid="{6683B901-B36C-4AE3-9BD3-6C6C3D9C95EC}">
+            <File Id="sdk_definitions_stanzahandlerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\stanzahandlerorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_statisticsparams.h" Guid="{C652F248-21E9-4765-AB6A-22446F1B45EC}">
+            <File Id="sdk_definitions_statisticsparams.h" KeyPath="yes" Source="SourceDir\sdk\definitions\statisticsparams.h" />
+          </Component>
+          <Component Id="sdk_definitions_statusbargroups.h" Guid="{937FEE13-8671-4404-8866-3AD861DA51B5}">
+            <File Id="sdk_definitions_statusbargroups.h" KeyPath="yes" Source="SourceDir\sdk\definitions\statusbargroups.h" />
+          </Component>
+          <Component Id="sdk_definitions_statusicons.h" Guid="{30D15763-043B-4C8A-88F7-B5CFDE3DC4B2}">
+            <File Id="sdk_definitions_statusicons.h" KeyPath="yes" Source="SourceDir\sdk\definitions\statusicons.h" />
+          </Component>
+          <Component Id="sdk_definitions_tabpagenotifypriorities.h" Guid="{73203F2C-5C7A-4BB8-93E7-3436452C3C5B}">
+            <File Id="sdk_definitions_tabpagenotifypriorities.h" KeyPath="yes" Source="SourceDir\sdk\definitions\tabpagenotifypriorities.h" />
+          </Component>
+          <Component Id="sdk_definitions_toolbargroups.h" Guid="{BBF7769C-42EE-47AF-B6F2-00D426CF351B}">
+            <File Id="sdk_definitions_toolbargroups.h" KeyPath="yes" Source="SourceDir\sdk\definitions\toolbargroups.h" />
+          </Component>
+          <Component Id="sdk_definitions_vcardvaluenames.h" Guid="{5D760BC4-194E-4F10-9FA0-BC179AA7A19D}">
+            <File Id="sdk_definitions_vcardvaluenames.h" KeyPath="yes" Source="SourceDir\sdk\definitions\vcardvaluenames.h" />
+          </Component>
+          <Component Id="sdk_definitions_version.h" Guid="{4F58C947-6104-4168-B4FF-A6A9E2A3D77E}">
+            <File Id="sdk_definitions_version.h" KeyPath="yes" Source="SourceDir\sdk\definitions\version.h" />
+          </Component>
+          <Component Id="sdk_definitions_xmppdatahandlerorders.h" Guid="{B1DF96F3-A2DA-4458-895D-C0F4E8EF55D9}">
+            <File Id="sdk_definitions_xmppdatahandlerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\xmppdatahandlerorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_xmpperrors.h" Guid="{E5D35F12-A4F4-4EA9-A49D-FA5ABAE57051}">
+            <File Id="sdk_definitions_xmpperrors.h" KeyPath="yes" Source="SourceDir\sdk\definitions\xmpperrors.h" />
+          </Component>
+          <Component Id="sdk_definitions_xmppfeatureorders.h" Guid="{F22CBEBD-0D31-4CA2-85F1-C9A3EC940C7D}">
+            <File Id="sdk_definitions_xmppfeatureorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\xmppfeatureorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_xmppfeaturepluginorders.h" Guid="{86F525C6-ACF7-49C5-9010-D967B8ED938B}">
+            <File Id="sdk_definitions_xmppfeaturepluginorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\xmppfeaturepluginorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_xmppstanzahandlerorders.h" Guid="{EE21DCBE-5A0F-4B0C-8E04-0906F4DE65D7}">
+            <File Id="sdk_definitions_xmppstanzahandlerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\xmppstanzahandlerorders.h" />
+          </Component>
+          <Component Id="sdk_definitions_xmppurihandlerorders.h" Guid="{15BBC88A-AA71-459E-A455-56653EB53ED8}">
+            <File Id="sdk_definitions_xmppurihandlerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\xmppurihandlerorders.h" />
+          </Component>
+        </Directory>
+        <Directory Id="sdk_interfaces" Name ="interfaces">
+          <Component Id="sdk_interfaces_iaccountmanager.h" Guid="{4BD78C4D-D0AB-4B73-8781-035D649B425D}">
+            <File Id="sdk_interfaces_iaccountmanager.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iaccountmanager.h" />
+          </Component>
+          <Component Id="sdk_interfaces_iannotations.h" Guid="{4FD853D4-8A15-48EA-9FD8-A470F519B629}">
+            <File Id="sdk_interfaces_iannotations.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iannotations.h" />
+          </Component>
+          <Component Id="sdk_interfaces_iautostatus.h" Guid="{84740246-0563-4A6C-82B2-84F675C9E1BC}">
+            <File Id="sdk_interfaces_iautostatus.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iautostatus.h" />
+          </Component>
+          <Component Id="sdk_interfaces_iavatars.h" Guid="{CB510CD9-0C24-4807-8261-9AD5143EE4B6}">
+            <File Id="sdk_interfaces_iavatars.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iavatars.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ibirthdayreminder.h" Guid="{2845B5ED-3E95-4772-9A2D-C1BD5A453A71}">
+            <File Id="sdk_interfaces_ibirthdayreminder.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ibirthdayreminder.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ibitsofbinary.h" Guid="{D20E8F46-C6C5-4B36-A038-052001260730}">
+            <File Id="sdk_interfaces_ibitsofbinary.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ibitsofbinary.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ibookmarks.h" Guid="{AA684175-0BB5-4A8F-82F7-6C87D72629AA}">
+            <File Id="sdk_interfaces_ibookmarks.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ibookmarks.h" />
+          </Component>
+          <Component Id="sdk_interfaces_icaptchaforms.h" Guid="{00048939-7845-495E-8A1E-C26E11D67018}">
+            <File Id="sdk_interfaces_icaptchaforms.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\icaptchaforms.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ichatstates.h" Guid="{40CCFA05-A1FA-4BDE-870C-F039C979B348}">
+            <File Id="sdk_interfaces_ichatstates.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ichatstates.h" />
+          </Component>
+          <Component Id="sdk_interfaces_iclientinfo.h" Guid="{CDF8D618-ED46-4479-BF90-1CF93BC321C5}">
+            <File Id="sdk_interfaces_iclientinfo.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iclientinfo.h" />
+          </Component>
+          <Component Id="sdk_interfaces_icommands.h" Guid="{A39CAE9D-51C2-409F-95B6-A231E1398444}">
+            <File Id="sdk_interfaces_icommands.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\icommands.h" />
+          </Component>
+          <Component Id="sdk_interfaces_iconnectionmanager.h" Guid="{51E3C322-7973-42E8-8DD1-FCB0B1B9BE40}">
+            <File Id="sdk_interfaces_iconnectionmanager.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iconnectionmanager.h" />
+          </Component>
+          <Component Id="sdk_interfaces_idataforms.h" Guid="{FDCEC18A-F15D-4528-9A98-8C97D6127BCA}">
+            <File Id="sdk_interfaces_idataforms.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\idataforms.h" />
+          </Component>
+          <Component Id="sdk_interfaces_idatastreamsmanager.h" Guid="{8282F3AF-43F5-4DB5-B16D-9E9C5EAD26F8}">
+            <File Id="sdk_interfaces_idatastreamsmanager.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\idatastreamsmanager.h" />
+          </Component>
+          <Component Id="sdk_interfaces_idefaultconnection.h" Guid="{F57F8865-9955-48CF-87E3-7F989720C06A}">
+            <File Id="sdk_interfaces_idefaultconnection.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\idefaultconnection.h" />
+          </Component>
+          <Component Id="sdk_interfaces_iemoticons.h" Guid="{DA8487AB-86FF-4884-A683-5ABA74CB0EA6}">
+            <File Id="sdk_interfaces_iemoticons.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iemoticons.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ifilemessagearchive.h" Guid="{761D342E-1546-4B21-9356-1230BB2FD081}">
+            <File Id="sdk_interfaces_ifilemessagearchive.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ifilemessagearchive.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ifilestreamsmanager.h" Guid="{B2F6B9E6-2012-4352-A4C1-93DD2FD441F0}">
+            <File Id="sdk_interfaces_ifilestreamsmanager.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ifilestreamsmanager.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ifiletransfer.h" Guid="{98E8DC8D-C5EA-48EE-A19C-4A08782B6B40}">
+            <File Id="sdk_interfaces_ifiletransfer.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ifiletransfer.h" />
+          </Component>
+          <Component Id="sdk_interfaces_igateways.h" Guid="{50D7D701-2A87-49C6-89C9-5E50176CFD59}">
+            <File Id="sdk_interfaces_igateways.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\igateways.h" />
+          </Component>
+          <Component Id="sdk_interfaces_iinbandstreams.h" Guid="{E76568EC-038F-4AA4-BBB4-C3FD70B770CF}">
+            <File Id="sdk_interfaces_iinbandstreams.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iinbandstreams.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ijabbersearch.h" Guid="{F9E24F64-DE75-472F-99E7-869BBA108905}">
+            <File Id="sdk_interfaces_ijabbersearch.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ijabbersearch.h" />
+          </Component>
+          <Component Id="sdk_interfaces_imainwindow.h" Guid="{E9A462B2-E933-4C7A-B140-231E7D6D7A61}">
+            <File Id="sdk_interfaces_imainwindow.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\imainwindow.h" />
+          </Component>
+          <Component Id="sdk_interfaces_imessagearchiver.h" Guid="{7D3D66EA-BBC9-43E1-B939-84ED01F8AE8E}">
+            <File Id="sdk_interfaces_imessagearchiver.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\imessagearchiver.h" />
+          </Component>
+          <Component Id="sdk_interfaces_imessagecarbons.h" Guid="{1E3852A6-D128-4C26-8328-BD74E3CEED18}">
+            <File Id="sdk_interfaces_imessagecarbons.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\imessagecarbons.h" />
+          </Component>
+          <Component Id="sdk_interfaces_imessageprocessor.h" Guid="{08A1A10E-08CC-42D8-A376-B12DB431F0B1}">
+            <File Id="sdk_interfaces_imessageprocessor.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\imessageprocessor.h" />
+          </Component>
+          <Component Id="sdk_interfaces_imessagestyles.h" Guid="{76C12BA2-257E-4A9F-8F95-C3CABA886878}">
+            <File Id="sdk_interfaces_imessagestyles.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\imessagestyles.h" />
+          </Component>
+          <Component Id="sdk_interfaces_imessagewidgets.h" Guid="{DB1C253F-CA19-40EB-AC16-835E7779658F}">
+            <File Id="sdk_interfaces_imessagewidgets.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\imessagewidgets.h" />
+          </Component>
+          <Component Id="sdk_interfaces_imetacontacts.h" Guid="{E6497C3E-ECFB-4E86-9281-E3E7B1742F1F}">
+            <File Id="sdk_interfaces_imetacontacts.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\imetacontacts.h" />
+          </Component>
+          <Component Id="sdk_interfaces_imultiuserchat.h" Guid="{3A736034-FFB7-4A94-A3C3-7F225E225D2E}">
+            <File Id="sdk_interfaces_imultiuserchat.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\imultiuserchat.h" />
+          </Component>
+          <Component Id="sdk_interfaces_inotifications.h" Guid="{104A0C9D-A400-43F6-BBD9-D5701D80D775}">
+            <File Id="sdk_interfaces_inotifications.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\inotifications.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ioptionsmanager.h" Guid="{28421420-77D7-48F5-B7A6-5D111593E9D8}">
+            <File Id="sdk_interfaces_ioptionsmanager.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ioptionsmanager.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ipepmanager.h" Guid="{2C70FE56-CA14-4902-A860-6333776EA95A}">
+            <File Id="sdk_interfaces_ipepmanager.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ipepmanager.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ipluginmanager.h" Guid="{D567B04E-685B-468E-9A2C-66445B7B3FDA}">
+            <File Id="sdk_interfaces_ipluginmanager.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ipluginmanager.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ipresence.h" Guid="{E0DA1950-CD46-4605-9304-C14F7FCB34DA}">
+            <File Id="sdk_interfaces_ipresence.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ipresence.h" />
+          </Component>
+          <Component Id="sdk_interfaces_iprivacylists.h" Guid="{04FDBAE1-C024-4425-8737-912307919580}">
+            <File Id="sdk_interfaces_iprivacylists.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iprivacylists.h" />
+          </Component>
+          <Component Id="sdk_interfaces_iprivatestorage.h" Guid="{763C9C8C-C5A5-4F22-9988-9ED3A5D7260A}">
+            <File Id="sdk_interfaces_iprivatestorage.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iprivatestorage.h" />
+          </Component>
+          <Component Id="sdk_interfaces_irecentcontacts.h" Guid="{9AD5CAB4-30CE-4F29-BA2C-018E0A43AD49}">
+            <File Id="sdk_interfaces_irecentcontacts.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\irecentcontacts.h" />
+          </Component>
+          <Component Id="sdk_interfaces_iregistraton.h" Guid="{632083E6-3838-4B42-AF91-BCF2C9726A59}">
+            <File Id="sdk_interfaces_iregistraton.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iregistraton.h" />
+          </Component>
+          <Component Id="sdk_interfaces_iroster.h" Guid="{489DA16D-A492-4DDC-B89D-AE670E1443A5}">
+            <File Id="sdk_interfaces_iroster.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iroster.h" />
+          </Component>
+          <Component Id="sdk_interfaces_irosterchanger.h" Guid="{7AEC21FF-D437-4AD2-81BA-72FAC564654B}">
+            <File Id="sdk_interfaces_irosterchanger.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\irosterchanger.h" />
+          </Component>
+          <Component Id="sdk_interfaces_irosteritemexchange.h" Guid="{08F06F99-AC55-449F-87D0-84F2830B56FB}">
+            <File Id="sdk_interfaces_irosteritemexchange.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\irosteritemexchange.h" />
+          </Component>
+          <Component Id="sdk_interfaces_irostersearch.h" Guid="{AC6FD1A7-187D-4348-8A6D-E41A23207E2B}">
+            <File Id="sdk_interfaces_irostersearch.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\irostersearch.h" />
+          </Component>
+          <Component Id="sdk_interfaces_irostersmodel.h" Guid="{2AB5491E-1CD2-4CFD-9169-FAF413CE46A0}">
+            <File Id="sdk_interfaces_irostersmodel.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\irostersmodel.h" />
+          </Component>
+          <Component Id="sdk_interfaces_irostersview.h" Guid="{E7134F03-CAB2-4CD1-AB0F-F6F52BC033E5}">
+            <File Id="sdk_interfaces_irostersview.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\irostersview.h" />
+          </Component>
+          <Component Id="sdk_interfaces_iservermessagearchive.h" Guid="{6B7075B8-1B8F-4D14-8EC7-1D82481E397C}">
+            <File Id="sdk_interfaces_iservermessagearchive.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iservermessagearchive.h" />
+          </Component>
+          <Component Id="sdk_interfaces_iservicediscovery.h" Guid="{79E526B3-0E2C-4628-A935-7912319E66E7}">
+            <File Id="sdk_interfaces_iservicediscovery.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iservicediscovery.h" />
+          </Component>
+          <Component Id="sdk_interfaces_isessionnegotiation.h" Guid="{1477665A-6698-4F7B-AE16-5A75A9BE05F5}">
+            <File Id="sdk_interfaces_isessionnegotiation.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\isessionnegotiation.h" />
+          </Component>
+          <Component Id="sdk_interfaces_isocksstreams.h" Guid="{800543FE-DD5E-44F7-A676-ED9A3BEF7916}">
+            <File Id="sdk_interfaces_isocksstreams.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\isocksstreams.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ispellchecker.h" Guid="{A4A77761-51AE-4439-AE65-A679EAFB3B9B}">
+            <File Id="sdk_interfaces_ispellchecker.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ispellchecker.h" />
+          </Component>
+          <Component Id="sdk_interfaces_istanzaprocessor.h" Guid="{AD2320C3-993B-4F54-870D-086D383A03FF}">
+            <File Id="sdk_interfaces_istanzaprocessor.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\istanzaprocessor.h" />
+          </Component>
+          <Component Id="sdk_interfaces_istatistics.h" Guid="{90EE57DA-DC5F-4BFB-8703-9C1CD9F98CA6}">
+            <File Id="sdk_interfaces_istatistics.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\istatistics.h" />
+          </Component>
+          <Component Id="sdk_interfaces_istatuschanger.h" Guid="{3436F6EF-00E4-4EA9-9899-2ADC40F39BEF}">
+            <File Id="sdk_interfaces_istatuschanger.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\istatuschanger.h" />
+          </Component>
+          <Component Id="sdk_interfaces_istatusicons.h" Guid="{0085C2EF-A7BE-40C9-BD69-63E2BDFFFA49}">
+            <File Id="sdk_interfaces_istatusicons.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\istatusicons.h" />
+          </Component>
+          <Component Id="sdk_interfaces_itraymanager.h" Guid="{2BE32FAF-B731-4AD7-BD8F-EBAB97854D85}">
+            <File Id="sdk_interfaces_itraymanager.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\itraymanager.h" />
+          </Component>
+          <Component Id="sdk_interfaces_iurlprocessor.h" Guid="{93FB2AEC-7C81-4116-A8AD-BC284752FFB1}">
+            <File Id="sdk_interfaces_iurlprocessor.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iurlprocessor.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ivcard.h" Guid="{ADAA74BA-4E04-4974-B639-8321CA677FF1}">
+            <File Id="sdk_interfaces_ivcard.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ivcard.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ixmppstreams.h" Guid="{56A8C655-C958-4E2F-A5C0-FF55805D6535}">
+            <File Id="sdk_interfaces_ixmppstreams.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ixmppstreams.h" />
+          </Component>
+          <Component Id="sdk_interfaces_ixmppuriqueries.h" Guid="{B654BB09-4B6A-4D4F-A65D-56E11CCF1C94}">
+            <File Id="sdk_interfaces_ixmppuriqueries.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ixmppuriqueries.h" />
+          </Component>
+        </Directory>
+        <Directory Id="sdk_make" Name="Make">
+          <Component Id="sdk_make_config.cmake" Guid="{4406F660-6459-4A7C-905A-18B045772CC8}">
+            <File Id="sdk_make_config.cmake" KeyPath="yes" Source="SourceDir\sdk\make\config.cmake" />
+          </Component>
+          <Component Id="sdk_make_config.inc" Guid="{1EC1BA48-7327-4987-A28A-F466CF345A7D}">
+            <File Id="sdk_make_config.inc" KeyPath="yes" Source="SourceDir\sdk\make\config.inc" />
+          </Component>
+          <Component Id="sdk_make_translations.cmake" Guid="{09DB84D4-0FD1-422C-A18B-7FD3AC2847CD}">
+            <File Id="sdk_make_translations.cmake" KeyPath="yes" Source="SourceDir\sdk\make\translations.cmake" />
+          </Component>
+          <Component Id="sdk_make_translations.inc" Guid="{8A0F48D4-AF85-4AA7-B331-4ADAE3D051B6}">
+            <File Id="sdk_make_translations.inc" KeyPath="yes" Source="SourceDir\sdk\make\translations.inc" />
+          </Component>
+        </Directory>
+        <Directory Id="sdk_utils" Name="utils">
+          <Component Id="sdk_utils_action.h" Guid="{7EBFA28D-A8BE-4D64-B6D1-0E730F9B98B1}">
+            <File Id="sdk_utils_action.h" KeyPath="yes" Source="SourceDir\sdk\utils\action.h" />
+          </Component>
+          <Component Id="sdk_utils_advanceditem.h" Guid="{24939C60-6EF7-4DDF-9BB1-7A705CE957C5}">
+            <File Id="sdk_utils_advanceditem.h" KeyPath="yes" Source="SourceDir\sdk\utils\advanceditem.h" />
+          </Component>
+          <Component Id="sdk_utils_advanceditemdelegate.h" Guid="{1BDA998F-89DD-4A35-A5D1-550711A990D8}">
+            <File Id="sdk_utils_advanceditemdelegate.h" KeyPath="yes" Source="SourceDir\sdk\utils\advanceditemdelegate.h" />
+          </Component>
+          <Component Id="sdk_utils_advanceditemmodel.h" Guid="{9C3B0A62-26AE-4EBC-80A6-BDC6F3AA6ED4}">
+            <File Id="sdk_utils_advanceditemmodel.h" KeyPath="yes" Source="SourceDir\sdk\utils\advanceditemmodel.h" />
+          </Component>
+          <Component Id="sdk_utils_animatedtextbrowser.h" Guid="{A7106C44-52BD-4E46-9B2A-C2368BCF336F}">
+            <File Id="sdk_utils_animatedtextbrowser.h" KeyPath="yes" Source="SourceDir\sdk\utils\animatedtextbrowser.h" />
+          </Component>
+          <Component Id="sdk_utils_boxwidget.h" Guid="{1EED1950-9EC3-464D-929A-397924342774}">
+            <File Id="sdk_utils_boxwidget.h" KeyPath="yes" Source="SourceDir\sdk\utils\boxwidget.h" />
+          </Component>
+          <Component Id="sdk_utils_closebutton.h" Guid="{07344E66-3E23-4FD0-BB07-3962723F4232}">
+            <File Id="sdk_utils_closebutton.h" KeyPath="yes" Source="SourceDir\sdk\utils\closebutton.h" />
+          </Component>
+          <Component Id="sdk_utils_datetime.h" Guid="{0C3ED461-37C5-47D0-9F54-7AC506E220D6}">
+            <File Id="sdk_utils_datetime.h" KeyPath="yes" Source="SourceDir\sdk\utils\datetime.h" />
+          </Component>
+          <Component Id="sdk_utils_filecookiejar.h" Guid="{7BBBA184-01AE-49D5-8A3C-92C4525A2C70}">
+            <File Id="sdk_utils_filecookiejar.h" KeyPath="yes" Source="SourceDir\sdk\utils\filecookiejar.h" />
+          </Component>
+          <Component Id="sdk_utils_filestorage.h" Guid="{C84E1016-A934-42BB-AE49-4B5E7F11303F}">
+            <File Id="sdk_utils_filestorage.h" KeyPath="yes" Source="SourceDir\sdk\utils\filestorage.h" />
+          </Component>
+          <Component Id="sdk_utils_iconsetdelegate.h" Guid="{775B263D-8038-4C59-848A-6A5454B8C838}">
+            <File Id="sdk_utils_iconsetdelegate.h" KeyPath="yes" Source="SourceDir\sdk\utils\iconsetdelegate.h" />
+          </Component>
+          <Component Id="sdk_utils_iconstorage.h" Guid="{9158F5AF-154C-4B7A-8DD4-506069550811}">
+            <File Id="sdk_utils_iconstorage.h" KeyPath="yes" Source="SourceDir\sdk\utils\iconstorage.h" />
+          </Component>
+          <Component Id="sdk_utils_imagemanager.h" Guid="{BFDF5DD1-2C59-4FC4-82E4-19FD1E63B682}">
+            <File Id="sdk_utils_imagemanager.h" KeyPath="yes" Source="SourceDir\sdk\utils\imagemanager.h" />
+          </Component>
+          <Component Id="sdk_utils_jid.h" Guid="{CA784996-C761-4586-95C1-29A1A4692DB9}">
+            <File Id="sdk_utils_jid.h" KeyPath="yes" Source="SourceDir\sdk\utils\jid.h" />
+          </Component>
+          <Component Id="sdk_utils_menu.h" Guid="{67DF052A-2E29-420D-8BBE-BAF54FD39D2B}">
+            <File Id="sdk_utils_menu.h" KeyPath="yes" Source="SourceDir\sdk\utils\menu.h" />
+          </Component>
+          <Component Id="sdk_utils_menubarchanger.h" Guid="{4FE83179-93FA-4A10-A30C-09720A77A531}">
+            <File Id="sdk_utils_menubarchanger.h" KeyPath="yes" Source="SourceDir\sdk\utils\menubarchanger.h" />
+          </Component>
+          <Component Id="sdk_utils_message.h" Guid="{FFCFB9B4-87BF-4C8F-9C3C-4B71CF4D0D47}">
+            <File Id="sdk_utils_message.h" KeyPath="yes" Source="SourceDir\sdk\utils\message.h" />
+          </Component>
+          <Component Id="sdk_utils_options.h" Guid="{C1E31CAC-D43B-4E96-B129-5187FF5189C9}">
+            <File Id="sdk_utils_options.h" KeyPath="yes" Source="SourceDir\sdk\utils\options.h" />
+          </Component>
+          <Component Id="sdk_utils_ringbuffer.h" Guid="{3B0BA934-B9D5-4F8E-9B6E-65FE24F2A9E0}">
+            <File Id="sdk_utils_ringbuffer.h" KeyPath="yes" Source="SourceDir\sdk\utils\ringbuffer.h" />
+          </Component>
+          <Component Id="sdk_utils_searchlineedit.h" Guid="{4E130443-AF7D-4761-8C2F-FA4BEBEB1237}">
+            <File Id="sdk_utils_searchlineedit.h" KeyPath="yes" Source="SourceDir\sdk\utils\searchlineedit.h" />
+          </Component>
+          <Component Id="sdk_utils_shortcuts.h" Guid="{31F7EE39-CF02-4CD1-9813-0F6C4C5D86F7}">
+            <File Id="sdk_utils_shortcuts.h" KeyPath="yes" Source="SourceDir\sdk\utils\shortcuts.h" />
+          </Component>
+          <Component Id="sdk_utils_stanza.h" Guid="{8A7F7C30-2A98-48F7-A7A9-71E372E5BDC4}">
+            <File Id="sdk_utils_stanza.h" KeyPath="yes" Source="SourceDir\sdk\utils\stanza.h" />
+          </Component>
+          <Component Id="sdk_utils_statusbarchanger.h" Guid="{667EBAD0-5924-45E8-B7CF-4AB12D362804}">
+            <File Id="sdk_utils_statusbarchanger.h" KeyPath="yes" Source="SourceDir\sdk\utils\statusbarchanger.h" />
+          </Component>
+          <Component Id="sdk_utils_systemmanager.h" Guid="{804613D5-3869-480D-ACE0-AB1503078739}">
+            <File Id="sdk_utils_systemmanager.h" KeyPath="yes" Source="SourceDir\sdk\utils\systemmanager.h" />
+          </Component>
+          <Component Id="sdk_utils_textmanager.h" Guid="{F5EF0891-B287-444D-866F-3BA53C159579}">
+            <File Id="sdk_utils_textmanager.h" KeyPath="yes" Source="SourceDir\sdk\utils\textmanager.h" />
+          </Component>
+          <Component Id="sdk_utils_toolbarchanger.h" Guid="{F045EC6B-7C9C-4C45-96A5-0CC75DCC3700}">
+            <File Id="sdk_utils_toolbarchanger.h" KeyPath="yes" Source="SourceDir\sdk\utils\toolbarchanger.h" />
+          </Component>
+          <Component Id="sdk_utils_unzipfile.h" Guid="{51EEACAC-2347-4FFB-8AA9-1C817CEB0202}">
+            <File Id="sdk_utils_unzipfile.h" KeyPath="yes" Source="SourceDir\sdk\utils\unzipfile.h" />
+          </Component>
+          <Component Id="sdk_utils_utilsexport.h" Guid="{B8AD1805-A377-4B9B-B50A-58360CCDEF70}">
+            <File Id="sdk_utils_utilsexport.h" KeyPath="yes" Source="SourceDir\sdk\utils\utilsexport.h" />
+          </Component>
+          <Component Id="sdk_utils_versionparser.h" Guid="{C490B452-6D2C-4349-883F-2A1DE66B9048}">
+            <File Id="sdk_utils_versionparser.h" KeyPath="yes" Source="SourceDir\sdk\utils\versionparser.h" />
+          </Component>
+          <Component Id="sdk_utils_widgetmanager.h" Guid="{93D261B8-1D5E-477B-BC0D-1C39085992E7}">
+            <File Id="sdk_utils_widgetmanager.h" KeyPath="yes" Source="SourceDir\sdk\utils\widgetmanager.h" />
+          </Component>
+          <Component Id="sdk_utils_xmpperror.h" Guid="{7155B293-281D-4413-9288-B4858DCBDC1C}">
+            <File Id="sdk_utils_xmpperror.h" KeyPath="yes" Source="SourceDir\sdk\utils\xmpperror.h" />
+          </Component>
+        </Directory>
+      </Directory>
       <Directory Id="translations" Name="translations">
         <Directory Id="translations_de" Name="de">
           <Component Id="de_accountmanager.qm" Guid="{0C0963FE-4333-4BF6-B849-8A77D9E5A8E5}">
@@ -3210,6 +3856,9 @@
           <Component Id="de_messagearchiver.qm" Guid="{8C1AE6D6-59CE-40E2-9AAF-5FF8B66A85B3}">
             <File Id="de_messagearchiver.qm" KeyPath="yes" Source="SourceDir\translations\de\messagearchiver.qm" />
           </Component>
+          <Component Id="de_messagecarbons.qm" Guid="{FE327B49-3EE3-469D-AC1D-547D3091C875}">
+            <File Id="de_messagecarbons.qm" KeyPath="yes" Source="SourceDir\translations\de\messagecarbons.qm" />
+          </Component>
           <Component Id="de_messageprocessor.qm" Guid="{1CC12F59-C94B-4D11-AE95-BFDD248D1E3A}">
             <File Id="de_messageprocessor.qm" KeyPath="yes" Source="SourceDir\translations\de\messageprocessor.qm" />
           </Component>
@@ -3245,6 +3894,9 @@
           </Component>
           <Component Id="de_qt_de.qm" Guid="{839D0C38-308C-4D76-B03C-02B31457CDB7}">
             <File Id="de_qt_de.qm" KeyPath="yes" Source="SourceDir\translations\de\qt_de.qm" />
+          </Component>
+          <Component Id="de_recentcontacts.qm" Guid="{105E9D03-0672-45E4-8DBD-0636BA21E62F}">
+            <File Id="de_recentcontacts.qm" KeyPath="yes" Source="SourceDir\translations\de\recentcontacts.qm" />
           </Component>
           <Component Id="de_registration.qm" Guid="{E1FED568-1DD5-44D7-B3C1-1CD99C0CACF6}">
             <File Id="de_registration.qm" KeyPath="yes" Source="SourceDir\translations\de\registration.qm" />
@@ -3291,11 +3943,17 @@
           <Component Id="de_socksstreams.qm" Guid="{57E223CB-00BE-4007-ACB6-8C9B0BCD5F62}">
             <File Id="de_socksstreams.qm" KeyPath="yes" Source="SourceDir\translations\de\socksstreams.qm" />
           </Component>
+          <Component Id="de_spellchecker.qm" Guid="{459F27FB-3907-4936-A0CA-6A6FF5CA6BAD}">
+            <File Id="de_spellchecker.qm" KeyPath="yes" Source="SourceDir\translations\de\spellchecker.qm" />
+          </Component>
           <Component Id="de_stanzaprocessor.qm" Guid="{680497FB-BF8D-49B7-9695-594255BD0A69}">
             <File Id="de_stanzaprocessor.qm" KeyPath="yes" Source="SourceDir\translations\de\stanzaprocessor.qm" />
           </Component>
           <Component Id="de_starttls.qm" Guid="{90683E37-FE68-4C68-A263-4DCDD66B98B0}">
             <File Id="de_starttls.qm" KeyPath="yes" Source="SourceDir\translations\de\starttls.qm" />
+          </Component>
+          <Component Id="de_statistics.qm" Guid="{499303CD-1975-483B-BB27-94DD299A1D16}">
+            <File Id="de_statistics.qm" KeyPath="yes" Source="SourceDir\translations\de\statistics.qm" />
           </Component>
           <Component Id="de_statuschanger.qm" Guid="{EE970C4C-18D5-45A2-ABDC-4988AE76821B}">
             <File Id="de_statuschanger.qm" KeyPath="yes" Source="SourceDir\translations\de\statuschanger.qm" />
@@ -3413,6 +4071,9 @@
           <Component Id="pl_messagearchiver.qm" Guid="{9B287BB1-E0B4-4CEF-97D1-CC6CFDC2BD0C}">
             <File Id="pl_messagearchiver.qm" KeyPath="yes" Source="SourceDir\translations\pl\messagearchiver.qm" />
           </Component>
+          <Component Id="pl_messagecarbons.qm" Guid="{B9D1049C-E201-4AC8-9C87-DAC1C73C9DDB}">
+            <File Id="pl_messagecarbons.qm" KeyPath="yes" Source="SourceDir\translations\pl\messagecarbons.qm" />
+          </Component>
           <Component Id="pl_messageprocessor.qm" Guid="{0EB714F6-4C88-47A5-A472-2A13749CE99D}">
             <File Id="pl_messageprocessor.qm" KeyPath="yes" Source="SourceDir\translations\pl\messageprocessor.qm" />
           </Component>
@@ -3448,6 +4109,9 @@
           </Component>
           <Component Id="pl_qt_pl.qm" Guid="{8BF26245-15F3-4B6F-98AB-479D957FBD0E}">
             <File Id="pl_qt_pl.qm" KeyPath="yes" Source="SourceDir\translations\pl\qt_pl.qm" />
+          </Component>
+          <Component Id="pl_recentcontacts.qm" Guid="{37F0E980-CF90-4A18-A0F5-9E707501ECDF}">
+            <File Id="pl_recentcontacts.qm" KeyPath="yes" Source="SourceDir\translations\pl\recentcontacts.qm" />
           </Component>
           <Component Id="pl_registration.qm" Guid="{CEB41A7E-BBF9-45DC-A9B9-1AC74164945E}">
             <File Id="pl_registration.qm" KeyPath="yes" Source="SourceDir\translations\pl\registration.qm" />
@@ -3494,11 +4158,17 @@
           <Component Id="pl_socksstreams.qm" Guid="{F744C915-D383-4D0E-893C-B479E598FF11}">
             <File Id="pl_socksstreams.qm" KeyPath="yes" Source="SourceDir\translations\pl\socksstreams.qm" />
           </Component>
+          <Component Id="pl_spellchecker.qm" Guid="{D9F4D5EE-4582-48DA-91A7-C5326171C6C8}">
+            <File Id="pl_spellchecker.qm" KeyPath="yes" Source="SourceDir\translations\pl\spellchecker.qm" />
+          </Component>
           <Component Id="pl_stanzaprocessor.qm" Guid="{BFFCDA71-6256-42E2-B447-2135CE9E5DB2}">
             <File Id="pl_stanzaprocessor.qm" KeyPath="yes" Source="SourceDir\translations\pl\stanzaprocessor.qm" />
           </Component>
           <Component Id="pl_starttls.qm" Guid="{9E41CE37-5671-4747-ADBB-A70B24C85D5D}">
             <File Id="pl_starttls.qm" KeyPath="yes" Source="SourceDir\translations\pl\starttls.qm" />
+          </Component>
+          <Component Id="pl_statistics.qm" Guid="{142C6A1F-907C-433C-B7CF-2F55ACEC1DD2}">
+            <File Id="pl_statistics.qm" KeyPath="yes" Source="SourceDir\translations\pl\statistics.qm" />
           </Component>
           <Component Id="pl_statuschanger.qm" Guid="{CC85E71D-4029-43F5-9EB2-B737BEB0EE9D}">
             <File Id="pl_statuschanger.qm" KeyPath="yes" Source="SourceDir\translations\pl\statuschanger.qm" />
@@ -3616,6 +4286,9 @@
           <Component Id="ru_messagearchiver.qm" Guid="{E242F430-E9A4-4A65-96DB-5123F8022596}">
             <File Id="ru_messagearchiver.qm" KeyPath="yes" Source="SourceDir\translations\ru\messagearchiver.qm" />
           </Component>
+          <Component Id="ru_messagecarbons.qm" Guid="{0DD2C2FE-9CF2-402D-B839-07C10528B44D}">
+            <File Id="ru_messagecarbons.qm" KeyPath="yes" Source="SourceDir\translations\ru\messagecarbons.qm" />
+          </Component>
           <Component Id="ru_messageprocessor.qm" Guid="{34FE15A6-9970-4DCC-9761-07BED33435B9}">
             <File Id="ru_messageprocessor.qm" KeyPath="yes" Source="SourceDir\translations\ru\messageprocessor.qm" />
           </Component>
@@ -3651,6 +4324,9 @@
           </Component>
           <Component Id="ru_qt_ru.qm" Guid="{15157BD3-34E2-40D5-A776-4BBB4E0BC8AF}">
             <File Id="ru_qt_ru.qm" KeyPath="yes" Source="SourceDir\translations\ru\qt_ru.qm" />
+          </Component>
+          <Component Id="ru_recentcontacts.qm" Guid="{D6432C6F-C946-4772-96B4-82B0F51F8A40}">
+            <File Id="ru_recentcontacts.qm" KeyPath="yes" Source="SourceDir\translations\ru\recentcontacts.qm" />
           </Component>
           <Component Id="ru_registration.qm" Guid="{A795F192-0169-4678-9657-654190F413E6}">
             <File Id="ru_registration.qm" KeyPath="yes" Source="SourceDir\translations\ru\registration.qm" />
@@ -3697,11 +4373,17 @@
           <Component Id="ru_socksstreams.qm" Guid="{C291B83B-5355-4492-97EB-AC154FFA48C3}">
             <File Id="ru_socksstreams.qm" KeyPath="yes" Source="SourceDir\translations\ru\socksstreams.qm" />
           </Component>
+          <Component Id="ru_spellchecker.qm" Guid="{5D054B4C-D091-49BD-9E7B-3235AE5D7400}">
+            <File Id="ru_spellchecker.qm" KeyPath="yes" Source="SourceDir\translations\ru\spellchecker.qm" />
+          </Component>
           <Component Id="ru_stanzaprocessor.qm" Guid="{960E172C-DB52-450C-855E-36365D251870}">
             <File Id="ru_stanzaprocessor.qm" KeyPath="yes" Source="SourceDir\translations\ru\stanzaprocessor.qm" />
           </Component>
           <Component Id="ru_starttls.qm" Guid="{F62646AC-DFF8-4663-A7AA-7A575B3EE18F}">
             <File Id="ru_starttls.qm" KeyPath="yes" Source="SourceDir\translations\ru\starttls.qm" />
+          </Component>
+          <Component Id="ru_statistics.qm" Guid="{A564C54B-CBC4-4273-9AAD-8533837346C9}">
+            <File Id="ru_statistics.qm" KeyPath="yes" Source="SourceDir\translations\ru\statistics.qm" />
           </Component>
           <Component Id="ru_statuschanger.qm" Guid="{8ABE43A5-91B0-4FEA-8407-740AD9BB9C63}">
             <File Id="ru_statuschanger.qm" KeyPath="yes" Source="SourceDir\translations\ru\statuschanger.qm" />
@@ -3819,6 +4501,9 @@
           <Component Id="uk_messagearchiver.qm" Guid="{B834C65B-78DB-4678-9352-457000E54330}">
             <File Id="uk_messagearchiver.qm" KeyPath="yes" Source="SourceDir\translations\uk\messagearchiver.qm" />
           </Component>
+          <Component Id="uk_messagecarbons.qm" Guid="{128164F1-D8E8-40A3-BB10-51C57E967376}">
+            <File Id="uk_messagecarbons.qm" KeyPath="yes" Source="SourceDir\translations\uk\messagecarbons.qm" />
+          </Component>
           <Component Id="uk_messageprocessor.qm" Guid="{C9573A2B-3829-47A7-85A6-D631C03CC250}">
             <File Id="uk_messageprocessor.qm" KeyPath="yes" Source="SourceDir\translations\uk\messageprocessor.qm" />
           </Component>
@@ -3854,6 +4539,9 @@
           </Component>
           <Component Id="uk_qt_uk.qm" Guid="{80885EB4-E272-43AF-92DF-6A924DDB2D52}">
             <File Id="uk_qt_uk.qm" KeyPath="yes" Source="SourceDir\translations\uk\qt_uk.qm" />
+          </Component>
+          <Component Id="uk_recentcontacts.qm" Guid="{A349A823-84C5-42F5-B3CE-A32304D29403}">
+            <File Id="uk_recentcontacts.qm" KeyPath="yes" Source="SourceDir\translations\uk\recentcontacts.qm" />
           </Component>
           <Component Id="uk_registration.qm" Guid="{4FA4627A-8D8C-4BC5-849C-271765B42ABE}">
             <File Id="uk_registration.qm" KeyPath="yes" Source="SourceDir\translations\uk\registration.qm" />
@@ -3900,11 +4588,17 @@
           <Component Id="uk_socksstreams.qm" Guid="{DD2B9B37-6962-470A-BAEB-FADE80597964}">
             <File Id="uk_socksstreams.qm" KeyPath="yes" Source="SourceDir\translations\uk\socksstreams.qm" />
           </Component>
+          <Component Id="uk_spellchecker.qm" Guid="{8CD14BA3-4985-4E05-AD39-D3940B4057E1}">
+            <File Id="uk_spellchecker.qm" KeyPath="yes" Source="SourceDir\translations\uk\spellchecker.qm" />
+          </Component>
           <Component Id="uk_stanzaprocessor.qm" Guid="{492850ED-770A-4C29-BDB6-6986D0F02F31}">
             <File Id="uk_stanzaprocessor.qm" KeyPath="yes" Source="SourceDir\translations\uk\stanzaprocessor.qm" />
           </Component>
           <Component Id="uk_starttls.qm" Guid="{E944EA39-BF83-4421-90D0-F1F1B12B370F}">
             <File Id="uk_starttls.qm" KeyPath="yes" Source="SourceDir\translations\uk\starttls.qm" />
+          </Component>
+          <Component Id="uk_statistics.qm" Guid="{C432B1CB-1D13-45E4-ABB0-5442F92D74AC}">
+            <File Id="uk_statistics.qm" KeyPath="yes" Source="SourceDir\translations\uk\statistics.qm" />
           </Component>
           <Component Id="uk_statuschanger.qm" Guid="{339F296B-CFED-4F73-A6D4-5EB86AC6DCA1}">
             <File Id="uk_statuschanger.qm" KeyPath="yes" Source="SourceDir\translations\uk\statuschanger.qm" />
@@ -3941,7 +4635,6 @@
     <ComponentGroup Id="cg.main">
       <ComponentRef Id="vacuum.exe" />
       <ComponentRef Id="vacuumutils.dll" />
-      <ComponentRef Id="vacuumutils.lib" />
     </ComponentGroup>
     <ComponentGroup Id="cg.docs">
       <ComponentRef Id="AUTHORS" />
@@ -3999,6 +4692,7 @@
       <ComponentRef Id="plugins_jabbersearch.dll" />
       <ComponentRef Id="plugins_mainwindow.dll" />
       <ComponentRef Id="plugins_messagearchiver.dll" />
+      <ComponentRef Id="plugins_messagecarbons.dll" />
       <ComponentRef Id="plugins_messageprocessor.dll" />
       <ComponentRef Id="plugins_messagestyles.dll" />
       <ComponentRef Id="plugins_messagewidgets.dll" />
@@ -4010,6 +4704,7 @@
       <ComponentRef Id="plugins_presence.dll" />
       <ComponentRef Id="plugins_privacylists.dll" />
       <ComponentRef Id="plugins_privatestorage.dll" />
+      <ComponentRef Id="plugins_recentcontacts.dll" />
       <ComponentRef Id="plugins_registration.dll" />
       <ComponentRef Id="plugins_remotecontrol.dll" />
       <ComponentRef Id="plugins_roster.dll" />
@@ -4026,6 +4721,7 @@
       <ComponentRef Id="plugins_socksstreams.dll" />
       <ComponentRef Id="plugins_stanzaprocessor.dll" />
       <ComponentRef Id="plugins_starttls.dll" />
+      <ComponentRef Id="plugins_statistics.dll" />
       <ComponentRef Id="plugins_statuschanger.dll" />
       <ComponentRef Id="plugins_statusicons.dll" />
       <ComponentRef Id="plugins_traymanager.dll" />
@@ -4054,6 +4750,19 @@
     </ComponentGroup>
     <ComponentGroup Id="cg.plugins_simplemessagestyle">
       <ComponentRef Id="plugins_simplemessagestyle.dll" />
+    </ComponentGroup>
+    <ComponentGroup Id="cg.plugins_spellchecker">
+      <ComponentRef Id="plugins_spellchecker.dll" />
+      <ComponentRef Id="hunspell_de_DE.aff" />
+      <ComponentRef Id="hunspell_de_DE.dic" />
+      <ComponentRef Id="hunspell_en_US.aff" />
+      <ComponentRef Id="hunspell_en_US.dic" />
+      <ComponentRef Id="hunspell_pl_PL.aff" />
+      <ComponentRef Id="hunspell_pl_PL.dic" />
+      <ComponentRef Id="hunspell_ru_RU.aff" />
+      <ComponentRef Id="hunspell_ru_RU.dic" />
+      <ComponentRef Id="hunspell_uk_UA.aff" />
+      <ComponentRef Id="hunspell_uk_UA.dic" />
     </ComponentGroup>
     <ComponentGroup Id="cg.resources_adiummessagestyle_renkoo">
       <ComponentRef Id="renkoo_Contents_Info.plist" />
@@ -4456,6 +5165,7 @@
       <ComponentRef Id="menuicons_shared_bookmarks.png" />
       <ComponentRef Id="menuicons_shared_bookmarksadd.png" />
       <ComponentRef Id="menuicons_shared_bookmarksedit.png" />
+      <ComponentRef Id="menuicons_shared_bookmarksremove.png" />
       <ComponentRef Id="menuicons_shared_bookmarksroom.png" />
       <ComponentRef Id="menuicons_shared_bookmarksurl.png" />
       <ComponentRef Id="menuicons_shared_captchaforms.def.xml" />
@@ -4463,7 +5173,6 @@
       <ComponentRef Id="menuicons_shared_chatmessagehandler.def.xml" />
       <ComponentRef Id="menuicons_shared_chatmessagehandlerclearchat.png" />
       <ComponentRef Id="menuicons_shared_chatmessagehandlermessage.png" />
-      <ComponentRef Id="menuicons_shared_chatmessagehandlerusermenu.png" />
       <ComponentRef Id="menuicons_shared_chatstates.def.xml" />
       <ComponentRef Id="menuicons_shared_chatstatesactive.png" />
       <ComponentRef Id="menuicons_shared_chatstatescomposing.png" />
@@ -4519,6 +5228,7 @@
       <ComponentRef Id="menuicons_shared_messagestyles.png" />
       <ComponentRef Id="menuicons_shared_messagewidgets.def.xml" />
       <ComponentRef Id="menuicons_shared_messagewidgetsquote.png" />
+      <ComponentRef Id="menuicons_shared_messagewidgetsselect.png" />
       <ComponentRef Id="menuicons_shared_messagewidgetssend.png" />
       <ComponentRef Id="menuicons_shared_messagewidgetstabmenu.png" />
       <ComponentRef Id="menuicons_shared_muc.def.xml" />
@@ -4540,10 +5250,13 @@
       <ComponentRef Id="menuicons_shared_mucmessage.png" />
       <ComponentRef Id="menuicons_shared_mucprivatemessage.png" />
       <ComponentRef Id="menuicons_shared_mucrequestvoice.png" />
-      <ComponentRef Id="menuicons_shared_muctoolsmenu.png" />
       <ComponentRef Id="menuicons_shared_mucusermenu.png" />
       <ComponentRef Id="menuicons_shared_normalmessagehandler.def.xml" />
+      <ComponentRef Id="menuicons_shared_normalmessagehandlerforward.png" />
       <ComponentRef Id="menuicons_shared_normalmessagehandlermessage.png" />
+      <ComponentRef Id="menuicons_shared_normalmessagehandlernext.png" />
+      <ComponentRef Id="menuicons_shared_normalmessagehandlerreply.png" />
+      <ComponentRef Id="menuicons_shared_normalmessagehandlersend.png" />
       <ComponentRef Id="menuicons_shared_notifications.def.xml" />
       <ComponentRef Id="menuicons_shared_notifications.png" />
       <ComponentRef Id="menuicons_shared_notificationsactivateall.png" />
@@ -4585,6 +5298,12 @@
       <ComponentRef Id="menuicons_shared_rchangersubscription.png" />
       <ComponentRef Id="menuicons_shared_rchangerthisgroup.png" />
       <ComponentRef Id="menuicons_shared_rchangerunsubscribe.png" />
+      <ComponentRef Id="menuicons_shared_recentcontacts.def.xml" />
+      <ComponentRef Id="menuicons_shared_recentcontacts.png" />
+      <ComponentRef Id="menuicons_shared_recentcontactsfavorite.png" />
+      <ComponentRef Id="menuicons_shared_recentcontactsinsertfavorite.png" />
+      <ComponentRef Id="menuicons_shared_recentcontactsremovefavorite.png" />
+      <ComponentRef Id="menuicons_shared_recentcontactsremoverecent.png" />
       <ComponentRef Id="menuicons_shared_register.def.xml" />
       <ComponentRef Id="menuicons_shared_register.png" />
       <ComponentRef Id="menuicons_shared_registerchange.png" />
@@ -4595,6 +5314,7 @@
       <ComponentRef Id="menuicons_shared_rostersearch.png" />
       <ComponentRef Id="menuicons_shared_rosterview.def.xml" />
       <ComponentRef Id="menuicons_shared_rosterviewclipboard.png" />
+      <ComponentRef Id="menuicons_shared_rosterviewcontacts.png" />
       <ComponentRef Id="menuicons_shared_rosterviewhideoffline.png" />
       <ComponentRef Id="menuicons_shared_rosterviewoptions.png" />
       <ComponentRef Id="menuicons_shared_rosterviewshowoffline.png" />
@@ -4790,6 +5510,17 @@
       <ComponentRef Id="statusicons_bot_online.png" />
       <ComponentRef Id="statusicons_bot_perr.png" />
       <ComponentRef Id="statusicons_bot_xa.png" />
+      <ComponentRef Id="statusicons_conference_ask.png" />
+      <ComponentRef Id="statusicons_conference_away.png" />
+      <ComponentRef Id="statusicons_conference_chatty.png" />
+      <ComponentRef Id="statusicons_conference_dnd.png" />
+      <ComponentRef Id="statusicons_conference_icon.def.xml" />
+      <ComponentRef Id="statusicons_conference_invisible.png" />
+      <ComponentRef Id="statusicons_conference_offline.png" />
+      <ComponentRef Id="statusicons_conference_online.png" />
+      <ComponentRef Id="statusicons_conference_perr.png" />
+      <ComponentRef Id="statusicons_conference_statusicons.def.xml" />
+      <ComponentRef Id="statusicons_conference_xa.png" />
       <ComponentRef Id="statusicons_facebook_ask.png" />
       <ComponentRef Id="statusicons_facebook_away.png" />
       <ComponentRef Id="statusicons_facebook_chatty.png" />
@@ -4942,6 +5673,17 @@
       <ComponentRef Id="statusicons_smtp_perr.png" />
       <ComponentRef Id="statusicons_smtp_statusicons.def.xml" />
       <ComponentRef Id="statusicons_smtp_xa.png" />
+      <ComponentRef Id="statusicons_twitter_ask.png" />
+      <ComponentRef Id="statusicons_twitter_away.png" />
+      <ComponentRef Id="statusicons_twitter_chatty.png" />
+      <ComponentRef Id="statusicons_twitter_dnd.png" />
+      <ComponentRef Id="statusicons_twitter_icon.def.xml" />
+      <ComponentRef Id="statusicons_twitter_invisible.png" />
+      <ComponentRef Id="statusicons_twitter_noauth.png" />
+      <ComponentRef Id="statusicons_twitter_offline.png" />
+      <ComponentRef Id="statusicons_twitter_online.png" />
+      <ComponentRef Id="statusicons_twitter_statusicons.def.xml" />
+      <ComponentRef Id="statusicons_twitter_xa.png" />
       <ComponentRef Id="statusicons_vkontakte_ask.png" />
       <ComponentRef Id="statusicons_vkontakte_away.png" />
       <ComponentRef Id="statusicons_vkontakte_chatty.png" />
@@ -4989,6 +5731,172 @@
       <ComponentRef Id="statusicons_yaonline_statusicons.def.xml" />
       <ComponentRef Id="statusicons_yaonline_xa.png" />
     </ComponentGroup>
+    <ComponentGroup Id="cg.sdk">
+      <ComponentRef Id="vacuumutils.lib" />
+      <ComponentRef Id="sdk_definitions_actiongroups.h" />
+      <ComponentRef Id="sdk_definitions_archivecapabilityorders.h" />
+      <ComponentRef Id="sdk_definitions_archivehandlerorders.h" />
+      <ComponentRef Id="sdk_definitions_commandline.h" />
+      <ComponentRef Id="sdk_definitions_dataformtypes.h" />
+      <ComponentRef Id="sdk_definitions_discofeaturehandlerorders.h" />
+      <ComponentRef Id="sdk_definitions_discoitemdataroles.h" />
+      <ComponentRef Id="sdk_definitions_fshandlerorders.h" />
+      <ComponentRef Id="sdk_definitions_internalerrors.h" />
+      <ComponentRef Id="sdk_definitions_mainwindowtabpages.h" />
+      <ComponentRef Id="sdk_definitions_mainwindowwidgets.h" />
+      <ComponentRef Id="sdk_definitions_menubargroups.h" />
+      <ComponentRef Id="sdk_definitions_menuicons.h" />
+      <ComponentRef Id="sdk_definitions_messagechatwindowwidgets.h" />
+      <ComponentRef Id="sdk_definitions_messagedataroles.h" />
+      <ComponentRef Id="sdk_definitions_messageeditcontentshandlerorders.h" />
+      <ComponentRef Id="sdk_definitions_messageeditororders.h" />
+      <ComponentRef Id="sdk_definitions_messageeditsendhandlerorders.h" />
+      <ComponentRef Id="sdk_definitions_messagehandlerorders.h" />
+      <ComponentRef Id="sdk_definitions_messagenormalwindowwidgets.h" />
+      <ComponentRef Id="sdk_definitions_messageviewurlhandlerorders.h" />
+      <ComponentRef Id="sdk_definitions_messagewriterorders.h" />
+      <ComponentRef Id="sdk_definitions_multiuserdataroles.h" />
+      <ComponentRef Id="sdk_definitions_multiusertooltiporders.h" />
+      <ComponentRef Id="sdk_definitions_namespaces.h" />
+      <ComponentRef Id="sdk_definitions_notificationdataroles.h" />
+      <ComponentRef Id="sdk_definitions_notificationhandlerorders.h" />
+      <ComponentRef Id="sdk_definitions_notificationtypeorders.h" />
+      <ComponentRef Id="sdk_definitions_notificationtypes.h" />
+      <ComponentRef Id="sdk_definitions_optionnodeorders.h" />
+      <ComponentRef Id="sdk_definitions_optionnodes.h" />
+      <ComponentRef Id="sdk_definitions_optionvalues.h" />
+      <ComponentRef Id="sdk_definitions_optionwidgetorders.h" />
+      <ComponentRef Id="sdk_definitions_plugininitorders.h" />
+      <ComponentRef Id="sdk_definitions_recentitemproperties.h" />
+      <ComponentRef Id="sdk_definitions_recentitemtypes.h" />
+      <ComponentRef Id="sdk_definitions_resources.h" />
+      <ComponentRef Id="sdk_definitions_rosterclickhookerorders.h" />
+      <ComponentRef Id="sdk_definitions_rosterdataholderorders.h" />
+      <ComponentRef Id="sdk_definitions_rosterdragdropmimetypes.h" />
+      <ComponentRef Id="sdk_definitions_rosteredithandlerorders.h" />
+      <ComponentRef Id="sdk_definitions_rosterindexkindorders.h" />
+      <ComponentRef Id="sdk_definitions_rosterindexkinds.h" />
+      <ComponentRef Id="sdk_definitions_rosterindexroles.h" />
+      <ComponentRef Id="sdk_definitions_rosterkeyhookerorders.h" />
+      <ComponentRef Id="sdk_definitions_rosterlabelholderorders.h" />
+      <ComponentRef Id="sdk_definitions_rosterlabels.h" />
+      <ComponentRef Id="sdk_definitions_rosternotifyorders.h" />
+      <ComponentRef Id="sdk_definitions_rosterproxyorders.h" />
+      <ComponentRef Id="sdk_definitions_rostertooltiporders.h" />
+      <ComponentRef Id="sdk_definitions_serviceicons.h" />
+      <ComponentRef Id="sdk_definitions_sessionnegotiatororders.h" />
+      <ComponentRef Id="sdk_definitions_shortcutgrouporders.h" />
+      <ComponentRef Id="sdk_definitions_shortcuts.h" />
+      <ComponentRef Id="sdk_definitions_soundfiles.h" />
+      <ComponentRef Id="sdk_definitions_stanzahandlerorders.h" />
+      <ComponentRef Id="sdk_definitions_statisticsparams.h" />
+      <ComponentRef Id="sdk_definitions_statusbargroups.h" />
+      <ComponentRef Id="sdk_definitions_statusicons.h" />
+      <ComponentRef Id="sdk_definitions_tabpagenotifypriorities.h" />
+      <ComponentRef Id="sdk_definitions_toolbargroups.h" />
+      <ComponentRef Id="sdk_definitions_vcardvaluenames.h" />
+      <ComponentRef Id="sdk_definitions_version.h" />
+      <ComponentRef Id="sdk_definitions_xmppdatahandlerorders.h" />
+      <ComponentRef Id="sdk_definitions_xmpperrors.h" />
+      <ComponentRef Id="sdk_definitions_xmppfeatureorders.h" />
+      <ComponentRef Id="sdk_definitions_xmppfeaturepluginorders.h" />
+      <ComponentRef Id="sdk_definitions_xmppstanzahandlerorders.h" />
+      <ComponentRef Id="sdk_definitions_xmppurihandlerorders.h" />
+      <ComponentRef Id="sdk_interfaces_iaccountmanager.h" />
+      <ComponentRef Id="sdk_interfaces_iannotations.h" />
+      <ComponentRef Id="sdk_interfaces_iautostatus.h" />
+      <ComponentRef Id="sdk_interfaces_iavatars.h" />
+      <ComponentRef Id="sdk_interfaces_ibirthdayreminder.h" />
+      <ComponentRef Id="sdk_interfaces_ibitsofbinary.h" />
+      <ComponentRef Id="sdk_interfaces_ibookmarks.h" />
+      <ComponentRef Id="sdk_interfaces_icaptchaforms.h" />
+      <ComponentRef Id="sdk_interfaces_ichatstates.h" />
+      <ComponentRef Id="sdk_interfaces_iclientinfo.h" />
+      <ComponentRef Id="sdk_interfaces_icommands.h" />
+      <ComponentRef Id="sdk_interfaces_iconnectionmanager.h" />
+      <ComponentRef Id="sdk_interfaces_idataforms.h" />
+      <ComponentRef Id="sdk_interfaces_idatastreamsmanager.h" />
+      <ComponentRef Id="sdk_interfaces_idefaultconnection.h" />
+      <ComponentRef Id="sdk_interfaces_iemoticons.h" />
+      <ComponentRef Id="sdk_interfaces_ifilemessagearchive.h" />
+      <ComponentRef Id="sdk_interfaces_ifilestreamsmanager.h" />
+      <ComponentRef Id="sdk_interfaces_ifiletransfer.h" />
+      <ComponentRef Id="sdk_interfaces_igateways.h" />
+      <ComponentRef Id="sdk_interfaces_iinbandstreams.h" />
+      <ComponentRef Id="sdk_interfaces_ijabbersearch.h" />
+      <ComponentRef Id="sdk_interfaces_imainwindow.h" />
+      <ComponentRef Id="sdk_interfaces_imessagearchiver.h" />
+      <ComponentRef Id="sdk_interfaces_imessagecarbons.h" />
+      <ComponentRef Id="sdk_interfaces_imessageprocessor.h" />
+      <ComponentRef Id="sdk_interfaces_imessagestyles.h" />
+      <ComponentRef Id="sdk_interfaces_imessagewidgets.h" />
+      <ComponentRef Id="sdk_interfaces_imetacontacts.h" />
+      <ComponentRef Id="sdk_interfaces_imultiuserchat.h" />
+      <ComponentRef Id="sdk_interfaces_inotifications.h" />
+      <ComponentRef Id="sdk_interfaces_ioptionsmanager.h" />
+      <ComponentRef Id="sdk_interfaces_ipepmanager.h" />
+      <ComponentRef Id="sdk_interfaces_ipluginmanager.h" />
+      <ComponentRef Id="sdk_interfaces_ipresence.h" />
+      <ComponentRef Id="sdk_interfaces_iprivacylists.h" />
+      <ComponentRef Id="sdk_interfaces_iprivatestorage.h" />
+      <ComponentRef Id="sdk_interfaces_irecentcontacts.h" />
+      <ComponentRef Id="sdk_interfaces_iregistraton.h" />
+      <ComponentRef Id="sdk_interfaces_iroster.h" />
+      <ComponentRef Id="sdk_interfaces_irosterchanger.h" />
+      <ComponentRef Id="sdk_interfaces_irosteritemexchange.h" />
+      <ComponentRef Id="sdk_interfaces_irostersearch.h" />
+      <ComponentRef Id="sdk_interfaces_irostersmodel.h" />
+      <ComponentRef Id="sdk_interfaces_irostersview.h" />
+      <ComponentRef Id="sdk_interfaces_iservermessagearchive.h" />
+      <ComponentRef Id="sdk_interfaces_iservicediscovery.h" />
+      <ComponentRef Id="sdk_interfaces_isessionnegotiation.h" />
+      <ComponentRef Id="sdk_interfaces_isocksstreams.h" />
+      <ComponentRef Id="sdk_interfaces_ispellchecker.h" />
+      <ComponentRef Id="sdk_interfaces_istanzaprocessor.h" />
+      <ComponentRef Id="sdk_interfaces_istatistics.h" />
+      <ComponentRef Id="sdk_interfaces_istatuschanger.h" />
+      <ComponentRef Id="sdk_interfaces_istatusicons.h" />
+      <ComponentRef Id="sdk_interfaces_itraymanager.h" />
+      <ComponentRef Id="sdk_interfaces_iurlprocessor.h" />
+      <ComponentRef Id="sdk_interfaces_ivcard.h" />
+      <ComponentRef Id="sdk_interfaces_ixmppstreams.h" />
+      <ComponentRef Id="sdk_interfaces_ixmppuriqueries.h" />
+      <ComponentRef Id="sdk_make_config.cmake" />
+      <ComponentRef Id="sdk_make_config.inc" />
+      <ComponentRef Id="sdk_make_translations.cmake" />
+      <ComponentRef Id="sdk_make_translations.inc" />
+      <ComponentRef Id="sdk_utils_action.h" />
+      <ComponentRef Id="sdk_utils_advanceditem.h" />
+      <ComponentRef Id="sdk_utils_advanceditemdelegate.h" />
+      <ComponentRef Id="sdk_utils_advanceditemmodel.h" />
+      <ComponentRef Id="sdk_utils_animatedtextbrowser.h" />
+      <ComponentRef Id="sdk_utils_boxwidget.h" />
+      <ComponentRef Id="sdk_utils_closebutton.h" />
+      <ComponentRef Id="sdk_utils_datetime.h" />
+      <ComponentRef Id="sdk_utils_filecookiejar.h" />
+      <ComponentRef Id="sdk_utils_filestorage.h" />
+      <ComponentRef Id="sdk_utils_iconsetdelegate.h" />
+      <ComponentRef Id="sdk_utils_iconstorage.h" />
+      <ComponentRef Id="sdk_utils_imagemanager.h" />
+      <ComponentRef Id="sdk_utils_jid.h" />
+      <ComponentRef Id="sdk_utils_menu.h" />
+      <ComponentRef Id="sdk_utils_menubarchanger.h" />
+      <ComponentRef Id="sdk_utils_message.h" />
+      <ComponentRef Id="sdk_utils_options.h" />
+      <ComponentRef Id="sdk_utils_ringbuffer.h" />
+      <ComponentRef Id="sdk_utils_searchlineedit.h" />
+      <ComponentRef Id="sdk_utils_shortcuts.h" />
+      <ComponentRef Id="sdk_utils_stanza.h" />
+      <ComponentRef Id="sdk_utils_statusbarchanger.h" />
+      <ComponentRef Id="sdk_utils_systemmanager.h" />
+      <ComponentRef Id="sdk_utils_textmanager.h" />
+      <ComponentRef Id="sdk_utils_toolbarchanger.h" />
+      <ComponentRef Id="sdk_utils_unzipfile.h" />
+      <ComponentRef Id="sdk_utils_utilsexport.h" />
+      <ComponentRef Id="sdk_utils_versionparser.h" />
+      <ComponentRef Id="sdk_utils_widgetmanager.h" />
+      <ComponentRef Id="sdk_utils_xmpperror.h" />
+    </ComponentGroup>
     <ComponentGroup Id="cg.translations_de">
       <ComponentRef Id="de_accountmanager.qm" />
       <ComponentRef Id="de_adiummessagestyle.qm" />
@@ -5019,6 +5927,7 @@
       <ComponentRef Id="de_jabbersearch.qm" />
       <ComponentRef Id="de_mainwindow.qm" />
       <ComponentRef Id="de_messagearchiver.qm" />
+      <ComponentRef Id="de_messagecarbons.qm" />
       <ComponentRef Id="de_messageprocessor.qm" />
       <ComponentRef Id="de_messagestyles.qm" />
       <ComponentRef Id="de_messagewidgets.qm" />
@@ -5031,6 +5940,7 @@
       <ComponentRef Id="de_privacylists.qm" />
       <ComponentRef Id="de_privatestorage.qm" />
       <ComponentRef Id="de_qt_de.qm" />
+      <ComponentRef Id="de_recentcontacts.qm" />
       <ComponentRef Id="de_registration.qm" />
       <ComponentRef Id="de_remotecontrol.qm" />
       <ComponentRef Id="de_roster.qm" />
@@ -5046,8 +5956,10 @@
       <ComponentRef Id="de_shortcutmanager.qm" />
       <ComponentRef Id="de_simplemessagestyle.qm" />
       <ComponentRef Id="de_socksstreams.qm" />
+      <ComponentRef Id="de_spellchecker.qm" />
       <ComponentRef Id="de_stanzaprocessor.qm" />
       <ComponentRef Id="de_starttls.qm" />
+      <ComponentRef Id="de_statistics.qm" />
       <ComponentRef Id="de_statuschanger.qm" />
       <ComponentRef Id="de_statusicons.qm" />
       <ComponentRef Id="de_traymanager.qm" />
@@ -5088,6 +6000,7 @@
       <ComponentRef Id="pl_jabbersearch.qm" />
       <ComponentRef Id="pl_mainwindow.qm" />
       <ComponentRef Id="pl_messagearchiver.qm" />
+      <ComponentRef Id="pl_messagecarbons.qm" />
       <ComponentRef Id="pl_messageprocessor.qm" />
       <ComponentRef Id="pl_messagestyles.qm" />
       <ComponentRef Id="pl_messagewidgets.qm" />
@@ -5100,6 +6013,7 @@
       <ComponentRef Id="pl_privacylists.qm" />
       <ComponentRef Id="pl_privatestorage.qm" />
       <ComponentRef Id="pl_qt_pl.qm" />
+      <ComponentRef Id="pl_recentcontacts.qm" />
       <ComponentRef Id="pl_registration.qm" />
       <ComponentRef Id="pl_remotecontrol.qm" />
       <ComponentRef Id="pl_roster.qm" />
@@ -5115,8 +6029,10 @@
       <ComponentRef Id="pl_shortcutmanager.qm" />
       <ComponentRef Id="pl_simplemessagestyle.qm" />
       <ComponentRef Id="pl_socksstreams.qm" />
+      <ComponentRef Id="pl_spellchecker.qm" />
       <ComponentRef Id="pl_stanzaprocessor.qm" />
       <ComponentRef Id="pl_starttls.qm" />
+      <ComponentRef Id="pl_statistics.qm" />
       <ComponentRef Id="pl_statuschanger.qm" />
       <ComponentRef Id="pl_statusicons.qm" />
       <ComponentRef Id="pl_traymanager.qm" />
@@ -5157,6 +6073,7 @@
       <ComponentRef Id="ru_jabbersearch.qm" />
       <ComponentRef Id="ru_mainwindow.qm" />
       <ComponentRef Id="ru_messagearchiver.qm" />
+      <ComponentRef Id="ru_messagecarbons.qm" />
       <ComponentRef Id="ru_messageprocessor.qm" />
       <ComponentRef Id="ru_messagestyles.qm" />
       <ComponentRef Id="ru_messagewidgets.qm" />
@@ -5169,6 +6086,7 @@
       <ComponentRef Id="ru_privacylists.qm" />
       <ComponentRef Id="ru_privatestorage.qm" />
       <ComponentRef Id="ru_qt_ru.qm" />
+      <ComponentRef Id="ru_recentcontacts.qm" />
       <ComponentRef Id="ru_registration.qm" />
       <ComponentRef Id="ru_remotecontrol.qm" />
       <ComponentRef Id="ru_roster.qm" />
@@ -5184,8 +6102,10 @@
       <ComponentRef Id="ru_shortcutmanager.qm" />
       <ComponentRef Id="ru_simplemessagestyle.qm" />
       <ComponentRef Id="ru_socksstreams.qm" />
+      <ComponentRef Id="ru_spellchecker.qm" />
       <ComponentRef Id="ru_stanzaprocessor.qm" />
       <ComponentRef Id="ru_starttls.qm" />
+      <ComponentRef Id="ru_statistics.qm" />
       <ComponentRef Id="ru_statuschanger.qm" />
       <ComponentRef Id="ru_statusicons.qm" />
       <ComponentRef Id="ru_traymanager.qm" />
@@ -5226,6 +6146,7 @@
       <ComponentRef Id="uk_jabbersearch.qm" />
       <ComponentRef Id="uk_mainwindow.qm" />
       <ComponentRef Id="uk_messagearchiver.qm" />
+      <ComponentRef Id="uk_messagecarbons.qm" />
       <ComponentRef Id="uk_messageprocessor.qm" />
       <ComponentRef Id="uk_messagestyles.qm" />
       <ComponentRef Id="uk_messagewidgets.qm" />
@@ -5238,6 +6159,7 @@
       <ComponentRef Id="uk_privacylists.qm" />
       <ComponentRef Id="uk_privatestorage.qm" />
       <ComponentRef Id="uk_qt_uk.qm" />
+      <ComponentRef Id="uk_recentcontacts.qm" />
       <ComponentRef Id="uk_registration.qm" />
       <ComponentRef Id="uk_remotecontrol.qm" />
       <ComponentRef Id="uk_roster.qm" />
@@ -5253,8 +6175,10 @@
       <ComponentRef Id="uk_shortcutmanager.qm" />
       <ComponentRef Id="uk_simplemessagestyle.qm" />
       <ComponentRef Id="uk_socksstreams.qm" />
+      <ComponentRef Id="uk_spellchecker.qm" />
       <ComponentRef Id="uk_stanzaprocessor.qm" />
       <ComponentRef Id="uk_starttls.qm" />
+      <ComponentRef Id="uk_statistics.qm" />
       <ComponentRef Id="uk_statuschanger.qm" />
       <ComponentRef Id="uk_statusicons.qm" />
       <ComponentRef Id="uk_traymanager.qm" />

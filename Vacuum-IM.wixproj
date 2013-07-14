@@ -24,7 +24,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <Cultures>en-US;ru-RU</Cultures>
-    <LinkerAdditionalOptions>-b "C:\Git\vacuum-im-wix-installer"</LinkerAdditionalOptions>
+    <LinkerAdditionalOptions>-b "C:\vacuum-im-wix-installer"</LinkerAdditionalOptions>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Files.wxs" />

@@ -38,6 +38,9 @@
         <Feature Id="f.plugins_compress" Title="!(loc.t_plugins_compress)" Description="!(loc.d_plugins_compress)" Level="1" AllowAdvertise="no">
           <ComponentGroupRef Id="cg.plugins_compress" />
         </Feature>
+        <Feature Id="f.plugins_spellchecker" Title="!(loc.t_plugins_spellchecker)" Description="!(loc.d_plugins_spellchecker)" Level="1" AllowAdvertise="no">
+          <ComponentGroupRef Id="cg.plugins_spellchecker" />
+        </Feature>
         <Feature Id="f.plugins_emoticons" Title="!(loc.t_plugins_emoticons)" Description="!(loc.d_plugins_emoticons)" Level="1" AllowAdvertise="no">
           <ComponentGroupRef Id="cg.plugins_emoticons" />
           <Feature Id="f.resources_emoticons_kolobok_dark" Title="!(loc.t_resources_emoticons_kolobok_dark)" Description="!(loc.d_resources_emoticons_kolobok_dark)" Level="1" AllowAdvertise="no">
@@ -80,6 +83,9 @@
         <Feature Id="f.translations_uk" Title="!(loc.t_translations_uk)" Description="!(loc.d_translations_uk)" Level="1" AllowAdvertise="no">
           <ComponentGroupRef Id="cg.translations_uk" />
         </Feature>
+      </Feature>
+      <Feature Id="f.sdk" Title="!(loc.t_sdk)" Description="!(loc.d_sdk)" Level="1" AllowAdvertise="no">
+        <ComponentGroupRef Id="cg.sdk" />
       </Feature>
     </Feature>
   </Fragment>

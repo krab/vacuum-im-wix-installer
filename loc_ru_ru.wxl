@@ -9,6 +9,7 @@
   <String Id="d_plugins_avatars" Overridable="yes">Позволяет устанавливать и отображать аватары</String>
   <String Id="d_plugins_birthdayreminder" Overridable="yes">Напоминать о днях рождения ваших друзей</String>
   <String Id="d_plugins_compress" Overridable="yes">Позволяет сжимать поток сообщений отправляемый и получаемый от сервера</String>
+  <String Id="d_plugins_spellchecker" Overridable="yes">Подсвечивает слова, возможно, набранные неправильно</String>
   <String Id="d_plugins_emoticons" Overridable="yes">Позволяет использовать изображения смайликов в сообщениях</String>
   <String Id="d_plugins_simplemessagestyle" Overridable="yes">Позволяет использовать упрощённый стиль оформления сообщений</String>
   <String Id="d_product" Overridable="yes">Кроссплатформенный jabber клиент написанный на Qt</String>
@@ -26,12 +27,14 @@
   <String Id="d_translations_pl" Overridable="yes">Польская локализация</String>
   <String Id="d_translations_ru" Overridable="yes">Русская локализация</String>
   <String Id="d_translations_uk" Overridable="yes">Украинская локализация</String>
+  <String Id="d_sdk" Overridable="yes">Установка lib, qmake и заголовочных файлов для разработки плагинов</String>
   <String Id="t_plugins" Overridable="yes">Плагины</String>
   <String Id="t_plugins_adiummessagestyle" Overridable="yes">Adium стиль сообщений</String>
-  <String Id="t_plugins_autostatus" Overridable="yes">Авто статус </String>
+  <String Id="t_plugins_autostatus" Overridable="yes">Автостатус </String>
   <String Id="t_plugins_avatars" Overridable="yes">Аватары</String>
   <String Id="t_plugins_birthdayreminder" Overridable="yes">Напоминания о днях рождения</String>
   <String Id="t_plugins_compress" Overridable="yes">Сжатие XMPP потока</String>
+  <String Id="t_plugins_spellchecker" Overridable="yes">Проверка орфографии</String>
   <String Id="t_plugins_emoticons" Overridable="yes">Смайлики</String>
   <String Id="t_plugins_simplemessagestyle" Overridable="yes">Упрощённый стиль сообщений</String>
   <String Id="t_resources_adiummessagestyle_renkoo" Overridable="yes">Renkoo</String>
@@ -48,4 +51,5 @@
   <String Id="t_translations_pl" Overridable="yes">Польская</String>
   <String Id="t_translations_ru" Overridable="yes">Русская</String>
   <String Id="t_translations_uk" Overridable="yes">Украинская</String>
+  <String Id="t_sdk" Overridable="yes">SDK</String>
 </WixLocalization>

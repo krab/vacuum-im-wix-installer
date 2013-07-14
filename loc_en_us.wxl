@@ -9,6 +9,7 @@
   <String Id="d_plugins_avatars" Overridable="yes">Allows to set and display avatars</String>
   <String Id="d_plugins_birthdayreminder" Overridable="yes">Reminds about birthdays of your friends</String>
   <String Id="d_plugins_compress" Overridable="yes">Allows to compress a stream of messages sent and received from the server</String>
+  <String Id="d_plugins_spellchecker" Overridable="yes">Highlights words that may not be spelled correctly</String>
   <String Id="d_plugins_emoticons" Overridable="yes">Allows to use your smiley images in messages</String>
   <String Id="d_plugins_simplemessagestyle" Overridable="yes">Allows to use a simplified style in message design</String>
   <String Id="d_product" Overridable="yes">Crossplarform jabber client written on Qt</String>
@@ -21,6 +22,7 @@
   <String Id="d_resources_simplemessagestyles_normal" Overridable="yes">Simple style Messange</String>
   <String Id="d_resources_simplemessagestyles_plain" Overridable="yes">Simple style Plain</String>
   <String Id="d_resources_simplemessagestyles_psi" Overridable="yes">Simple style Psi</String>
+  <String Id="d_sdk" Overridable="yes">Installation of lib, qmake files and headers for plugin development.</String>
   <String Id="d_translations" Overridable="yes">Localizations files</String>
   <String Id="d_translations_de" Overridable="yes">German localization</String>
   <String Id="d_translations_pl" Overridable="yes">Polish localization</String>
@@ -32,6 +34,7 @@
   <String Id="t_plugins_avatars" Overridable="yes">Avatars</String>
   <String Id="t_plugins_birthdayreminder" Overridable="yes">Birthday Reminder</String>
   <String Id="t_plugins_compress" Overridable="yes">Stream Compression</String>
+  <String Id="t_plugins_spellchecker" Overridable="yes">Spellchecker</String>
   <String Id="t_plugins_emoticons" Overridable="yes">Emoticons</String>
   <String Id="t_plugins_simplemessagestyle" Overridable="yes">Simple Message Style</String>
   <String Id="t_resources_adiummessagestyle_renkoo" Overridable="yes">Renkoo</String>
@@ -48,4 +51,5 @@
   <String Id="t_translations_pl" Overridable="yes">Polish</String>
   <String Id="t_translations_ru" Overridable="yes">Russian</String>
   <String Id="t_translations_uk" Overridable="yes">Ukrainian</String>
+  <String Id="t_sdk" Overridable="yes">SDK</String>
 </WixLocalization>
