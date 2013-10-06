@@ -21,9 +21,9 @@
       <Component Id="msvcr100.dll" Guid="{52593AB8-6625-4D4A-993D-F2EDBD92A3BC}">
         <File Id="msvcr100.dll" KeyPath="yes" Source="SourceDir\msvcr100.dll" />
       </Component>
-      <Component Id="phonon4.dll" Guid="{38F2FD70-F890-4124-9164-4122876DC13A}">
+      <!--<Component Id="phonon4.dll" Guid="{38F2FD70-F890-4124-9164-4122876DC13A}">
         <File Id="phonon4.dll" KeyPath="yes" Source="SourceDir\phonon4.dll" />
-      </Component>
+      </Component>-->
       <Component Id="QtCore4.dll" Guid="{9B9ED9A7-12AA-49D9-B00B-3EE4F69AEEA3}">
         <File Id="QtCore4.dll" KeyPath="yes" Source="SourceDir\QtCore4.dll" />
       </Component>
@@ -33,15 +33,18 @@
       <Component Id="QtNetwork4.dll" Guid="{2CB06173-CD9B-44EC-9F68-E5DC72EA5721}">
         <File Id="QtNetwork4.dll" KeyPath="yes" Source="SourceDir\QtNetwork4.dll" />
       </Component>
+      <Component Id="QtSvg4.dll" Guid="{52229FD0-2EC6-11E3-AA6E-0800200C9A66}">
+        <File Id="QtSvg4.dll" KeyPath="yes" Source="SourceDir\QtSvg4.dll" />
+      </Component>
       <Component Id="QtWebKit4.dll" Guid="{0F140499-3989-48DD-87CB-D7391B390125}">
         <File Id="QtWebKit4.dll" KeyPath="yes" Source="SourceDir\QtWebKit4.dll" />
       </Component>
       <Component Id="QtXml4.dll" Guid="{88E40AD8-75B8-42A7-B6CF-81A0A6AAEFDE}">
         <File Id="QtXml4.dll" KeyPath="yes" Source="SourceDir\QtXml4.dll" />
       </Component>
-      <Component Id="QtXmlPatterns4.dll" Guid="{2B9015A5-DE16-4D66-85D4-7B963CDB0342}">
+      <!--<Component Id="QtXmlPatterns4.dll" Guid="{2B9015A5-DE16-4D66-85D4-7B963CDB0342}">
         <File Id="QtXmlPatterns4.dll" KeyPath="yes" Source="SourceDir\QtXmlPatterns4.dll" />
-      </Component>
+      </Component>-->
       <Component Id="README" Guid="{8D2F4080-3CD0-44B8-8F2E-30EF37B26436}">
         <File Id="README" KeyPath="yes" Source="SourceDir\README" />
       </Component>
@@ -86,11 +89,11 @@
           <File Id="imageformats_qtiff4.dll" KeyPath="yes" Source="SourceDir\imageformats\qtiff4.dll" />
         </Component>
       </Directory>
-      <Directory Id="phonon_backend" Name="phonon_backend">
+      <!--<Directory Id="phonon_backend" Name="phonon_backend">
         <Component Id="phonon_backend_phonon_ds94.dll" Guid="{BBEE98C8-6588-469A-958C-E5F69BABF81F}">
           <File Id="phonon_backend_phonon_ds94.dll" KeyPath="yes" Source="SourceDir\phonon_backend\phonon_ds94.dll" />
         </Component>
-      </Directory>
+      </Directory>-->
       <Directory Id="plugins" Name="plugins">
         <Component Id="plugins_accountmanager.dll" Guid="{5861A15E-4C0A-436E-A9ED-C3E1CB5D83D2}">
           <File Id="plugins_accountmanager.dll" KeyPath="yes" Source="SourceDir\plugins\accountmanager.dll" />
@@ -2827,6 +2830,44 @@
               <File Id="statusicons_rss_xa.png" KeyPath="yes" Source="SourceDir\resources\statusicons\rss\xa.png" />
             </Component>
           </Directory>
+          <Directory Id="statusicons_twitter" Name="twitter">
+            <Component Id="statusicons_twitter_ask.png" Guid="{BC882C50-2EC6-11E3-AA6E-0800200C9A66}">
+              <File Id="statusicons_twitter_ask.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\ask.png" />
+            </Component>
+            <Component Id="statusicons_twitter_away.png" Guid="{C2958CF0-2EC6-11E3-AA6E-0800200C9A66}">
+              <File Id="statusicons_twitter_away.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\away.png" />
+            </Component>
+            <Component Id="statusicons_twitter_chatty.png" Guid="{C6D8DBF0-2EC6-11E3-AA6E-0800200C9A66}">
+              <File Id="statusicons_twitter_chatty.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\chatty.png" />
+            </Component>
+            <Component Id="statusicons_twitter_dnd.png" Guid="{CB5B2FC0-2EC6-11E3-AA6E-0800200C9A66}">
+              <File Id="statusicons_twitter_dnd.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\dnd.png" />
+            </Component>
+            <Component Id="statusicons_twitter_icon.def.xml" Guid="{D0613280-2EC6-11E3-AA6E-0800200C9A66}">
+              <File Id="statusicons_twitter_icon.def.xml" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\icon.def.xml" />
+            </Component>
+            <Component Id="statusicons_twitter_invisible.png" Guid="{D4FD28D0-2EC6-11E3-AA6E-0800200C9A66}">
+              <File Id="statusicons_twitter_invisible.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\invisible.png" />
+            </Component>
+            <Component Id="statusicons_twitter_noauth.png" Guid="{D9682410-2EC6-11E3-AA6E-0800200C9A66}">
+              <File Id="statusicons_twitter_noauth.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\noauth.png" />
+            </Component>
+            <Component Id="statusicons_twitter_offline.png" Guid="{DE835C80-2EC6-11E3-AA6E-0800200C9A66}">
+              <File Id="statusicons_twitter_offline.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\offline.png" />
+            </Component>
+            <Component Id="statusicons_twitter_online.png" Guid="{E3F0AC90-2EC6-11E3-AA6E-0800200C9A66}">
+              <File Id="statusicons_twitter_online.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\online.png" />
+            </Component>
+            <Component Id="statusicons_twitter_perr.png" Guid="{E838DD90-2EC6-11E3-AA6E-0800200C9A66}">
+              <File Id="statusicons_twitter_perr.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\perr.png" />
+            </Component>
+            <Component Id="statusicons_twitter_statusicons.def.xml" Guid="{EBE6CA60-2EC6-11E3-AA6E-0800200C9A66}">
+              <File Id="statusicons_twitter_statusicons.def.xml" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\statusicons.def.xml" />
+            </Component>
+            <Component Id="statusicons_twitter_xa.png" Guid="{EFD1E740-2EC6-11E3-AA6E-0800200C9A66}">
+              <File Id="statusicons_twitter_xa.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\xa.png" />
+            </Component>
+          </Directory>
           <Directory Id="statusicons_shared" Name="shared">
             <Component Id="statusicons_shared_ask.png" Guid="{7CBACCCF-0779-4FD8-A112-AE0AB374BA00}">
               <File Id="statusicons_shared_ask.png" KeyPath="yes" Source="SourceDir\resources\statusicons\shared\ask.png" />
@@ -3959,13 +4000,14 @@
       <ComponentRef Id="msvcr100.dll" />
     </ComponentGroup>
     <ComponentGroup Id="cg.qt_frameworks">
-      <ComponentRef Id="phonon4.dll" />
+      <!--<ComponentRef Id="phonon4.dll" />-->
       <ComponentRef Id="QtCore4.dll" />
       <ComponentRef Id="QtGui4.dll" />
       <ComponentRef Id="QtNetwork4.dll" />
+      <ComponentRef Id="QtSvg4.dll" />
       <ComponentRef Id="QtWebKit4.dll" />
       <ComponentRef Id="QtXml4.dll" />
-      <ComponentRef Id="QtXmlPatterns4.dll" />
+      <!--<ComponentRef Id="QtXmlPatterns4.dll" />-->
       <ComponentRef Id="imageformats_qgif4.dll" />
       <ComponentRef Id="imageformats_qico4.dll" />
       <ComponentRef Id="imageformats_qjpeg4.dll" />
@@ -3973,7 +4015,7 @@
       <ComponentRef Id="imageformats_qsvg4.dll" />
       <ComponentRef Id="imageformats_qtga4.dll" />
       <ComponentRef Id="imageformats_qtiff4.dll" />
-      <ComponentRef Id="phonon_backend_phonon_ds94.dll" />
+      <!--<ComponentRef Id="phonon_backend_phonon_ds94.dll" />-->
     </ComponentGroup>
     <ComponentGroup Id="cg.plugins">
       <ComponentRef Id="plugins_accountmanager.dll" />
@@ -4896,6 +4938,18 @@
       <ComponentRef Id="statusicons_rss_perr.png" />
       <ComponentRef Id="statusicons_rss_statusicons.def.xml" />
       <ComponentRef Id="statusicons_rss_xa.png" />
+      <ComponentRef Id="statusicons_twitter_ask.png" />
+      <ComponentRef Id="statusicons_twitter_away.png" />
+      <ComponentRef Id="statusicons_twitter_chatty.png" />
+      <ComponentRef Id="statusicons_twitter_dnd.png" />
+      <ComponentRef Id="statusicons_twitter_icon.def.xml" />
+      <ComponentRef Id="statusicons_twitter_invisible.png" />
+      <ComponentRef Id="statusicons_twitter_noauth.png" />
+      <ComponentRef Id="statusicons_twitter_offline.png" />
+      <ComponentRef Id="statusicons_twitter_online.png" />
+      <ComponentRef Id="statusicons_twitter_perr.png" />
+      <ComponentRef Id="statusicons_twitter_statusicons.def.xml" />
+      <ComponentRef Id="statusicons_twitter_xa.png" />
       <ComponentRef Id="statusicons_shared_ask.png" />
       <ComponentRef Id="statusicons_shared_away.png" />
       <ComponentRef Id="statusicons_shared_chatty.png" />
