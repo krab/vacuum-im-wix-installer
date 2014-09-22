@@ -3,14 +3,14 @@
      xmlns:swid="http://schemas.microsoft.com/wix/TagExtension">
   <?include Variables.wxi?>
   <Product Id="*" Name="$(var.ProductName)" Manufacturer="$(var.Manufacturer)" Codepage="$(var.ProductCodepage)" Language="!(loc.language)" Version="$(var.ProductVersion)" UpgradeCode="$(var.UpgradeCode)">
-    <Package Id="*" Description="$(var.ProductName) $(var.ProductVersion) installer" Manufacturer="$(var.Manufacturer)" InstallScope="perUser" InstallPrivileges="limited" InstallerVersion="200" Compressed="yes" ShortNames="no" />
+    <Package Id="*" Description="$(var.ProductName) $(var.ProductVersion) installer" Manufacturer="$(var.Manufacturer)" InstallScope="perMachine" InstallPrivileges="elevated" InstallerVersion="200" Compressed="yes" ShortNames="no" />
     <Upgrade Id="$(var.UpgradeCode)" />
     <Media Id="1" Cabinet="vacuumim.cab" EmbedCab="yes" CompressionLevel="high" />
 
     <swid:Tag Regid="$(var.TagId)" />
 
-    <WixVariable Id="WixUISupportPerMachine" Value="0" />
-    <WixVariable Id="WixUISupportPerUser" Value="1" />
+    <WixVariable Id="WixUISupportPerMachine" Value="1" />
+    <WixVariable Id="WixUISupportPerUser" Value="0" />
     
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
@@ -28,7 +28,7 @@
       <Directory Id="DesktopFolder" Name="Desktop"/>
     </Directory>
 
-    <Property Id="WixAppFolder" Value="WixPerUserFolder" />
+    <Property Id="WixAppFolder" Value="WixPerMachineFolder" />
     <Property Id="ApplicationFolderName" Value="$(var.ProductName)" />
     <!--<Property Id="DISABLEADVTSHORTCUTS" Value="1" />-->
     <Property Id="REINSTALLMODE" Value="amus" />
