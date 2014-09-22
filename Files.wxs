@@ -21,9 +21,6 @@
       <Component Id="msvcr100.dll" Guid="{52593AB8-6625-4D4A-993D-F2EDBD92A3BC}">
         <File Id="msvcr100.dll" KeyPath="yes" Source="SourceDir\msvcr100.dll" />
       </Component>
-      <Component Id="phonon4.dll" Guid="{38F2FD70-F890-4124-9164-4122876DC13A}">
-        <File Id="phonon4.dll" KeyPath="yes" Source="SourceDir\phonon4.dll" />
-      </Component>
       <Component Id="QtCore4.dll" Guid="{9B9ED9A7-12AA-49D9-B00B-3EE4F69AEEA3}">
         <File Id="QtCore4.dll" KeyPath="yes" Source="SourceDir\QtCore4.dll" />
       </Component>
@@ -33,14 +30,17 @@
       <Component Id="QtNetwork4.dll" Guid="{2CB06173-CD9B-44EC-9F68-E5DC72EA5721}">
         <File Id="QtNetwork4.dll" KeyPath="yes" Source="SourceDir\QtNetwork4.dll" />
       </Component>
+      <Component Id="QtSql4.dll" Guid="{D48A49A1-B437-441E-AFE8-CB7D192E7B73}">
+        <File Id="QtSql4.dll" KeyPath="yes" Source="SourceDir\QtSql4.dll" />
+      </Component>
+      <Component Id="QtSvg4.dll" Guid="{9853BD3C-ADC3-4314-97AB-07252E858415}">
+        <File Id="QtSvg4.dll" KeyPath="yes" Source="SourceDir\QtSvg4.dll" />
+      </Component>
       <Component Id="QtWebKit4.dll" Guid="{0F140499-3989-48DD-87CB-D7391B390125}">
         <File Id="QtWebKit4.dll" KeyPath="yes" Source="SourceDir\QtWebKit4.dll" />
       </Component>
       <Component Id="QtXml4.dll" Guid="{88E40AD8-75B8-42A7-B6CF-81A0A6AAEFDE}">
         <File Id="QtXml4.dll" KeyPath="yes" Source="SourceDir\QtXml4.dll" />
-      </Component>
-      <Component Id="QtXmlPatterns4.dll" Guid="{2B9015A5-DE16-4D66-85D4-7B963CDB0342}">
-        <File Id="QtXmlPatterns4.dll" KeyPath="yes" Source="SourceDir\QtXmlPatterns4.dll" />
       </Component>
       <Component Id="README" Guid="{8D2F4080-3CD0-44B8-8F2E-30EF37B26436}">
         <File Id="README" KeyPath="yes" Source="SourceDir\README" />
@@ -76,6 +76,12 @@
         <Component Id="hunspell_en_US.dic" Guid="{2F94CB92-2A63-4592-B43B-34BE77D44CBA}">
           <File Id="hunspell_en_US.dic" KeyPath="yes" Source="SourceDir\hunspell\en_US.dic" />
         </Component>
+        <Component Id="hunspell_es_ES.aff" Guid="{76569042-E1A3-47E4-BD92-20E6F29DDE39}">
+          <File Id="hunspell_es_ES.aff" KeyPath="yes" Source="SourceDir\hunspell\es_ES.aff" />
+        </Component>
+        <Component Id="hunspell_es_ES.dic" Guid="{081DD424-23DB-40EC-B46A-3B89F36B543B}">
+          <File Id="hunspell_es_ES.dic" KeyPath="yes" Source="SourceDir\hunspell\es_ES.dic" />
+        </Component>
         <Component Id="hunspell_pl_PL.aff" Guid="{B94DBA96-083C-4C72-8D2E-3C111CE32CE4}">
           <File Id="hunspell_pl_PL.aff" KeyPath="yes" Source="SourceDir\hunspell\pl_PL.aff" />
         </Component>
@@ -93,6 +99,11 @@
         </Component>
         <Component Id="hunspell_uk_UA.dic" Guid="{89F46C6F-902B-4A7E-BA11-31FD788C5D97}">
           <File Id="hunspell_uk_UA.dic" KeyPath="yes" Source="SourceDir\hunspell\uk_UA.dic" />
+        </Component>
+      </Directory>
+      <Directory Id="iconengines" Name="iconengines">
+        <Component Id="iconengines_qsvgicon4.dll" Guid="{976A069A-C276-47C7-ADEE-0BF780F6A35E}">
+          <File Id="iconengines_qsvgicon4.dll" KeyPath="yes" Source="SourceDir\iconengines\qsvgicon4.dll" />
         </Component>
       </Directory>
       <Directory Id="imageformats" Name="imageformats">
@@ -116,11 +127,6 @@
         </Component>
         <Component Id="imageformats_qtiff4.dll" Guid="{17431C94-5B9D-4ADF-B9F9-9AE0E2213B4B}">
           <File Id="imageformats_qtiff4.dll" KeyPath="yes" Source="SourceDir\imageformats\qtiff4.dll" />
-        </Component>
-      </Directory>
-      <Directory Id="phonon_backend" Name="phonon_backend">
-        <Component Id="phonon_backend_phonon_ds94.dll" Guid="{BBEE98C8-6588-469A-958C-E5F69BABF81F}">
-          <File Id="phonon_backend_phonon_ds94.dll" KeyPath="yes" Source="SourceDir\phonon_backend\phonon_ds94.dll" />
         </Component>
       </Directory>
       <Directory Id="plugins" Name="plugins">
@@ -3113,6 +3119,9 @@
             <Component Id="statusicons_twitter_online.png" Guid="{72D61266-7475-4085-A00A-10F8EDB848ED}">
               <File Id="statusicons_twitter_online.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\online.png" />
             </Component>
+            <Component Id="statusicons_twitter_perr.png" Guid="{A00CE16A-8380-4416-878C-65F127D6A0A2}">
+              <File Id="statusicons_twitter_perr.png" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\perr.png" />
+            </Component>
             <Component Id="statusicons_twitter_statusicons.def.xml" Guid="{DE9F0007-5659-44F6-A19B-61CED6F6356D}">
               <File Id="statusicons_twitter_statusicons.def.xml" KeyPath="yes" Source="SourceDir\resources\statusicons\twitter\statusicons.def.xml" />
             </Component>
@@ -3290,6 +3299,9 @@
           </Component>
           <Component Id="sdk_definitions_discoitemdataroles.h" Guid="{2762BE87-D635-4948-BDB0-FF6FFA7BBDFD}">
             <File Id="sdk_definitions_discoitemdataroles.h" KeyPath="yes" Source="SourceDir\sdk\definitions\discoitemdataroles.h" />
+          </Component>
+          <Component Id="sdk_definitions_filearchivedatabaseproperties.h" Guid="{F3D34836-2810-4470-A375-D19644C57255}">
+            <File Id="sdk_definitions_filearchivedatabaseproperties.h" KeyPath="yes" Source="SourceDir\sdk\definitions\filearchivedatabaseproperties.h" />
           </Component>
           <Component Id="sdk_definitions_fshandlerorders.h" Guid="{DA40115F-C305-4C5C-A9CF-B31F0AAA49B0}">
             <File Id="sdk_definitions_fshandlerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\fshandlerorders.h" />
@@ -3657,7 +3669,7 @@
             <File Id="sdk_interfaces_ixmppuriqueries.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ixmppuriqueries.h" />
           </Component>
         </Directory>
-        <Directory Id="sdk_make" Name="Make">
+        <Directory Id="sdk_make" Name="make">
           <Component Id="sdk_make_config.cmake" Guid="{4406F660-6459-4A7C-905A-18B045772CC8}">
             <File Id="sdk_make_config.cmake" KeyPath="yes" Source="SourceDir\sdk\make\config.cmake" />
           </Component>
@@ -3714,6 +3726,9 @@
           <Component Id="sdk_utils_jid.h" Guid="{CA784996-C761-4586-95C1-29A1A4692DB9}">
             <File Id="sdk_utils_jid.h" KeyPath="yes" Source="SourceDir\sdk\utils\jid.h" />
           </Component>
+          <Component Id="sdk_utils_logger.h" Guid="{F04516E0-CC25-4EBD-943B-4DEDF74E245B}">
+            <File Id="sdk_utils_logger.h" KeyPath="yes" Source="SourceDir\sdk\utils\logger.h" />
+          </Component>
           <Component Id="sdk_utils_menu.h" Guid="{67DF052A-2E29-420D-8BBE-BAF54FD39D2B}">
             <File Id="sdk_utils_menu.h" KeyPath="yes" Source="SourceDir\sdk\utils\menu.h" />
           </Component>
@@ -3734,6 +3749,9 @@
           </Component>
           <Component Id="sdk_utils_shortcuts.h" Guid="{31F7EE39-CF02-4CD1-9813-0F6C4C5D86F7}">
             <File Id="sdk_utils_shortcuts.h" KeyPath="yes" Source="SourceDir\sdk\utils\shortcuts.h" />
+          </Component>
+          <Component Id="sdk_utils_splitterwidget.h" Guid="{627A2E4F-2162-4D16-90D9-73C59A8D253C}">
+            <File Id="sdk_utils_splitterwidget.h" KeyPath="yes" Source="SourceDir\sdk\utils\splitterwidget.h" />
           </Component>
           <Component Id="sdk_utils_stanza.h" Guid="{8A7F7C30-2A98-48F7-A7A9-71E372E5BDC4}">
             <File Id="sdk_utils_stanza.h" KeyPath="yes" Source="SourceDir\sdk\utils\stanza.h" />
@@ -3766,6 +3784,11 @@
             <File Id="sdk_utils_xmpperror.h" KeyPath="yes" Source="SourceDir\sdk\utils\xmpperror.h" />
           </Component>
         </Directory>
+      </Directory>
+      <Directory Id="sqldrivers" Name="sqldrivers">
+        <Component Id="sqldrivers_qsqlite4.dll" Guid="{4817C23E-F8C2-46D9-BD47-98170B1851F8}">
+          <File Id="sqldrivers_qsqlite4.dll" KeyPath="yes" Source="SourceDir\sqldrivers\qsqlite4.dll" />
+        </Component>
       </Directory>
       <Directory Id="translations" Name="translations">
         <Directory Id="translations_de" Name="de">
@@ -3981,6 +4004,221 @@
           </Component>
           <Component Id="de_xmppuriqueries.qm" Guid="{1D71CF29-C3EC-47BA-AFF0-CAA2D1986FFC}">
             <File Id="de_xmppuriqueries.qm" KeyPath="yes" Source="SourceDir\translations\de\xmppuriqueries.qm" />
+          </Component>
+        </Directory>
+        <Directory Id="translations_es" Name="es">
+          <Component Id="es_accountmanager.qm" Guid="{96900604-7A49-4153-BC98-8F36E59D1CF4}">
+            <File Id="es_accountmanager.qm" KeyPath="yes" Source="SourceDir\translations\es\accountmanager.qm" />
+          </Component>
+          <Component Id="es_adiummessagestyle.qm" Guid="{BC9DFE7C-E069-441B-B9BE-D841E0A987D7}">
+            <File Id="es_adiummessagestyle.qm" KeyPath="yes" Source="SourceDir\translations\es\adiummessagestyle.qm" />
+          </Component>
+          <Component Id="es_annotations.qm" Guid="{46373214-0D4E-4863-9B5C-7520ADF38EDD}">
+            <File Id="es_annotations.qm" KeyPath="yes" Source="SourceDir\translations\es\annotations.qm" />
+          </Component>
+          <Component Id="es_autostatus.qm" Guid="{F9F395DC-78DC-4C10-BC3C-BB5BB3A409C0}">
+            <File Id="es_autostatus.qm" KeyPath="yes" Source="SourceDir\translations\es\autostatus.qm" />
+          </Component>
+          <Component Id="es_avatars.qm" Guid="{D2BF48E9-3AE2-46A8-B50A-AEFF762FCDAB}">
+            <File Id="es_avatars.qm" KeyPath="yes" Source="SourceDir\translations\es\avatars.qm" />
+          </Component>
+          <Component Id="es_birthdayreminder.qm" Guid="{875A9161-7F6E-45CD-BD60-85AE854DBB44}">
+            <File Id="es_birthdayreminder.qm" KeyPath="yes" Source="SourceDir\translations\es\birthdayreminder.qm" />
+          </Component>
+          <Component Id="es_bitsofbinary.qm" Guid="{F1B94059-85B2-46BD-B439-6D33C571DF59}">
+            <File Id="es_bitsofbinary.qm" KeyPath="yes" Source="SourceDir\translations\es\bitsofbinary.qm" />
+          </Component>
+          <Component Id="es_bookmarks.qm" Guid="{656B321F-E402-447F-AA5C-31859C373FE7}">
+            <File Id="es_bookmarks.qm" KeyPath="yes" Source="SourceDir\translations\es\bookmarks.qm" />
+          </Component>
+          <Component Id="es_captchaforms.qm" Guid="{D952570C-6DC2-41EA-80AD-EDDBF9FA82CA}">
+            <File Id="es_captchaforms.qm" KeyPath="yes" Source="SourceDir\translations\es\captchaforms.qm" />
+          </Component>
+          <Component Id="es_chatmessagehandler.qm" Guid="{C0D15B7F-8DBC-4EDE-8661-71BE22AE9A77}">
+            <File Id="es_chatmessagehandler.qm" KeyPath="yes" Source="SourceDir\translations\es\chatmessagehandler.qm" />
+          </Component>
+          <Component Id="es_chatstates.qm" Guid="{D990043E-446E-4D3E-9324-A30A14D85C95}">
+            <File Id="es_chatstates.qm" KeyPath="yes" Source="SourceDir\translations\es\chatstates.qm" />
+          </Component>
+          <Component Id="es_clientinfo.qm" Guid="{E157B531-6423-49A4-8AD1-0551C12ADDB6}">
+            <File Id="es_clientinfo.qm" KeyPath="yes" Source="SourceDir\translations\es\clientinfo.qm" />
+          </Component>
+          <Component Id="es_commands.qm" Guid="{F52F5688-57D1-4A0C-8125-39CDF41C3633}">
+            <File Id="es_commands.qm" KeyPath="yes" Source="SourceDir\translations\es\commands.qm" />
+          </Component>
+          <Component Id="es_compress.qm" Guid="{F1D9154C-D425-43CD-95D3-1B703DB944A7}">
+            <File Id="es_compress.qm" KeyPath="yes" Source="SourceDir\translations\es\compress.qm" />
+          </Component>
+          <Component Id="es_connectionmanager.qm" Guid="{6C03ACC9-A9C4-4456-9553-80EA26D8F1C0}">
+            <File Id="es_connectionmanager.qm" KeyPath="yes" Source="SourceDir\translations\es\connectionmanager.qm" />
+          </Component>
+          <Component Id="es_console.qm" Guid="{2CC5BB3D-CE6F-40AC-A1BB-2DE9522A4326}">
+            <File Id="es_console.qm" KeyPath="yes" Source="SourceDir\translations\es\console.qm" />
+          </Component>
+          <Component Id="es_dataforms.qm" Guid="{3B1A7055-8D3D-4A69-94A8-C541409090CB}">
+            <File Id="es_dataforms.qm" KeyPath="yes" Source="SourceDir\translations\es\dataforms.qm" />
+          </Component>
+          <Component Id="es_datastreamsmanager.qm" Guid="{D8744BFE-1107-45DA-A301-BA69194A7BF8}">
+            <File Id="es_datastreamsmanager.qm" KeyPath="yes" Source="SourceDir\translations\es\datastreamsmanager.qm" />
+          </Component>
+          <Component Id="es_defaultconnection.qm" Guid="{2E6CBB46-3E37-4676-A4AC-CC25AE198CAD}">
+            <File Id="es_defaultconnection.qm" KeyPath="yes" Source="SourceDir\translations\es\defaultconnection.qm" />
+          </Component>
+          <Component Id="es_emoticons.qm" Guid="{1690C247-2AA6-4EAD-92C0-CFE6E81592A9}">
+            <File Id="es_emoticons.qm" KeyPath="yes" Source="SourceDir\translations\es\emoticons.qm" />
+          </Component>
+          <Component Id="es_filemessagearchive.qm" Guid="{8A551C27-43E9-4E42-9988-D00E85CF05FF}">
+            <File Id="es_filemessagearchive.qm" KeyPath="yes" Source="SourceDir\translations\es\filemessagearchive.qm" />
+          </Component>
+          <Component Id="es_filestreamsmanager.qm" Guid="{5577E34F-88DE-42B1-AF1C-861DAE3F7C5B}">
+            <File Id="es_filestreamsmanager.qm" KeyPath="yes" Source="SourceDir\translations\es\filestreamsmanager.qm" />
+          </Component>
+          <Component Id="es_filetransfer.qm" Guid="{744AD482-C241-44CF-AC0B-7447A5DB8F96}">
+            <File Id="es_filetransfer.qm" KeyPath="yes" Source="SourceDir\translations\es\filetransfer.qm" />
+          </Component>
+          <Component Id="es_gateways.qm" Guid="{BA38FC0E-DC15-4DD8-83C6-F0240B05C217}">
+            <File Id="es_gateways.qm" KeyPath="yes" Source="SourceDir\translations\es\gateways.qm" />
+          </Component>
+          <Component Id="es_inbandstreams.qm" Guid="{B52FE27D-C584-4566-8F07-27B6FFDAEC3E}">
+            <File Id="es_inbandstreams.qm" KeyPath="yes" Source="SourceDir\translations\es\inbandstreams.qm" />
+          </Component>
+          <Component Id="es_iqauth.qm" Guid="{26A45F7B-2D83-4311-BD4C-DAE4CD810881}">
+            <File Id="es_iqauth.qm" KeyPath="yes" Source="SourceDir\translations\es\iqauth.qm" />
+          </Component>
+          <Component Id="es_jabbersearch.qm" Guid="{719C1F44-73BE-4663-A3D7-D0BFB0FDCCF6}">
+            <File Id="es_jabbersearch.qm" KeyPath="yes" Source="SourceDir\translations\es\jabbersearch.qm" />
+          </Component>
+          <Component Id="es_mainwindow.qm" Guid="{AE9E4A36-5877-4894-AF06-81DB92453D81}">
+            <File Id="es_mainwindow.qm" KeyPath="yes" Source="SourceDir\translations\es\mainwindow.qm" />
+          </Component>
+          <Component Id="es_messagearchiver.qm" Guid="{78F5B317-756D-4285-A2A8-3FB56C6A3393}">
+            <File Id="es_messagearchiver.qm" KeyPath="yes" Source="SourceDir\translations\es\messagearchiver.qm" />
+          </Component>
+          <Component Id="es_messagecarbons.qm" Guid="{D2F63070-254E-45B5-83B9-93D0A15DEE28}">
+            <File Id="es_messagecarbons.qm" KeyPath="yes" Source="SourceDir\translations\es\messagecarbons.qm" />
+          </Component>
+          <Component Id="es_messageprocessor.qm" Guid="{711A34D0-3B77-4AA4-85BD-384BC6304D01}">
+            <File Id="es_messageprocessor.qm" KeyPath="yes" Source="SourceDir\translations\es\messageprocessor.qm" />
+          </Component>
+          <Component Id="es_messagestyles.qm" Guid="{89ABC334-E23C-44BF-8909-56BF35B73AC5}">
+            <File Id="es_messagestyles.qm" KeyPath="yes" Source="SourceDir\translations\es\messagestyles.qm" />
+          </Component>
+          <Component Id="es_messagewidgets.qm" Guid="{2AAE49EF-C57B-47D9-BD4F-6C37D9B775D7}">
+            <File Id="es_messagewidgets.qm" KeyPath="yes" Source="SourceDir\translations\es\messagewidgets.qm" />
+          </Component>
+          <Component Id="es_multiuserchat.qm" Guid="{0A772888-A909-4F30-838D-2F51CEDD3E28}">
+            <File Id="es_multiuserchat.qm" KeyPath="yes" Source="SourceDir\translations\es\multiuserchat.qm" />
+          </Component>
+          <Component Id="es_normalmessagehandler.qm" Guid="{5767E069-EB38-46BE-B42B-B5DC74E579C0}">
+            <File Id="es_normalmessagehandler.qm" KeyPath="yes" Source="SourceDir\translations\es\normalmessagehandler.qm" />
+          </Component>
+          <Component Id="es_notifications.qm" Guid="{5EE96303-952B-4D94-8CE8-BF4E93628A2B}">
+            <File Id="es_notifications.qm" KeyPath="yes" Source="SourceDir\translations\es\notifications.qm" />
+          </Component>
+          <Component Id="es_optionsmanager.qm" Guid="{737634FE-E710-4916-85A5-289EA8C61B8B}">
+            <File Id="es_optionsmanager.qm" KeyPath="yes" Source="SourceDir\translations\es\optionsmanager.qm" />
+          </Component>
+          <Component Id="es_pepmanager.qm" Guid="{27A49AC1-D504-46C8-BE63-74AA1D1CC656}">
+            <File Id="es_pepmanager.qm" KeyPath="yes" Source="SourceDir\translations\es\pepmanager.qm" />
+          </Component>
+          <Component Id="es_presence.qm" Guid="{09468D75-7126-4F52-BC72-8CBFC740A2EA}">
+            <File Id="es_presence.qm" KeyPath="yes" Source="SourceDir\translations\es\presence.qm" />
+          </Component>
+          <Component Id="es_privacylists.qm" Guid="{8D934EC7-22E5-4CD7-BD35-FBD5582DF486}">
+            <File Id="es_privacylists.qm" KeyPath="yes" Source="SourceDir\translations\es\privacylists.qm" />
+          </Component>
+          <Component Id="es_privatestorage.qm" Guid="{5E65AB83-F468-4262-8648-DF7502942963}">
+            <File Id="es_privatestorage.qm" KeyPath="yes" Source="SourceDir\translations\es\privatestorage.qm" />
+          </Component>
+          <Component Id="es_qt_es.qm" Guid="{69160509-88EB-411C-A593-4ED49944E740}">
+            <File Id="es_qt_es.qm" KeyPath="yes" Source="SourceDir\translations\es\qt_es.qm" />
+          </Component>
+          <Component Id="es_recentcontacts.qm" Guid="{DF920C96-CA78-4D90-97CF-25CF64CE1595}">
+            <File Id="es_recentcontacts.qm" KeyPath="yes" Source="SourceDir\translations\es\recentcontacts.qm" />
+          </Component>
+          <Component Id="es_registration.qm" Guid="{01CA1EEC-836B-46B6-9433-B334DB6B84CC}">
+            <File Id="es_registration.qm" KeyPath="yes" Source="SourceDir\translations\es\registration.qm" />
+          </Component>
+          <Component Id="es_remotecontrol.qm" Guid="{57260135-F2A9-4734-9DD8-2B73F3B66E24}">
+            <File Id="es_remotecontrol.qm" KeyPath="yes" Source="SourceDir\translations\es\remotecontrol.qm" />
+          </Component>
+          <Component Id="es_roster.qm" Guid="{AFF017F0-6209-4F5F-871D-CA40577FF614}">
+            <File Id="es_roster.qm" KeyPath="yes" Source="SourceDir\translations\es\roster.qm" />
+          </Component>
+          <Component Id="es_rosterchanger.qm" Guid="{FB3F0DBE-DDF5-4396-A1AD-7AD417F4D702}">
+            <File Id="es_rosterchanger.qm" KeyPath="yes" Source="SourceDir\translations\es\rosterchanger.qm" />
+          </Component>
+          <Component Id="es_rosteritemexchange.qm" Guid="{1E8092AC-52BA-4567-BDDC-7BEF29A46DB7}">
+            <File Id="es_rosteritemexchange.qm" KeyPath="yes" Source="SourceDir\translations\es\rosteritemexchange.qm" />
+          </Component>
+          <Component Id="es_rostersearch.qm" Guid="{AC2316DE-7412-44AC-9709-519149CD059E}">
+            <File Id="es_rostersearch.qm" KeyPath="yes" Source="SourceDir\translations\es\rostersearch.qm" />
+          </Component>
+          <Component Id="es_rostersmodel.qm" Guid="{36E58013-BAB0-4EA2-B508-CA940FBBF62C}">
+            <File Id="es_rostersmodel.qm" KeyPath="yes" Source="SourceDir\translations\es\rostersmodel.qm" />
+          </Component>
+          <Component Id="es_rostersview.qm" Guid="{C3BAD90F-2CC4-40D5-A4B5-6B363155D817}">
+            <File Id="es_rostersview.qm" KeyPath="yes" Source="SourceDir\translations\es\rostersview.qm" />
+          </Component>
+          <Component Id="es_saslauth.qm" Guid="{DF01D2D9-C91B-4062-882B-2FFF2821568D}">
+            <File Id="es_saslauth.qm" KeyPath="yes" Source="SourceDir\translations\es\saslauth.qm" />
+          </Component>
+          <Component Id="es_servermessagearchive.qm" Guid="{1DD7B63E-3AAC-49A9-9D0D-081E5BDA7272}">
+            <File Id="es_servermessagearchive.qm" KeyPath="yes" Source="SourceDir\translations\es\servermessagearchive.qm" />
+          </Component>
+          <Component Id="es_servicediscovery.qm" Guid="{322860C7-BF9B-499D-A22E-1598DED53049}">
+            <File Id="es_servicediscovery.qm" KeyPath="yes" Source="SourceDir\translations\es\servicediscovery.qm" />
+          </Component>
+          <Component Id="es_sessionnegotiation.qm" Guid="{37F4410D-5D22-4CE5-B835-088A7DE527C3}">
+            <File Id="es_sessionnegotiation.qm" KeyPath="yes" Source="SourceDir\translations\es\sessionnegotiation.qm" />
+          </Component>
+          <Component Id="es_shortcutmanager.qm" Guid="{EF407E64-3AF2-4F38-8A0C-FF0C3E1CF617}">
+            <File Id="es_shortcutmanager.qm" KeyPath="yes" Source="SourceDir\translations\es\shortcutmanager.qm" />
+          </Component>
+          <Component Id="es_simplemessagestyle.qm" Guid="{A876AC17-EDAF-4FB2-89E9-B19ED9F2A2CE}">
+            <File Id="es_simplemessagestyle.qm" KeyPath="yes" Source="SourceDir\translations\es\simplemessagestyle.qm" />
+          </Component>
+          <Component Id="es_socksstreams.qm" Guid="{0AC62078-2093-4C6B-80B3-485A60EE0D2E}">
+            <File Id="es_socksstreams.qm" KeyPath="yes" Source="SourceDir\translations\es\socksstreams.qm" />
+          </Component>
+          <Component Id="es_spellchecker.qm" Guid="{DFA908A7-9D8B-478D-9716-6FA6FC3F7C12}">
+            <File Id="es_spellchecker.qm" KeyPath="yes" Source="SourceDir\translations\es\spellchecker.qm" />
+          </Component>
+          <Component Id="es_stanzaprocessor.qm" Guid="{1437B54F-9D9B-48E8-B48B-7E16BF28305B}">
+            <File Id="es_stanzaprocessor.qm" KeyPath="yes" Source="SourceDir\translations\es\stanzaprocessor.qm" />
+          </Component>
+          <Component Id="es_starttls.qm" Guid="{E0CFB3C1-0F51-42BC-81F9-C842D65554CB}">
+            <File Id="es_starttls.qm" KeyPath="yes" Source="SourceDir\translations\es\starttls.qm" />
+          </Component>
+          <Component Id="es_statistics.qm" Guid="{3F40C345-8555-47AE-AFC7-373F26096205}">
+            <File Id="es_statistics.qm" KeyPath="yes" Source="SourceDir\translations\es\statistics.qm" />
+          </Component>
+          <Component Id="es_statuschanger.qm" Guid="{E414E557-0233-4DBE-A32A-5BB6D5AAAE68}">
+            <File Id="es_statuschanger.qm" KeyPath="yes" Source="SourceDir\translations\es\statuschanger.qm" />
+          </Component>
+          <Component Id="es_statusicons.qm" Guid="{4E54F234-6D47-4B31-8ED3-45B59408AE68}">
+            <File Id="es_statusicons.qm" KeyPath="yes" Source="SourceDir\translations\es\statusicons.qm" />
+          </Component>
+          <Component Id="es_traymanager.qm" Guid="{FFE81157-9106-49B9-9B6D-98225E60E7D6}">
+            <File Id="es_traymanager.qm" KeyPath="yes" Source="SourceDir\translations\es\traymanager.qm" />
+          </Component>
+          <Component Id="es_urlprocessor.qm" Guid="{A0AE61A8-0B53-4736-B7D4-978E28B36B15}">
+            <File Id="es_urlprocessor.qm" KeyPath="yes" Source="SourceDir\translations\es\urlprocessor.qm" />
+          </Component>
+          <Component Id="es_vacuum.qm" Guid="{79A1A764-995C-4013-81BC-2158B77ED72B}">
+            <File Id="es_vacuum.qm" KeyPath="yes" Source="SourceDir\translations\es\vacuum.qm" />
+          </Component>
+          <Component Id="es_vacuumutils.qm" Guid="{FFDB298C-8A73-463F-811D-85FCF813BC3C}">
+            <File Id="es_vacuumutils.qm" KeyPath="yes" Source="SourceDir\translations\es\vacuumutils.qm" />
+          </Component>
+          <Component Id="es_vcard.qm" Guid="{CC1194B5-E49D-41AD-8B0F-D28A5D8AE88B}">
+            <File Id="es_vcard.qm" KeyPath="yes" Source="SourceDir\translations\es\vcard.qm" />
+          </Component>
+          <Component Id="es_xmppstreams.qm" Guid="{ACE6ECB8-97A0-4462-A0A3-18A7A1920E70}">
+            <File Id="es_xmppstreams.qm" KeyPath="yes" Source="SourceDir\translations\es\xmppstreams.qm" />
+          </Component>
+          <Component Id="es_xmppuriqueries.qm" Guid="{0D1D2904-6495-4A5E-B31F-5CA4004EF012}">
+            <File Id="es_xmppuriqueries.qm" KeyPath="yes" Source="SourceDir\translations\es\xmppuriqueries.qm" />
           </Component>
         </Directory>
         <Directory Id="translations_pl" Name="pl">
@@ -4652,13 +4890,14 @@
       <ComponentRef Id="msvcr100.dll" />
     </ComponentGroup>
     <ComponentGroup Id="cg.qt_frameworks">
-      <ComponentRef Id="phonon4.dll" />
       <ComponentRef Id="QtCore4.dll" />
       <ComponentRef Id="QtGui4.dll" />
       <ComponentRef Id="QtNetwork4.dll" />
+      <ComponentRef Id="QtSql4.dll" />
+      <ComponentRef Id="QtSvg4.dll" />
       <ComponentRef Id="QtWebKit4.dll" />
       <ComponentRef Id="QtXml4.dll" />
-      <ComponentRef Id="QtXmlPatterns4.dll" />
+      <ComponentRef Id="iconengines_qsvgicon4.dll" />
       <ComponentRef Id="imageformats_qgif4.dll" />
       <ComponentRef Id="imageformats_qico4.dll" />
       <ComponentRef Id="imageformats_qjpeg4.dll" />
@@ -4666,7 +4905,7 @@
       <ComponentRef Id="imageformats_qsvg4.dll" />
       <ComponentRef Id="imageformats_qtga4.dll" />
       <ComponentRef Id="imageformats_qtiff4.dll" />
-      <ComponentRef Id="phonon_backend_phonon_ds94.dll" />
+      <ComponentRef Id="sqldrivers_qsqlite4.dll" />
     </ComponentGroup>
     <ComponentGroup Id="cg.plugins">
       <ComponentRef Id="plugins_accountmanager.dll" />
@@ -4757,6 +4996,8 @@
       <ComponentRef Id="hunspell_de_DE.dic" />
       <ComponentRef Id="hunspell_en_US.aff" />
       <ComponentRef Id="hunspell_en_US.dic" />
+      <ComponentRef Id="hunspell_es_ES.aff" />
+      <ComponentRef Id="hunspell_es_ES.dic" />
       <ComponentRef Id="hunspell_pl_PL.aff" />
       <ComponentRef Id="hunspell_pl_PL.dic" />
       <ComponentRef Id="hunspell_ru_RU.aff" />
@@ -5682,6 +5923,7 @@
       <ComponentRef Id="statusicons_twitter_noauth.png" />
       <ComponentRef Id="statusicons_twitter_offline.png" />
       <ComponentRef Id="statusicons_twitter_online.png" />
+      <ComponentRef Id="statusicons_twitter_perr.png" />
       <ComponentRef Id="statusicons_twitter_statusicons.def.xml" />
       <ComponentRef Id="statusicons_twitter_xa.png" />
       <ComponentRef Id="statusicons_vkontakte_ask.png" />
@@ -5740,6 +5982,7 @@
       <ComponentRef Id="sdk_definitions_dataformtypes.h" />
       <ComponentRef Id="sdk_definitions_discofeaturehandlerorders.h" />
       <ComponentRef Id="sdk_definitions_discoitemdataroles.h" />
+      <ComponentRef Id="sdk_definitions_filearchivedatabaseproperties.h" />
       <ComponentRef Id="sdk_definitions_fshandlerorders.h" />
       <ComponentRef Id="sdk_definitions_internalerrors.h" />
       <ComponentRef Id="sdk_definitions_mainwindowtabpages.h" />
@@ -5879,6 +6122,7 @@
       <ComponentRef Id="sdk_utils_iconstorage.h" />
       <ComponentRef Id="sdk_utils_imagemanager.h" />
       <ComponentRef Id="sdk_utils_jid.h" />
+      <ComponentRef Id="sdk_utils_logger.h" />
       <ComponentRef Id="sdk_utils_menu.h" />
       <ComponentRef Id="sdk_utils_menubarchanger.h" />
       <ComponentRef Id="sdk_utils_message.h" />
@@ -5886,6 +6130,7 @@
       <ComponentRef Id="sdk_utils_ringbuffer.h" />
       <ComponentRef Id="sdk_utils_searchlineedit.h" />
       <ComponentRef Id="sdk_utils_shortcuts.h" />
+      <ComponentRef Id="sdk_utils_splitterwidget.h" />
       <ComponentRef Id="sdk_utils_stanza.h" />
       <ComponentRef Id="sdk_utils_statusbarchanger.h" />
       <ComponentRef Id="sdk_utils_systemmanager.h" />
@@ -5969,6 +6214,79 @@
       <ComponentRef Id="de_vcard.qm" />
       <ComponentRef Id="de_xmppstreams.qm" />
       <ComponentRef Id="de_xmppuriqueries.qm" />
+    </ComponentGroup>
+    <ComponentGroup Id="cg.translations_es">
+      <ComponentRef Id="es_accountmanager.qm" />
+      <ComponentRef Id="es_adiummessagestyle.qm" />
+      <ComponentRef Id="es_annotations.qm" />
+      <ComponentRef Id="es_autostatus.qm" />
+      <ComponentRef Id="es_avatars.qm" />
+      <ComponentRef Id="es_birthdayreminder.qm" />
+      <ComponentRef Id="es_bitsofbinary.qm" />
+      <ComponentRef Id="es_bookmarks.qm" />
+      <ComponentRef Id="es_captchaforms.qm" />
+      <ComponentRef Id="es_chatmessagehandler.qm" />
+      <ComponentRef Id="es_chatstates.qm" />
+      <ComponentRef Id="es_clientinfo.qm" />
+      <ComponentRef Id="es_commands.qm" />
+      <ComponentRef Id="es_compress.qm" />
+      <ComponentRef Id="es_connectionmanager.qm" />
+      <ComponentRef Id="es_console.qm" />
+      <ComponentRef Id="es_dataforms.qm" />
+      <ComponentRef Id="es_datastreamsmanager.qm" />
+      <ComponentRef Id="es_defaultconnection.qm" />
+      <ComponentRef Id="es_emoticons.qm" />
+      <ComponentRef Id="es_filemessagearchive.qm" />
+      <ComponentRef Id="es_filestreamsmanager.qm" />
+      <ComponentRef Id="es_filetransfer.qm" />
+      <ComponentRef Id="es_gateways.qm" />
+      <ComponentRef Id="es_inbandstreams.qm" />
+      <ComponentRef Id="es_iqauth.qm" />
+      <ComponentRef Id="es_jabbersearch.qm" />
+      <ComponentRef Id="es_mainwindow.qm" />
+      <ComponentRef Id="es_messagearchiver.qm" />
+      <ComponentRef Id="es_messagecarbons.qm" />
+      <ComponentRef Id="es_messageprocessor.qm" />
+      <ComponentRef Id="es_messagestyles.qm" />
+      <ComponentRef Id="es_messagewidgets.qm" />
+      <ComponentRef Id="es_multiuserchat.qm" />
+      <ComponentRef Id="es_normalmessagehandler.qm" />
+      <ComponentRef Id="es_notifications.qm" />
+      <ComponentRef Id="es_optionsmanager.qm" />
+      <ComponentRef Id="es_pepmanager.qm" />
+      <ComponentRef Id="es_presence.qm" />
+      <ComponentRef Id="es_privacylists.qm" />
+      <ComponentRef Id="es_privatestorage.qm" />
+      <ComponentRef Id="es_qt_es.qm" />
+      <ComponentRef Id="es_recentcontacts.qm" />
+      <ComponentRef Id="es_registration.qm" />
+      <ComponentRef Id="es_remotecontrol.qm" />
+      <ComponentRef Id="es_roster.qm" />
+      <ComponentRef Id="es_rosterchanger.qm" />
+      <ComponentRef Id="es_rosteritemexchange.qm" />
+      <ComponentRef Id="es_rostersearch.qm" />
+      <ComponentRef Id="es_rostersmodel.qm" />
+      <ComponentRef Id="es_rostersview.qm" />
+      <ComponentRef Id="es_saslauth.qm" />
+      <ComponentRef Id="es_servermessagearchive.qm" />
+      <ComponentRef Id="es_servicediscovery.qm" />
+      <ComponentRef Id="es_sessionnegotiation.qm" />
+      <ComponentRef Id="es_shortcutmanager.qm" />
+      <ComponentRef Id="es_simplemessagestyle.qm" />
+      <ComponentRef Id="es_socksstreams.qm" />
+      <ComponentRef Id="es_spellchecker.qm" />
+      <ComponentRef Id="es_stanzaprocessor.qm" />
+      <ComponentRef Id="es_starttls.qm" />
+      <ComponentRef Id="es_statistics.qm" />
+      <ComponentRef Id="es_statuschanger.qm" />
+      <ComponentRef Id="es_statusicons.qm" />
+      <ComponentRef Id="es_traymanager.qm" />
+      <ComponentRef Id="es_urlprocessor.qm" />
+      <ComponentRef Id="es_vacuum.qm" />
+      <ComponentRef Id="es_vacuumutils.qm" />
+      <ComponentRef Id="es_vcard.qm" />
+      <ComponentRef Id="es_xmppstreams.qm" />
+      <ComponentRef Id="es_xmppuriqueries.qm" />
     </ComponentGroup>
     <ComponentGroup Id="cg.translations_pl">
       <ComponentRef Id="pl_accountmanager.qm" />

@@ -24,6 +24,7 @@
   <String Id="d_resources_simplemessagestyles_psi" Overridable="yes">Упрощённый стиль Psi</String>
   <String Id="d_translations" Overridable="yes">Файлы локализаций</String>
   <String Id="d_translations_de" Overridable="yes">Немецкая локализация</String>
+  <String Id="d_translations_es" Overridable="yes">Испанская локализация</String>
   <String Id="d_translations_pl" Overridable="yes">Польская локализация</String>
   <String Id="d_translations_ru" Overridable="yes">Русская локализация</String>
   <String Id="d_translations_uk" Overridable="yes">Украинская локализация</String>
@@ -48,6 +49,7 @@
   <String Id="t_resources_simplemessagestyles_psi" Overridable="yes">Psi</String>
   <String Id="t_translations" Overridable="yes">Локализация</String>
   <String Id="t_translations_de" Overridable="yes">Немецкая</String>
+  <String Id="t_translations_es" Overridable="yes">Испанская</String>
   <String Id="t_translations_pl" Overridable="yes">Польская</String>
   <String Id="t_translations_ru" Overridable="yes">Русская</String>
   <String Id="t_translations_uk" Overridable="yes">Украинская</String>

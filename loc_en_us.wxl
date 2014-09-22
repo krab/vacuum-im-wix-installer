@@ -25,6 +25,7 @@
   <String Id="d_sdk" Overridable="yes">Installation of lib, qmake files and headers for plugin development.</String>
   <String Id="d_translations" Overridable="yes">Localizations files</String>
   <String Id="d_translations_de" Overridable="yes">German localization</String>
+  <String Id="d_translations_es" Overridable="yes">Spanish localization</String>
   <String Id="d_translations_pl" Overridable="yes">Polish localization</String>
   <String Id="d_translations_ru" Overridable="yes">Russian localization</String>
   <String Id="d_translations_uk" Overridable="yes">Ukrainian localization</String>
@@ -48,6 +49,7 @@
   <String Id="t_resources_simplemessagestyles_psi" Overridable="yes">Psi</String>
   <String Id="t_translations" Overridable="yes">Localization</String>
   <String Id="t_translations_de" Overridable="yes">German</String>
+  <String Id="t_translations_es" Overridable="yes">Spanish</String>
   <String Id="t_translations_pl" Overridable="yes">Polish</String>
   <String Id="t_translations_ru" Overridable="yes">Russian</String>
   <String Id="t_translations_uk" Overridable="yes">Ukrainian</String>

@@ -74,6 +74,9 @@
         <Feature Id="f.translations_de" Title="!(loc.t_translations_de)" Description="!(loc.d_translations_de)" Level="1" AllowAdvertise="no">
           <ComponentGroupRef Id="cg.translations_de" />
         </Feature>
+        <Feature Id="f.translations_es" Title="!(loc.t_translations_es)" Description="!(loc.d_translations_es)" Level="1" AllowAdvertise="no">
+          <ComponentGroupRef Id="cg.translations_es" />
+        </Feature>
         <Feature Id="f.translations_pl" Title="!(loc.t_translations_pl)" Description="!(loc.d_translations_pl)" Level="1" AllowAdvertise="no">
           <ComponentGroupRef Id="cg.translations_pl" />
         </Feature>
