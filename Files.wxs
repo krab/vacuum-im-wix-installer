@@ -229,6 +229,9 @@
         <Component Id="plugins_messagewidgets.dll" Guid="{E33CCD14-59D4-4663-B6AF-5DE1F4E5AD1E}">
           <File Id="plugins_messagewidgets.dll" KeyPath="yes" Source="SourceDir\plugins\messagewidgets.dll" />
         </Component>
+        <Component Id="plugins_metacontacts.dll" Guid="{6140BF1A-E151-44D2-965A-4E24E9D7AE4F}">
+          <File Id="plugins_metacontacts.dll" KeyPath="yes" Source="SourceDir\plugins\metacontacts.dll" />
+        </Component>
         <Component Id="plugins_multiuserchat.dll" Guid="{9491D3FF-B1D4-4D42-A4D7-ADD91C2A295D}">
           <File Id="plugins_multiuserchat.dll" KeyPath="yes" Source="SourceDir\plugins\multiuserchat.dll" />
         </Component>
@@ -1470,8 +1473,8 @@
         </Directory>
         <Directory Id="resources_menuicons" Name="menuicons">
           <Directory Id="menuicons_shared" Name="shared">
-            <Component Id="menuicons_shared_account.def.xml" Guid="{86CCCD6D-A431-4E19-B2CD-50BD2C72CFC3}">
-              <File Id="menuicons_shared_account.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\account.def.xml" />
+            <Component Id="menuicons_shared_accountmanager.def.xml" Guid="{1B677420-712A-43DB-A1CD-6B366278C00F}">
+              <File Id="menuicons_shared_accountmanager.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\accountmanager.def.xml" />
             </Component>
             <Component Id="menuicons_shared_account.png" Guid="{5D519B75-7A87-4008-BE8C-ACBC809D7F8F}">
               <File Id="menuicons_shared_account.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\account.png" />
@@ -1481,6 +1484,9 @@
             </Component>
             <Component Id="menuicons_shared_accountlist.png" Guid="{90DF4D23-2C9B-4833-AD8C-5467AF09EF6C}">
               <File Id="menuicons_shared_accountlist.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\accountlist.png" />
+            </Component>
+            <Component Id="menuicons_shared_accountmove.png" Guid="{BCAD52A9-7107-418F-9890-3FFFE96B0DA3}">
+              <File Id="menuicons_shared_accountmove.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\accountmove.png" />
             </Component>
             <Component Id="menuicons_shared_annotations.def.xml" Guid="{F201A6A8-F769-40D7-A53A-662B1A2D1355}">
               <File Id="menuicons_shared_annotations.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\annotations.def.xml" />
@@ -1499,12 +1505,6 @@
             </Component>
             <Component Id="menuicons_shared_arrowup.png" Guid="{A47C007E-3069-4323-8BB3-ADE9AC7CF51D}">
               <File Id="menuicons_shared_arrowup.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\arrowup.png" />
-            </Component>
-            <Component Id="menuicons_shared_autostatus.def.xml" Guid="{921D4F7A-AE72-44B8-96F2-999610F86A62}">
-              <File Id="menuicons_shared_autostatus.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\autostatus.def.xml" />
-            </Component>
-            <Component Id="menuicons_shared_autostatus.png" Guid="{BBA81A9F-5B3C-4D29-992F-641893C66CF4}">
-              <File Id="menuicons_shared_autostatus.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\autostatus.png" />
             </Component>
             <Component Id="menuicons_shared_avatar.def.xml" Guid="{0CA8D397-FE16-4C2A-BB66-EE1E1ACFE26B}">
               <File Id="menuicons_shared_avatar.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\avatar.def.xml" />
@@ -1623,12 +1623,6 @@
             <Component Id="menuicons_shared_datastreamsmanager.png" Guid="{B7AF19FC-5EA6-4A64-B4DC-41A2F930C47B}">
               <File Id="menuicons_shared_datastreamsmanager.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\datastreamsmanager.png" />
             </Component>
-            <Component Id="menuicons_shared_emoticons.def.xml" Guid="{9A47EEAA-CBC7-4B9C-AD77-BE45D38F6AFE}">
-              <File Id="menuicons_shared_emoticons.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\emoticons.def.xml" />
-            </Component>
-            <Component Id="menuicons_shared_emoticons.png" Guid="{4BE297F3-AB8E-43E6-A74F-1375711CC80A}">
-              <File Id="menuicons_shared_emoticons.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\emoticons.png" />
-            </Component>
             <Component Id="menuicons_shared_filestreamsmanager.def.xml" Guid="{4DF8DB3A-24A3-4ADF-9EB5-9B78C75724AA}">
               <File Id="menuicons_shared_filestreamsmanager.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\filestreamsmanager.def.xml" />
             </Component>
@@ -1719,12 +1713,6 @@
             <Component Id="menuicons_shared_mainwindowshowroster.png" Guid="{4AB45C10-EB56-4B42-8447-BAB3C865DC5F}">
               <File Id="menuicons_shared_mainwindowshowroster.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\mainwindowshowroster.png" />
             </Component>
-            <Component Id="menuicons_shared_messagestyles.def.xml" Guid="{B71B5C01-2429-4D7F-9139-48B792F9AAC0}">
-              <File Id="menuicons_shared_messagestyles.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\messagestyles.def.xml" />
-            </Component>
-            <Component Id="menuicons_shared_messagestyles.png" Guid="{B14B6AFB-9005-446F-A0A2-F97E157A6289}">
-              <File Id="menuicons_shared_messagestyles.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\messagestyles.png" />
-            </Component>
             <Component Id="menuicons_shared_messagewidgets.def.xml" Guid="{DB70D3BF-74B2-466E-8DAC-3215EF845C2D}">
               <File Id="menuicons_shared_messagewidgets.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\messagewidgets.def.xml" />
             </Component>
@@ -1739,6 +1727,18 @@
             </Component>
             <Component Id="menuicons_shared_messagewidgetstabmenu.png" Guid="{21144916-03C4-49A0-A4FE-37CA7DD94ED8}">
               <File Id="menuicons_shared_messagewidgetstabmenu.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\messagewidgetstabmenu.png" />
+            </Component>
+            <Component Id="menuicons_shared_metacontacts.def.xml" Guid="{78D17F79-E4CC-4E21-A091-33BD8FC6D31E}">
+              <File Id="menuicons_shared_metacontacts.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\metacontacts.def.xml" />
+            </Component>
+            <Component Id="menuicons_shared_metacontactscombine.png" Guid="{77220D76-BA86-4E0C-AAC4-8ACDA496489F}">
+              <File Id="menuicons_shared_metacontactscombine.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\metacontactscombine.png" />
+            </Component>
+            <Component Id="menuicons_shared_metacontactsdestroy.png" Guid="{7F9EA676-62D0-4F73-93F1-37E3B2F301F0}">
+              <File Id="menuicons_shared_metacontactsdestroy.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\metacontactsdestroy.png" />
+            </Component>
+            <Component Id="menuicons_shared_metacontactsdetach.png" Guid="{6AEDA977-E5EF-4FCD-8E58-9A009C959929}">
+              <File Id="menuicons_shared_metacontactsdetach.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\metacontactsdetach.png" />
             </Component>
             <Component Id="menuicons_shared_muc.def.xml" Guid="{07FF8512-558D-4756-BA9D-EE8E5DB68081}">
               <File Id="menuicons_shared_muc.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\muc.def.xml" />
@@ -1827,8 +1827,14 @@
             <Component Id="menuicons_shared_notificationsactivateall.png" Guid="{9D626BA0-2B1C-401A-9F7A-3EB918B2E17D}">
               <File Id="menuicons_shared_notificationsactivateall.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\notificationsactivateall.png" />
             </Component>
+            <Component Id="menuicons_shared_notificationspopupwindow.png" Guid="{CEC08B14-A716-458A-841B-564B2070EE35}">
+              <File Id="menuicons_shared_notificationspopupwindow.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\notificationspopupwindow.png" />
+            </Component>
             <Component Id="menuicons_shared_notificationsremoveall.png" Guid="{03BA85FF-0726-4148-BDEA-7A1EEDAFE114}">
               <File Id="menuicons_shared_notificationsremoveall.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\notificationsremoveall.png" />
+            </Component>
+            <Component Id="menuicons_shared_notificationsshowminimized.png" Guid="{C5D9715F-A16B-491B-94F7-7B3953FE179E}">
+              <File Id="menuicons_shared_notificationsshowminimized.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\notificationsshowminimized.png" />
             </Component>
             <Component Id="menuicons_shared_notificationssoundoff.png" Guid="{E1256AB3-9729-4AA2-90DB-CFDB17E49B80}">
               <File Id="menuicons_shared_notificationssoundoff.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\notificationssoundoff.png" />
@@ -1836,8 +1842,14 @@
             <Component Id="menuicons_shared_notificationssoundon.png" Guid="{F2B51D12-32D7-4051-BE35-3A514202D3ED}">
               <File Id="menuicons_shared_notificationssoundon.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\notificationssoundon.png" />
             </Component>
+            <Component Id="menuicons_shared_notificationssoundplay.png" Guid="{88063E95-E3D4-4938-A52F-30CBBE306410}">
+              <File Id="menuicons_shared_notificationssoundplay.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\notificationssoundplay.png" />
+            </Component>
             <Component Id="menuicons_shared_options.def.xml" Guid="{CDCD69A4-EA93-497A-8786-9543179B08AE}">
               <File Id="menuicons_shared_options.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\options.def.xml" />
+            </Component>
+            <Component Id="menuicons_shared_optionsappearance.png" Guid="{F5FD8F9B-C6F3-431B-B435-16CF05454987}">
+              <File Id="menuicons_shared_optionsappearance.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\optionsappearance.png" />
             </Component>
             <Component Id="menuicons_shared_optionsdialog.png" Guid="{8D39FEA2-47EF-4998-B549-81665718FA99}">
               <File Id="menuicons_shared_optionsdialog.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\optionsdialog.png" />
@@ -2042,12 +2054,6 @@
             </Component>
             <Component Id="menuicons_shared_snegotiationterminate.png" Guid="{4B4A0DF0-E264-4BDE-949C-E2D862FA921B}">
               <File Id="menuicons_shared_snegotiationterminate.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\snegotiationterminate.png" />
-            </Component>
-            <Component Id="menuicons_shared_statusicons.def.xml" Guid="{64BB53F8-04AB-42E8-81EE-815C812805D5}">
-              <File Id="menuicons_shared_statusicons.def.xml" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\statusicons.def.xml" />
-            </Component>
-            <Component Id="menuicons_shared_statusiconsoptions.png" Guid="{AC96935B-1646-405A-9476-A1024A6DD491}">
-              <File Id="menuicons_shared_statusiconsoptions.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\statusiconsoptions.png" />
             </Component>
             <Component Id="menuicons_shared_vacuum.png" Guid="{A962ACD3-2A2E-4E85-B14A-C680179DCE99}">
               <File Id="menuicons_shared_vacuum.png" KeyPath="yes" Source="SourceDir\resources\menuicons\shared\vacuum.png" />
@@ -3477,11 +3483,11 @@
           <Component Id="sdk_definitions_xmpperrors.h" Guid="{E5D35F12-A4F4-4EA9-A49D-FA5ABAE57051}">
             <File Id="sdk_definitions_xmpperrors.h" KeyPath="yes" Source="SourceDir\sdk\definitions\xmpperrors.h" />
           </Component>
+          <Component Id="sdk_definitions_xmppfeaturefactoryorders.h" Guid="{DC125216-8438-493A-AD43-FD2312F6931B}">
+            <File Id="sdk_definitions_xmppfeaturefactoryorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\xmppfeaturefactoryorders.h" />
+          </Component>
           <Component Id="sdk_definitions_xmppfeatureorders.h" Guid="{F22CBEBD-0D31-4CA2-85F1-C9A3EC940C7D}">
             <File Id="sdk_definitions_xmppfeatureorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\xmppfeatureorders.h" />
-          </Component>
-          <Component Id="sdk_definitions_xmppfeaturepluginorders.h" Guid="{86F525C6-ACF7-49C5-9010-D967B8ED938B}">
-            <File Id="sdk_definitions_xmppfeaturepluginorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\xmppfeaturepluginorders.h" />
           </Component>
           <Component Id="sdk_definitions_xmppstanzahandlerorders.h" Guid="{EE21DCBE-5A0F-4B0C-8E04-0906F4DE65D7}">
             <File Id="sdk_definitions_xmppstanzahandlerorders.h" KeyPath="yes" Source="SourceDir\sdk\definitions\xmppstanzahandlerorders.h" />
@@ -3569,8 +3575,8 @@
           <Component Id="sdk_interfaces_imessageprocessor.h" Guid="{08A1A10E-08CC-42D8-A376-B12DB431F0B1}">
             <File Id="sdk_interfaces_imessageprocessor.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\imessageprocessor.h" />
           </Component>
-          <Component Id="sdk_interfaces_imessagestyles.h" Guid="{76C12BA2-257E-4A9F-8F95-C3CABA886878}">
-            <File Id="sdk_interfaces_imessagestyles.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\imessagestyles.h" />
+          <Component Id="sdk_interfaces_imessagestylemanager.h" Guid="{96952C62-E159-4F13-8182-E487FF41CF75}">
+            <File Id="sdk_interfaces_imessagestylemanager.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\imessagestylemanager.h" />
           </Component>
           <Component Id="sdk_interfaces_imessagewidgets.h" Guid="{DB1C253F-CA19-40EB-AC16-835E7779658F}">
             <File Id="sdk_interfaces_imessagewidgets.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\imessagewidgets.h" />
@@ -3593,8 +3599,8 @@
           <Component Id="sdk_interfaces_ipluginmanager.h" Guid="{D567B04E-685B-468E-9A2C-66445B7B3FDA}">
             <File Id="sdk_interfaces_ipluginmanager.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ipluginmanager.h" />
           </Component>
-          <Component Id="sdk_interfaces_ipresence.h" Guid="{E0DA1950-CD46-4605-9304-C14F7FCB34DA}">
-            <File Id="sdk_interfaces_ipresence.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ipresence.h" />
+          <Component Id="sdk_interfaces_ipresencemanager.h" Guid="{A1E47487-FAF2-4A3C-9759-8EB4135B7B8E}">
+            <File Id="sdk_interfaces_ipresencemanager.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ipresencemanager.h" />
           </Component>
           <Component Id="sdk_interfaces_iprivacylists.h" Guid="{04FDBAE1-C024-4425-8737-912307919580}">
             <File Id="sdk_interfaces_iprivacylists.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iprivacylists.h" />
@@ -3608,8 +3614,8 @@
           <Component Id="sdk_interfaces_iregistraton.h" Guid="{632083E6-3838-4B42-AF91-BCF2C9726A59}">
             <File Id="sdk_interfaces_iregistraton.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iregistraton.h" />
           </Component>
-          <Component Id="sdk_interfaces_iroster.h" Guid="{489DA16D-A492-4DDC-B89D-AE670E1443A5}">
-            <File Id="sdk_interfaces_iroster.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iroster.h" />
+          <Component Id="sdk_interfaces_irostermanager.h" Guid="{38751E99-63E1-41EC-8C72-FEB5BF0BAC96}">
+            <File Id="sdk_interfaces_irostermanager.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\irostermanager.h" />
           </Component>
           <Component Id="sdk_interfaces_irosterchanger.h" Guid="{7AEC21FF-D437-4AD2-81BA-72FAC564654B}">
             <File Id="sdk_interfaces_irosterchanger.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\irosterchanger.h" />
@@ -3659,11 +3665,11 @@
           <Component Id="sdk_interfaces_iurlprocessor.h" Guid="{93FB2AEC-7C81-4116-A8AD-BC284752FFB1}">
             <File Id="sdk_interfaces_iurlprocessor.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\iurlprocessor.h" />
           </Component>
-          <Component Id="sdk_interfaces_ivcard.h" Guid="{ADAA74BA-4E04-4974-B639-8321CA677FF1}">
-            <File Id="sdk_interfaces_ivcard.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ivcard.h" />
+          <Component Id="sdk_interfaces_ivcardmanager.h" Guid="{5434501B-0E42-4AD7-82BA-1AA64C784106}">
+            <File Id="sdk_interfaces_ivcardmanager.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ivcardmanager.h" />
           </Component>
-          <Component Id="sdk_interfaces_ixmppstreams.h" Guid="{56A8C655-C958-4E2F-A5C0-FF55805D6535}">
-            <File Id="sdk_interfaces_ixmppstreams.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ixmppstreams.h" />
+          <Component Id="sdk_interfaces_ixmppstreammanager.h" Guid="{6F073320-CE30-445C-B673-F882960D35F2}">
+            <File Id="sdk_interfaces_ixmppstreammanager.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ixmppstreammanager.h" />
           </Component>
           <Component Id="sdk_interfaces_ixmppuriqueries.h" Guid="{B654BB09-4B6A-4D4F-A65D-56E11CCF1C94}">
             <File Id="sdk_interfaces_ixmppuriqueries.h" KeyPath="yes" Source="SourceDir\sdk\interfaces\ixmppuriqueries.h" />
@@ -3740,6 +3746,12 @@
           </Component>
           <Component Id="sdk_utils_options.h" Guid="{C1E31CAC-D43B-4E96-B129-5187FF5189C9}">
             <File Id="sdk_utils_options.h" KeyPath="yes" Source="SourceDir\sdk\utils\options.h" />
+          </Component>
+          <Component Id="sdk_utils_passworddialog.h" Guid="{B11E10F8-10AD-4A53-B2FC-6D61CBBFAFD2}">
+            <File Id="sdk_utils_passworddialog.h" KeyPath="yes" Source="SourceDir\sdk\utils\passworddialog.h" />
+          </Component>
+          <Component Id="sdk_utils_pluginhelper.h" Guid="{B412122E-444D-4703-8DD7-A64209BFDE01}">
+            <File Id="sdk_utils_pluginhelper.h" KeyPath="yes" Source="SourceDir\sdk\utils\pluginhelper.h" />
           </Component>
           <Component Id="sdk_utils_ringbuffer.h" Guid="{3B0BA934-B9D5-4F8E-9B6E-65FE24F2A9E0}">
             <File Id="sdk_utils_ringbuffer.h" KeyPath="yes" Source="SourceDir\sdk\utils\ringbuffer.h" />
@@ -3890,6 +3902,9 @@
           </Component>
           <Component Id="de_messagewidgets.qm" Guid="{4152E5B6-7D2B-4EA1-A181-43DD0ED27F5B}">
             <File Id="de_messagewidgets.qm" KeyPath="yes" Source="SourceDir\translations\de\messagewidgets.qm" />
+          </Component>
+          <Component Id="de_metacontacts.qm" Guid="{06E4C1FD-4D58-4D71-978E-2D8446409806}">
+            <File Id="de_metacontacts.qm" KeyPath="yes" Source="SourceDir\translations\de\metacontacts.qm" />
           </Component>
           <Component Id="de_multiuserchat.qm" Guid="{E9B38E4F-52A7-42F5-9F2B-F2D645D7D161}">
             <File Id="de_multiuserchat.qm" KeyPath="yes" Source="SourceDir\translations\de\multiuserchat.qm" />
@@ -4106,6 +4121,9 @@
           <Component Id="es_messagewidgets.qm" Guid="{2AAE49EF-C57B-47D9-BD4F-6C37D9B775D7}">
             <File Id="es_messagewidgets.qm" KeyPath="yes" Source="SourceDir\translations\es\messagewidgets.qm" />
           </Component>
+          <Component Id="es_metacontacts.qm" Guid="{0B985509-0814-42BF-9A9D-C67E1D4351D2}">
+            <File Id="es_metacontacts.qm" KeyPath="yes" Source="SourceDir\translations\es\metacontacts.qm" />
+          </Component>
           <Component Id="es_multiuserchat.qm" Guid="{0A772888-A909-4F30-838D-2F51CEDD3E28}">
             <File Id="es_multiuserchat.qm" KeyPath="yes" Source="SourceDir\translations\es\multiuserchat.qm" />
           </Component>
@@ -4320,6 +4338,9 @@
           </Component>
           <Component Id="pl_messagewidgets.qm" Guid="{B751AE96-73BD-4684-878E-97D8977A3885}">
             <File Id="pl_messagewidgets.qm" KeyPath="yes" Source="SourceDir\translations\pl\messagewidgets.qm" />
+          </Component>
+          <Component Id="pl_metacontacts.qm" Guid="{51AD2FDF-4FD4-423A-AEA9-0E6C567A077F}">
+            <File Id="pl_metacontacts.qm" KeyPath="yes" Source="SourceDir\translations\pl\metacontacts.qm" />
           </Component>
           <Component Id="pl_multiuserchat.qm" Guid="{D8941595-C05A-490D-8FA2-96F37E1FEF9C}">
             <File Id="pl_multiuserchat.qm" KeyPath="yes" Source="SourceDir\translations\pl\multiuserchat.qm" />
@@ -4536,6 +4557,9 @@
           <Component Id="ru_messagewidgets.qm" Guid="{249AB630-F598-4501-B480-0ED46CC349C5}">
             <File Id="ru_messagewidgets.qm" KeyPath="yes" Source="SourceDir\translations\ru\messagewidgets.qm" />
           </Component>
+          <Component Id="ru_metacontacts.qm" Guid="{F3E2929B-F704-4950-9E6C-F77B2A0270E5}">
+            <File Id="ru_metacontacts.qm" KeyPath="yes" Source="SourceDir\translations\ru\metacontacts.qm" />
+          </Component>
           <Component Id="ru_multiuserchat.qm" Guid="{6006442C-FBD0-4BDD-AA9C-AC48CE158035}">
             <File Id="ru_multiuserchat.qm" KeyPath="yes" Source="SourceDir\translations\ru\multiuserchat.qm" />
           </Component>
@@ -4751,6 +4775,9 @@
           <Component Id="uk_messagewidgets.qm" Guid="{C41DDC19-26C0-41EA-AF74-D0D1079C5EFC}">
             <File Id="uk_messagewidgets.qm" KeyPath="yes" Source="SourceDir\translations\uk\messagewidgets.qm" />
           </Component>
+          <Component Id="uk_metacontacts.qm" Guid="{046DD539-A23F-48F4-A806-F2C24652B098}">
+            <File Id="uk_metacontacts.qm" KeyPath="yes" Source="SourceDir\translations\uk\metacontacts.qm" />
+          </Component>
           <Component Id="uk_multiuserchat.qm" Guid="{D9BB79F8-0156-4362-8749-E397FA12C3B2}">
             <File Id="uk_multiuserchat.qm" KeyPath="yes" Source="SourceDir\translations\uk\multiuserchat.qm" />
           </Component>
@@ -4935,6 +4962,7 @@
       <ComponentRef Id="plugins_messageprocessor.dll" />
       <ComponentRef Id="plugins_messagestyles.dll" />
       <ComponentRef Id="plugins_messagewidgets.dll" />
+      <ComponentRef Id="plugins_metacontacts.dll" />
       <ComponentRef Id="plugins_multiuserchat.dll" />
       <ComponentRef Id="plugins_normalmessagehandler.dll" />
       <ComponentRef Id="plugins_notifications.dll" />
@@ -5382,18 +5410,17 @@
       <ComponentRef Id="emoticons_tasha_icon.def.xml" />
     </ComponentGroup>
     <ComponentGroup Id="cg.resources_menuicons_shared">
-      <ComponentRef Id="menuicons_shared_account.def.xml" />
+      <ComponentRef Id="menuicons_shared_accountmanager.def.xml" />
       <ComponentRef Id="menuicons_shared_account.png" />
       <ComponentRef Id="menuicons_shared_accountchange.png" />
       <ComponentRef Id="menuicons_shared_accountlist.png" />
+      <ComponentRef Id="menuicons_shared_accountmove.png" />
       <ComponentRef Id="menuicons_shared_annotations.def.xml" />
       <ComponentRef Id="menuicons_shared_annotations.png" />
       <ComponentRef Id="menuicons_shared_arrowdown.png" />
       <ComponentRef Id="menuicons_shared_arrowleft.png" />
       <ComponentRef Id="menuicons_shared_arrowright.png" />
       <ComponentRef Id="menuicons_shared_arrowup.png" />
-      <ComponentRef Id="menuicons_shared_autostatus.def.xml" />
-      <ComponentRef Id="menuicons_shared_autostatus.png" />
       <ComponentRef Id="menuicons_shared_avatar.def.xml" />
       <ComponentRef Id="menuicons_shared_avatarchange.png" />
       <ComponentRef Id="menuicons_shared_avatarcustom.png" />
@@ -5433,8 +5460,6 @@
       <ComponentRef Id="menuicons_shared_console.png" />
       <ComponentRef Id="menuicons_shared_datastreamsmanager.def.xml" />
       <ComponentRef Id="menuicons_shared_datastreamsmanager.png" />
-      <ComponentRef Id="menuicons_shared_emoticons.def.xml" />
-      <ComponentRef Id="menuicons_shared_emoticons.png" />
       <ComponentRef Id="menuicons_shared_filestreamsmanager.def.xml" />
       <ComponentRef Id="menuicons_shared_filestreamsmanager.png" />
       <ComponentRef Id="menuicons_shared_filetransfer.def.xml" />
@@ -5465,13 +5490,15 @@
       <ComponentRef Id="menuicons_shared_mainwindowmenu.png" />
       <ComponentRef Id="menuicons_shared_mainwindowquit.png" />
       <ComponentRef Id="menuicons_shared_mainwindowshowroster.png" />
-      <ComponentRef Id="menuicons_shared_messagestyles.def.xml" />
-      <ComponentRef Id="menuicons_shared_messagestyles.png" />
       <ComponentRef Id="menuicons_shared_messagewidgets.def.xml" />
       <ComponentRef Id="menuicons_shared_messagewidgetsquote.png" />
       <ComponentRef Id="menuicons_shared_messagewidgetsselect.png" />
       <ComponentRef Id="menuicons_shared_messagewidgetssend.png" />
       <ComponentRef Id="menuicons_shared_messagewidgetstabmenu.png" />
+      <ComponentRef Id="menuicons_shared_metacontacts.def.xml" />
+      <ComponentRef Id="menuicons_shared_metacontactscombine.png" />
+      <ComponentRef Id="menuicons_shared_metacontactsdestroy.png" />
+      <ComponentRef Id="menuicons_shared_metacontactsdetach.png" />
       <ComponentRef Id="menuicons_shared_muc.def.xml" />
       <ComponentRef Id="menuicons_shared_mucchangenick.png" />
       <ComponentRef Id="menuicons_shared_mucchangetopic.png" />
@@ -5501,10 +5528,14 @@
       <ComponentRef Id="menuicons_shared_notifications.def.xml" />
       <ComponentRef Id="menuicons_shared_notifications.png" />
       <ComponentRef Id="menuicons_shared_notificationsactivateall.png" />
+      <ComponentRef Id="menuicons_shared_notificationspopupwindow.png" />
       <ComponentRef Id="menuicons_shared_notificationsremoveall.png" />
+      <ComponentRef Id="menuicons_shared_notificationsshowminimized.png" />
       <ComponentRef Id="menuicons_shared_notificationssoundoff.png" />
       <ComponentRef Id="menuicons_shared_notificationssoundon.png" />
+      <ComponentRef Id="menuicons_shared_notificationssoundplay.png" />
       <ComponentRef Id="menuicons_shared_options.def.xml" />
+      <ComponentRef Id="menuicons_shared_optionsappearance.png" />
       <ComponentRef Id="menuicons_shared_optionsdialog.png" />
       <ComponentRef Id="menuicons_shared_optionseditprofiles.png" />
       <ComponentRef Id="menuicons_shared_optionsprofile.png" />
@@ -5573,8 +5604,6 @@
       <ComponentRef Id="menuicons_shared_snegotiation.png" />
       <ComponentRef Id="menuicons_shared_snegotiationinit.png" />
       <ComponentRef Id="menuicons_shared_snegotiationterminate.png" />
-      <ComponentRef Id="menuicons_shared_statusicons.def.xml" />
-      <ComponentRef Id="menuicons_shared_statusiconsoptions.png" />
       <ComponentRef Id="menuicons_shared_vacuum.png" />
       <ComponentRef Id="menuicons_shared_vcard.def.xml" />
       <ComponentRef Id="menuicons_shared_vcard.png" />
@@ -6041,8 +6070,8 @@
       <ComponentRef Id="sdk_definitions_version.h" />
       <ComponentRef Id="sdk_definitions_xmppdatahandlerorders.h" />
       <ComponentRef Id="sdk_definitions_xmpperrors.h" />
+      <ComponentRef Id="sdk_definitions_xmppfeaturefactoryorders.h" />
       <ComponentRef Id="sdk_definitions_xmppfeatureorders.h" />
-      <ComponentRef Id="sdk_definitions_xmppfeaturepluginorders.h" />
       <ComponentRef Id="sdk_definitions_xmppstanzahandlerorders.h" />
       <ComponentRef Id="sdk_definitions_xmppurihandlerorders.h" />
       <ComponentRef Id="sdk_interfaces_iaccountmanager.h" />
@@ -6071,7 +6100,7 @@
       <ComponentRef Id="sdk_interfaces_imessagearchiver.h" />
       <ComponentRef Id="sdk_interfaces_imessagecarbons.h" />
       <ComponentRef Id="sdk_interfaces_imessageprocessor.h" />
-      <ComponentRef Id="sdk_interfaces_imessagestyles.h" />
+      <ComponentRef Id="sdk_interfaces_imessagestylemanager.h" />
       <ComponentRef Id="sdk_interfaces_imessagewidgets.h" />
       <ComponentRef Id="sdk_interfaces_imetacontacts.h" />
       <ComponentRef Id="sdk_interfaces_imultiuserchat.h" />
@@ -6079,12 +6108,12 @@
       <ComponentRef Id="sdk_interfaces_ioptionsmanager.h" />
       <ComponentRef Id="sdk_interfaces_ipepmanager.h" />
       <ComponentRef Id="sdk_interfaces_ipluginmanager.h" />
-      <ComponentRef Id="sdk_interfaces_ipresence.h" />
+      <ComponentRef Id="sdk_interfaces_ipresencemanager.h" />
       <ComponentRef Id="sdk_interfaces_iprivacylists.h" />
       <ComponentRef Id="sdk_interfaces_iprivatestorage.h" />
       <ComponentRef Id="sdk_interfaces_irecentcontacts.h" />
       <ComponentRef Id="sdk_interfaces_iregistraton.h" />
-      <ComponentRef Id="sdk_interfaces_iroster.h" />
+      <ComponentRef Id="sdk_interfaces_irostermanager.h" />
       <ComponentRef Id="sdk_interfaces_irosterchanger.h" />
       <ComponentRef Id="sdk_interfaces_irosteritemexchange.h" />
       <ComponentRef Id="sdk_interfaces_irostersearch.h" />
@@ -6101,8 +6130,8 @@
       <ComponentRef Id="sdk_interfaces_istatusicons.h" />
       <ComponentRef Id="sdk_interfaces_itraymanager.h" />
       <ComponentRef Id="sdk_interfaces_iurlprocessor.h" />
-      <ComponentRef Id="sdk_interfaces_ivcard.h" />
-      <ComponentRef Id="sdk_interfaces_ixmppstreams.h" />
+      <ComponentRef Id="sdk_interfaces_ivcardmanager.h" />
+      <ComponentRef Id="sdk_interfaces_ixmppstreammanager.h" />
       <ComponentRef Id="sdk_interfaces_ixmppuriqueries.h" />
       <ComponentRef Id="sdk_make_config.cmake" />
       <ComponentRef Id="sdk_make_config.inc" />
@@ -6127,6 +6156,8 @@
       <ComponentRef Id="sdk_utils_menubarchanger.h" />
       <ComponentRef Id="sdk_utils_message.h" />
       <ComponentRef Id="sdk_utils_options.h" />
+      <ComponentRef Id="sdk_utils_passworddialog.h" />
+      <ComponentRef Id="sdk_utils_pluginhelper.h" />
       <ComponentRef Id="sdk_utils_ringbuffer.h" />
       <ComponentRef Id="sdk_utils_searchlineedit.h" />
       <ComponentRef Id="sdk_utils_shortcuts.h" />
@@ -6176,6 +6207,7 @@
       <ComponentRef Id="de_messageprocessor.qm" />
       <ComponentRef Id="de_messagestyles.qm" />
       <ComponentRef Id="de_messagewidgets.qm" />
+      <ComponentRef Id="de_metacontacts.qm" />
       <ComponentRef Id="de_multiuserchat.qm" />
       <ComponentRef Id="de_normalmessagehandler.qm" />
       <ComponentRef Id="de_notifications.qm" />
@@ -6249,6 +6281,7 @@
       <ComponentRef Id="es_messageprocessor.qm" />
       <ComponentRef Id="es_messagestyles.qm" />
       <ComponentRef Id="es_messagewidgets.qm" />
+      <ComponentRef Id="es_metacontacts.qm" />
       <ComponentRef Id="es_multiuserchat.qm" />
       <ComponentRef Id="es_normalmessagehandler.qm" />
       <ComponentRef Id="es_notifications.qm" />
@@ -6322,6 +6355,7 @@
       <ComponentRef Id="pl_messageprocessor.qm" />
       <ComponentRef Id="pl_messagestyles.qm" />
       <ComponentRef Id="pl_messagewidgets.qm" />
+      <ComponentRef Id="pl_metacontacts.qm" />
       <ComponentRef Id="pl_multiuserchat.qm" />
       <ComponentRef Id="pl_normalmessagehandler.qm" />
       <ComponentRef Id="pl_notifications.qm" />
@@ -6395,6 +6429,7 @@
       <ComponentRef Id="ru_messageprocessor.qm" />
       <ComponentRef Id="ru_messagestyles.qm" />
       <ComponentRef Id="ru_messagewidgets.qm" />
+      <ComponentRef Id="ru_metacontacts.qm" />
       <ComponentRef Id="ru_multiuserchat.qm" />
       <ComponentRef Id="ru_normalmessagehandler.qm" />
       <ComponentRef Id="ru_notifications.qm" />
@@ -6468,6 +6503,7 @@
       <ComponentRef Id="uk_messageprocessor.qm" />
       <ComponentRef Id="uk_messagestyles.qm" />
       <ComponentRef Id="uk_messagewidgets.qm" />
+      <ComponentRef Id="uk_metacontacts.qm" />
       <ComponentRef Id="uk_multiuserchat.qm" />
       <ComponentRef Id="uk_normalmessagehandler.qm" />
       <ComponentRef Id="uk_notifications.qm" />

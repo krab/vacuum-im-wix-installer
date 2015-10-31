@@ -7,8 +7,6 @@
     <Upgrade Id="$(var.UpgradeCode)" />
     <Media Id="1" Cabinet="vacuumim.cab" EmbedCab="yes" CompressionLevel="high" />
 
-    <swid:Tag Regid="$(var.TagId)" />
-
     <WixVariable Id="WixUISupportPerMachine" Value="0" />
     <WixVariable Id="WixUISupportPerUser" Value="1" />
     

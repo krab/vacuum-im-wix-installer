@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Include>
 	<?define ProductName="Vacuum-IM"?>
-	<?define ProductVersion="1.3.0.2417"?>
+	<?define ProductVersion="1.3.0.20151030"?>
 	<?define ProductCodepage="UTF-8"?>
 	<?define UpgradeCode="70E8E2D2-162A-4B89-95E7-DD8D2332B585"?>
 	<?define Manufacturer="Sergey Potapov"?>
   <?define ApplicationDescription="Crossplarform jabber client written on Qt"?>
-  <?define TagId="regid.2010-01.com.jrudevels.vacuum"?>
 </Include>

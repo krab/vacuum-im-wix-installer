@@ -1,19 +1,25 @@
-SET PATH=%PATH%;"C:\Program Files (x86)\WiX Toolset v3.9\bin\"
-SET PATH=%PATH%;"C:\Program Files\Microsoft SDKs\Windows\v7.1\Bin\"
+SET PATH=%PATH%;"C:\Program Files (x86)\WiX Toolset v3.10\bin\"
+SET PATH=%PATH%;"C:\Program Files (x86)\Windows Kits\10\bin\x86\"
 
-candle -nologo -out obj\ -ext WixUIExtension -ext WixTagExtension Files.wxs Product.wxs Features.wxs
+candle -nologo -out obj\ -ext WixUIExtension Files.wxs Product.wxs Features.wxs
 
-light -b "C:\Dev\github\vacuum-im-wix-installer" -nologo -out bin\Release\en-us\Vacuum-IM.msi -cultures:en-US -loc loc_en_us.wxl -ext WixUIExtension -ext WixTagExtension obj\Files.wixobj obj\Product.wixobj obj\Features.wixobj
+light -b "C:\vacuum-im-wix-installer" -nologo -out bin\Release\en-us\Vacuum-IM.msi -cultures:en-US -loc loc_en_us.wxl -ext WixUIExtension obj\Files.wixobj obj\Product.wixobj obj\Features.wixobj
 
-light -b "C:\Dev\github\vacuum-im-wix-installer" -nologo -out bin\Release\ru-ru\Vacuum-IM.msi -cultures:ru-ru -loc loc_ru_ru.wxl -ext WixUIExtension -ext WixTagExtension obj\Files.wixobj obj\Product.wixobj obj\Features.wixobj
+light -b "C:\vacuum-im-wix-installer" -nologo -out bin\Release\ru-ru\Vacuum-IM.msi -cultures:ru-ru -loc loc_ru_ru.wxl -ext WixUIExtension obj\Files.wixobj obj\Product.wixobj obj\Features.wixobj
 
 msitran -g bin\Release\en-us\Vacuum-IM.msi bin\Release\ru-ru\Vacuum-IM.msi bin\Release\en-us\ru.mst
 
 msidb -d bin\Release\en-us\Vacuum-IM.msi -r bin\Release\en-us\ru.mst
 
-"C:\Program Files\Microsoft SDKs\Windows\v7.1\Samples\sysmgmt\msi\scripts\wisubstg.vbs" bin\Release\en-us\Vacuum-IM.msi bin\Release\en-us\ru.mst 1049
+"C:\Program Files (x86)\Windows Kits\10\bin\x86\wisubstg.vbs" bin\Release\en-us\Vacuum-IM.msi bin\Release\en-us\ru.mst 1049
 
-"C:\Program Files\Microsoft SDKs\Windows\v7.1\Samples\sysmgmt\msi\scripts\WiLangId.vbs" bin\Release\en-us\Vacuum-IM.msi Package 1033,1049
+"C:\Program Files (x86)\Windows Kits\10\bin\x86\wilangid.vbs" bin\Release\en-us\Vacuum-IM.msi Package 1033,1049
+
+
+
+
+
+
 
 
 
